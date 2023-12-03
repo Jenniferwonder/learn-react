@@ -30,7 +30,7 @@ mindmap-plugin: basic
                 - `className` 相当于 html `class`
         - Using JS
             - `style={{
-                 width: user.imageSize, height: user.imageSize, }}`
+                  width: user.imageSize, height: user.imageSize, }}`
 - `return()`
     - Each component returns a piece of JSX code to be rendered on page
 - 📌 Case
@@ -74,7 +74,7 @@ mindmap-plugin: basic
 
 ## ⭐Share Data between Components
 
-### ![[z-Assets/Paste image 1701567850607image.png]]
+### ![Share Date Illustration](z-Assets/1701567850607.png)
 
 ### Move the *state* up from the component to its parent
 
