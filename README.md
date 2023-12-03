@@ -23,5 +23,5 @@ Each component in [scr/components](https://github.com/Jenniferwonder/react-tutor
 ## How to Use?
 
 - Run `npm install` to install dependencies;
-- Run `npm start`, and import needed component to `App.js` to view each component effect in the browser.
-- For tic-tac-toe app, add `Game.js` to `index.js` to view the effect.
+- Run `npm start`, and import needed component to `App.js` and add `<App/>` to `index.js` to view each component effect in the browser.
+- For tic-tac-toe app, add `<Game/>` to `index.js` to view the effect.
