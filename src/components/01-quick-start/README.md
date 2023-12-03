@@ -34,35 +34,35 @@ mindmap-plugin: basic
 - `return()`
     - Each component returns a piece of JSX code to be rendered on page
 - 📌 Case
-    - *AboutPage*
+    - *[AboutPage](https://github.com/Jenniferwonder/react-tutorial/blob/main/src/components/01-quick-start/AboutPage.jsx)*
 
 ### Conditional Rendering
 - Case-1-`if...else`
 - Case-2-`test? a:b`
 - Case-3-`&&`
 - 📌 Case
-    - *Conditional*
+    - *[Conditional](https://github.com/Jenniferwonder/react-tutorial/blob/main/src/components/01-quick-start/Conditional.jsx)*
 
 ### Render Lists
 - `.map()` method
 - `key`
     - `<li>` has a `key` attribute. For each item in a list, you should pass a string or a number that uniquely identifies that item among its siblings.
 - 📌 Case
-    - *Lists*
+    - *[Lists](https://github.com/Jenniferwonder/react-tutorial/blob/main/src/components/01-quick-start/Lists.jsx)*
 
 ## ⭐Event Update
 
 ### Respond to Events
 - `onClick={handleClick}`
 - 📌 Case
-    - *Click*
+    - *[Click](https://github.com/Jenniferwonder/react-tutorial/blob/main/src/components/01-quick-start/Click.jsx)*
 
 ### Update Screen
 - `useState` Hook
     - `import { useState } from "react";`
     - `import { React } from "react";`
 - 📌 Case
-    - *UpdateClick*
+    - *[UpdateClick](https://github.com/Jenniferwonder/react-tutorial/blob/main/src/components/01-quick-start/UpdateClick.jsx)*
 
 ### Hooks
 - Functions starting with `use` are called _Hooks_.
@@ -85,4 +85,4 @@ mindmap-plugin: basic
 - `MyButton({ count, onClick })`
 
 ### 📌 Case
-- *ShareData*
+- *[ShareData](https://github.com/Jenniferwonder/react-tutorial/blob/main/src/components/01-quick-start/ShareData.jsx)*
