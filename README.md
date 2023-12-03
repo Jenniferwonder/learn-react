@@ -7,10 +7,10 @@ DateModified: 2023-12-03
 
 This repository contains code examples from the official [React tutorial](https://react.dev/learn/reacting-to-input-with-state) initiated by create-react-app.
 
-Each component in `scr/components` is a code example provided by the official tutorial, currently containing:
+Each component in [scr/components](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components) is a code example provided by the official tutorial, currently containing:
 
-- 01-quick-start
-- 02-tic-tac-toe
+- [01-quick-start](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/01-quick-start)
+- [02-tic-tac-toe](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe)
 - edit-profile
 - heading-context
 - heading-post
