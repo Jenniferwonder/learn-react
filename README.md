@@ -1,9 +1,9 @@
 ---
 DateStarted: 2023-09-14
-DateModified: 2023-12-03
+DateModified: 2023-12-04
 ---
 
-# React-tutorial
+# React Tutorial Code & Notes
 
 This repository contains code examples from the official [React tutorial](https://react.dev/learn/reacting-to-input-with-state) initiated by create-react-app.
 
@@ -18,7 +18,6 @@ Each component in [scr/components](https://github.com/Jenniferwonder/react-tutor
 - letter-select
 - pic-bg
 - task-app
-- tic-tac-toe
 
 ## How to Use?
 
