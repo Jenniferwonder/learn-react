@@ -1,7 +1,7 @@
 // 02-tic-tac-toe
 import { useState } from "react";
 import { React } from "react";
-import Board from "./components/02-tic-tac-toe/Board";
+import Board from "./Board";
 
 // Lift state up again to add time travel
 export default function Game() {

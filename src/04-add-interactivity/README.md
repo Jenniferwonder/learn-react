@@ -1,6 +1,6 @@
 ---
 DateStarted: 2023-12-04
-DateModified: 2023-12-04
+DateModified: 2023-12-05
 aliases: add-interactivity-react-state
 source: https://react.dev/learn/adding-interactivity
 ---

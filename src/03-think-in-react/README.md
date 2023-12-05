@@ -1,6 +1,6 @@
 ---
 DateStarted: 2023-12-04
-DateModified: 2023-12-04
+DateModified: 2023-12-05
 mindmap-plugin: basic
 aliases: product-table-react
 source: https://react.dev/learn/thinking-in-react
