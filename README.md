@@ -5,12 +5,12 @@ DateModified: 2023-12-05
 
 # React Tutorial Code & Notes
 
-This repository contains a curated list of runnable code examples and projects provided by the [Official React Tutorial](https://react.dev/learn/reacting-to-input-with-state).
+This repository contains a curated list of runnable code examples and projects provided by the official [React Tutorial](https://react.dev/learn/reacting-to-input-with-state).
 
 Projects for each chapter can be found in [src](https://github.com/Jenniferwonder/react-tutorial/tree/main/src), currently containing:
 
 <details>
-<summary>📂[01-quick-start](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/01-quick-start)</summary>
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/01-quick-start">📂01-quick-start</a></summary>
 
 - [AboutPage]()
 - [Conditional]()
@@ -22,17 +22,18 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 </details>
 
 <details>
-<summary>📂[02-tic-tac-toe](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe)</summary>
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe">📂02-tic-tac-toe</a></summary>
 </details>
+- [tic-tac-toe](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe)
 
 <details>
-<summary>📂[03-think-in-react]()</summary>
+<summary><a href="">📂03-think-in-react</a></summary>
 
 - [product-table-app]()
 </details>
 
 <details>
-<summary>📂[04-add-interactivity]()</summary>
+<summary><a href="">📂04-add-interactivity</a></summary>
 
 - [Gallery]()
 - [Message]()
@@ -41,7 +42,7 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 </details>
 
 <details>
-<summary>📂[05-react-to-input]()</summary>
+<summary><a href="">📂05-react-to-input</a></summary>
 
 - [city-quiz]()
 - [edit-profile]()
@@ -52,35 +53,35 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 </details>
 
 <details>
-<summary>📂[06-state-structure]()</summary>
+<summary><a href="">📂06-state-structure</a></summary>
 
-- []()
+- [TravelPlan]()
 </details>
 
 <details>
-<summary>📂[07-share-state]()</summary>
+<summary><a href="">📂07-share-state</a></summary>
 
-- []()
+- [FilterList]()
 </details>
 
 <details>
-<summary>📂[08-preserve-reset-state]()</summary>
+<summary><a href="">📂08-preserve-reset-state</a></summary>
 
-- []()
-- []()
+- [score-board]()
+- [chat-form]()
 </details>
 
 <details>
-<summary>📂[09-reducer]()</summary>
+<summary><a href="">📂09-reducer</a></summary>
 
-- []()
+- [TaskApp]()
 </details>
 
 <details>
-<summary>📂[10-context]()</summary>
+<summary><a href="">📂10-context()</summary>
 
-- []()
-- []()
+- [heading-context]()
+- [heading-post]()
 </details>
 
 ## How to Use?
