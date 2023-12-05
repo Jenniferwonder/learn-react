@@ -10,7 +10,7 @@ This repository contains a curated list of runnable code examples and projects p
 Projects for each chapter can be found in [src](https://github.com/Jenniferwonder/react-tutorial/tree/main/src), currently containing:
 
 <details>
-<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/01-quick-start">📂01-quick-start</a></summary>
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/01-quick-start">📂01-quick-start</a></summary>
 
 - [AboutPage]()
 - [Conditional]()
@@ -22,9 +22,9 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 </details>
 
 <details>
-<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe">📂02-tic-tac-toe</a></summary>
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/02-tic-tac-toe">📂02-tic-tac-toe</a></summary>
 
-- [tic-tac-toe](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe)
+- [tic-tac-toe](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/02-tic-tac-toe)
 </details>
 
 <details>
