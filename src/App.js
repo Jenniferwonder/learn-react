@@ -10,10 +10,10 @@
 // import Game from "./02-tic-tac-toe/Game";
 
 // 🏷️03-think-in-react
-// import ProductApp from "./03-think-in-react/product-app/ProductApp";
+// import ProductTableApp from "./03-think-in-react/product-table-app/ProductTableApp";
 
 // 🏷️04-add-interactivity
-// import ChatForm from "./04-add-interactivity/ChatForm";
+// import Message from "./04-add-interactivity/Message";
 // import Gallery from "./04-add-interactivity/Gallery";
 // import Scores from "./04-add-interactivity/Scores";
 // import Objects from "./04-add-interactivity/Objects";
@@ -57,10 +57,10 @@ export default function App() {
 			<h1>Welcome to 02-tic-tac-toe</h1>
 			{/* <Game /> */}
 			<h1>Welcome to 03-think-in-react</h1>
-			{/* <ProductApp /> */}
+			{/* <ProductTableApp /> */}
 			<h1>Welcome to 04-add-interactivity</h1>
 			{/* <Gallery /> */}
-			{/* <ChatForm /> */}
+			{/* <Message /> */}
 			{/* <Scores /> */}
 			{/* <Objects /> */}
 			{/* <ImmerObjects /> */}
