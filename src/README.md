@@ -11,6 +11,7 @@ Each component in [scr/components](https://github.com/Jenniferwonder/react-tutor
 
 - [01-quick-start](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/01-quick-start)
 - [02-tic-tac-toe](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe)
+- 
 - edit-profile
 - heading-context
 - heading-post
