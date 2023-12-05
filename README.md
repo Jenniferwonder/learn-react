@@ -79,7 +79,7 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 </details>
 
 <details>
-<summary><a href="">📂10-context()</summary>
+<summary><a href="">📂10-context</summary>
 
 - [heading-context]()
 - [heading-post]()
