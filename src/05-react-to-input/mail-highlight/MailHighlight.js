@@ -3,7 +3,7 @@ import { initialLetters } from "./data.js";
 import Letter from "./Letter.js";
 import "./styles.css";
 
-export default function MailClient() {
+export default function MailHighlight() {
 	const [letters, setLetters] = useState(initialLetters);
 	// const [highlightedLetter, setHighlightedLetter] = useState(null);
 	const [highlightedId, setHighlightedId] = useState(null);

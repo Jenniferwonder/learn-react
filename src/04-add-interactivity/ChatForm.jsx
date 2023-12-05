@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Chat() {
+export default function ChatForm() {
 	const [to, setTo] = useState("Alice");
 	const [message, setMessage] = useState("Hello");
 

@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
 
-export default function PicBg() {
+export default function RemoveBg() {
 	const [isClick, setIsClick] = useState(false);
 
 	let bgClassName = "background background--active";
@@ -10,7 +10,7 @@ export default function PicBg() {
 	if (isClick) {
 		bgClassName = "background";
 		picClassName += " picture--active";
-		console.log("3");
+		// console.log("3");
 	}
 	return (
 		<div

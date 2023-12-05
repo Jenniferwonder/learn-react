@@ -3,7 +3,7 @@ import { letters } from "./data.js";
 import Letter from "./Letter.js";
 import "./styles.css";
 
-export default function MailClient() {
+export default function MailSelect() {
 	// const [selectedId, setSelectedId] = useState(null);
 	const [selectedIds, setSelectedIds] = useState([]);
 
