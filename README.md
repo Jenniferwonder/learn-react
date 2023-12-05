@@ -23,8 +23,9 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 
 <details>
 <summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe">📂02-tic-tac-toe</a></summary>
-</details>
+
 - [tic-tac-toe](https://github.com/Jenniferwonder/react-tutorial/tree/main/src/components/02-tic-tac-toe)
+</details>
 
 <details>
 <summary><a href="">📂03-think-in-react</a></summary>
