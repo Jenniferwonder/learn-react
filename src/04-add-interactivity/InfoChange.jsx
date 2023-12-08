@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Objects() {
+export default function InfoChange() {
 	const [person, setPerson] = useState({
 		name: "Niki de Saint Phalle",
 		artwork: {

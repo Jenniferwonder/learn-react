@@ -1,6 +1,6 @@
 import { useImmer } from "use-immer";
 
-export default function ImmerObjects() {
+export default function ImmerInfoChange() {
 	const [person, updatePerson] = useImmer({
 		name: "Niki de Saint Phalle",
 		artwork: {
