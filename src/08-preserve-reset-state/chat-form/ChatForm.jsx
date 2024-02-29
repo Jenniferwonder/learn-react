@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Chat from "./Chat.js";
 import ContactList from "./ContactList.js";
+// import "./styles.css";
 
 export default function ChatForm() {
 	const [to, setTo] = useState(contacts[0]);
