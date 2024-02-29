@@ -38,6 +38,7 @@ import PauseCounter from "./08-preserve-reset-state/score-board/PauseCounter";
 import ScoreboardA from "./08-preserve-reset-state/score-board/ScoreboardA";
 import ScoreboardB from "./08-preserve-reset-state/score-board/ScoreboardB";
 import ChatForm from "./08-preserve-reset-state/chat-form/ChatForm";
+import NavApp from "./10-context/nav-message/NavApp";
 
 // import TaskApp from "./task-app/TaskApp";
 // import HeadingApp from "./heading-context/HeadingApp";
@@ -86,8 +87,10 @@ export default function App() {
 			{/* <TaskApp /> */}
 			{/* <HeadingApp /> */}
 			{/* <PostApp /> */}
-			<h1>Welcome to component from my-react-component-lib</h1>
+			{/* <h1>Welcome to component from my-react-component-lib</h1> */}
 			{/* <Button label="Hello World"></Button> */}
+			<h1>Welcome to 10-context-api</h1>
+			<NavApp />
 		</>
 	);
 }
