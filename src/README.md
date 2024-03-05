@@ -28,61 +28,38 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 </details>
 
 <details>
-<summary><a href="">📂03-think-in-react</a></summary>
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/03-think-in-react">📂03-think-in-react</a></summary>
 
 - [product-table-app]()
 </details>
 
 <details>
-<summary><a href="">📂04-add-interactivity</a></summary>
-
-- [Gallery]()
-- [Message]()
-- [Objects]()
-- [ImmerObjects]()
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/04-state-management">📂04-state-management</a></summary>
 </details>
 
 <details>
-<summary><a href="">📂05-react-to-input</a></summary>
-
-- [city-quiz]()
-- [edit-profile]()
-- [edit-profile-js]()
-- [mail-highlight]()
-- [mail-select]()
-- [remove-bg]()
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/05-more-hooks">📂05-more-hooks</a></summary>
 </details>
 
 <details>
-<summary><a href="">📂06-state-structure</a></summary>
-
-- [TravelPlan]()
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/06-style-for-react">📂06-style-for-react</a></summary>
 </details>
 
 <details>
-<summary><a href="">📂07-share-state</a></summary>
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/07-routing">📂07-routing</a></summary>
 
-- [FilterList]()
 </details>
 
 <details>
-<summary><a href="">📂08-preserve-reset-state</a></summary>
-
-- [score-board]()
-- [chat-form]()
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/08-query">📂08-query</a></summary>
 </details>
 
 <details>
-<summary><a href="">📂09-reducer</a></summary>
-
-- [TaskApp]()
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/09-suspense">📂09-suspense</a></summary>
 </details>
 
 <details>
-<summary><a href="">📂10-context</summary>
-
-- [heading-context]()
-- [heading-post]()
+<summary><a href="https://github.com/Jenniferwonder/react-tutorial/tree/main/src/10-server-component">📂10-server-component</a></summary>
 </details>
 
 ## How to Use?

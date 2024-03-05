@@ -1,7 +1,6 @@
 ---
 DateStarted: 2023-12-02
 DateModified: 2023-12-05
-mindmap-plugin: basic
 aliases:
   - react-quick-start
 ---
@@ -93,5 +92,5 @@ aliases:
 - You can only call Hooks at the **top** of your components (or other Hooks)
 - If you want to use `useState` in a condition or a loop, extract a new component and put it there
 
-### other built-in Hooks
+### Other built-in Hooks
 - https://react.dev/reference/react

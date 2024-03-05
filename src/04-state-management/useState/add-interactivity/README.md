@@ -7,7 +7,7 @@ source: https://react.dev/learn/adding-interactivity
 
 # Add Interactivity with State
 
-## State: a component’s memory
+## State: a component's memory
 
 - Build an Art Gallery page
   - ![04-art-gallery-mock](z-Assets/04-art-gallery-mock.png)
