@@ -24,3 +24,8 @@ aliases:
 ## React-router-dom
 
 ## [Next.js](Next.js)
+
+## Questions
+#### [路由切换时同一组件无法重新渲染的有什么方法可以解决？](https://github.com/haizlin/fe-interview/issues/833)
+
+

@@ -1,5 +1,4 @@
 ---
-DateDue: 
 Title: "React Client and Server Components "
 Type: D
 tags:
@@ -8,7 +7,10 @@ DateStarted: 2024-01-17
 DateModified: 2024-01-17
 DateDo: 
 DateDone: 
-status:
+DateDue: 
+status: 
+aliases:
+  - React Server Components
 ---
 
 # React Client and Server Components
@@ -53,3 +55,12 @@ status:
 - Server Components don't support `useState`
   - you'll need to use a Client Component instead.
   - fix this by moving the interactive "Like" button to a Client Component
+
+## Questions
+#### [有用过React的服务端渲染吗？怎么做的？](https://github.com/haizlin/fe-interview/issues/665)
+
+
+
+
+
+
