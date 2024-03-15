@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { letters } from "./data.js";
-import Letter from "./Letter.js";
+import { letters } from "./data.jsx";
+import Letter from "./Letter.jsx";
 import "./styles.css";
 
 export default function MailSelect() {

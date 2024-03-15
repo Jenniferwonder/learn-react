@@ -19,6 +19,8 @@ aliases:
   - React Performance
 ---
 # React Performance Best Practice
+## Render
+[in Depth-JS Critical Rendering Path](https://angularindepth.com/posts/1498/101-javascript-critical-rendering-path)
 
 ## Questions
 #### [说出几点你认为的React最佳实践](https://github.com/haizlin/fe-interview/issues/852)

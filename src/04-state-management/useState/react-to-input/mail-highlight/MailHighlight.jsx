@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { initialLetters } from "./data.js";
-import Letter from "./Letter.js";
+import { initialLetters } from "./data.jsx";
+import Letter from "./Letter.jsx";
 import "./styles.css";
 
 export default function MailHighlight() {

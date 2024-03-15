@@ -35,7 +35,6 @@ Comment:
 #### [请描述下你对React的新特性Hooks的理解？它有哪些应用场景？](https://github.com/haizlin/fe-interview/issues/702)
 #### [React为什么要搞一个Hooks？](https://github.com/haizlin/fe-interview/issues/846)
 #### [React Hooks帮我们解决了哪些问题？](https://github.com/haizlin/fe-interview/issues/845)
-
 #### [怎样使用Hooks获取服务端数据？](https://github.com/haizlin/fe-interview/issues/891)
 #### [使用Hooks要遵守哪些原则？](https://github.com/haizlin/fe-interview/issues/890)
 

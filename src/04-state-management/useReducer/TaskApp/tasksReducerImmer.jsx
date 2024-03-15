@@ -1,6 +1,6 @@
 import { useImmerReducer } from "use-immer"; // https://github.com/immerjs/use-immer#useimmerreducer
-import AddTask from "../11-scale-up-reducer-context/task-app/AddTask.js";
-import TaskList from "../11-scale-up-reducer-context/task-app/TaskList.js";
+import AddTask from "AddTask.js";
+import TaskList from "TaskList.js";
 
 function tasksReducer(draft, action) {
 	switch (action.type) {

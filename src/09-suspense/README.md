@@ -20,6 +20,8 @@ aliases:
 ---
 # React Suspense
 >[codesandbox.io/p/sandbox/frosty-hermann-bztrp?file=%2Fsrc%2Findex.js%3A10%2C11](https://codesandbox.io/p/sandbox/frosty-hermann-bztrp?file=%2Fsrc%2Findex.js%3A10%2C11)
+[in Depth-react-suspense-will-be-a-game-changer](https://angularindepth.com/posts/1044/why-react-suspense-will-be-a-game-changer)
+[GitHub - julianburr/talk-suspense-game-changer: Demo app for my talk at ReactJS Brisbane](https://github.com/julianburr/talk-suspense-game-changer)
 
 让你可以“等待”目标代码加载，并且可以直接指定一个加载的界面（像是个 spinner）
 

@@ -67,6 +67,7 @@ aliases:
 #### [解释下React中component和pureComponent两者的区别是什么？](https://github.com/haizlin/fe-interview/issues/618)
 
 #### [在React中声明组件时组件名的第一个字母必须是大写吗？为什么？](https://github.com/haizlin/fe-interview/issues/803)
+- [why-component-identifiers-must-be-capitalized-in-react](https://angularindepth.com/posts/1499/why-component-identifiers-must-be-capitalized-in-react)
 #### [说说你对React的组件命名规范的理解](https://github.com/haizlin/fe-interview/issues/796)
 #### [React组件命名推荐的方式是哪个？为什么不推荐使用displayName？](https://github.com/haizlin/fe-interview/issues/798)
 #### [React的displayName有什么作用？](https://github.com/haizlin/fe-interview/issues/797)
@@ -92,6 +93,7 @@ aliases:
 #### [React兄弟组件如何通信？](https://github.com/haizlin/fe-interview/issues/651)
 #### [React非父子组件如何通信？](https://github.com/haizlin/fe-interview/issues/650)
 #### [React父子组件如何通信？](https://github.com/haizlin/fe-interview/issues/649)
+### 如何实现双向绑定，并抽象成公共组件
 
 ### Portal & Slot
 #### [举例说明React的插槽有哪些运用场景？](https://github.com/haizlin/fe-interview/issues/934)
@@ -141,6 +143,7 @@ aliases:
 #### [需要把keys设置为全局唯一吗？](https://github.com/haizlin/fe-interview/issues/884)
 #### [React中遍历时为什么不用索引作为唯一的key值？](https://github.com/haizlin/fe-interview/issues/643)
 #### [React中的key有什么作用？](https://github.com/haizlin/fe-interview/issues/642)
+### React key 是干嘛用的 为什么要加？key 主要是解决哪一类问题的
 
 ### Props
 #### [React组件的state和props两者有什么区别？](https://github.com/haizlin/fe-interview/issues/645)
@@ -164,6 +167,7 @@ aliases:
 #### [React的isMounted有什么作用？](https://github.com/haizlin/fe-interview/issues/799)
 
 ### Event
+#### React 组件中怎么做事件代理？它的原理是什么？
 #### [`<div onClick={handlerClick}>单击</div>`和`<div onClick={handlerClick(1)}>单击</div>`有什么区别？](https://github.com/haizlin/fe-interview/issues/830)
 jsx 事件 = 函数，会调用函数并把函数的返回值记录，在每次render 时调用  
 因此，handleClick 会随事件触发调用，handleClick() 只会调用一次

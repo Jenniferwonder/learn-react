@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Chat from "./Chat.js";
-import ContactList from "./ContactList.js";
+import Chat from "./Chat.jsx";
+import ContactList from "./ContactList.jsx";
 // import "./styles.css";
 
 export default function ChatForm() {

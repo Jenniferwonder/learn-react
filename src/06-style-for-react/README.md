@@ -32,7 +32,7 @@ aliases:
 - react-transition-group
 - react-spring
 - rc-animate
-
+- [in Depth-react-spring](https://angularindepth.com/posts/1352/taking-react-animations-to-the-next-level-with-react-spring)
 
 ## Questions
 ### Basics

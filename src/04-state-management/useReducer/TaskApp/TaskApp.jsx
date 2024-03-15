@@ -1,8 +1,8 @@
 // import { useState } from "react";
 import { useReducer } from "react";
-import AddTask from "./AddTask.js";
-import TaskList from "./TaskList.js";
-import tasksReducer from "./tasksReducer.js";
+import AddTask from "./AddTask.jsx";
+import TaskList from "./TaskList.jsx";
+import tasksReducer from "./tasksReducer.jsx";
 import "./styles.css";
 
 export default function TaskApp() {

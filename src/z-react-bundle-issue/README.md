@@ -24,7 +24,9 @@ aliases:
 比如生产环境域名`http://www.prod.com`，开发环境域名`http://www.deve.com`，  
 则可以分别设置`REACT_APP_BASE_URL = 'http://www.prod.com'`和`REACT_APP_BASE_URL = 'http://www.deve.com'`，  
 然后在程序中使用`process.env.REACT_APP_BASE_URL`来获取基础路径，此时打包的时候会根据不同的环境打包不同的域名
-
+## Reference
+- [in Depth-a-note-on-vite-p1](https://angularindepth.com/posts/1318/a-note-on-vite-a-very-fast-dev-build-tool)
+- [in Depth-a-note-on-vite-p2](https://angularindepth.com/posts/1327/a-note-on-vite-a-very-fast-dev-build-tool-ii)
 ## Questions
 #### [React根据不同的环境打包不同的域名？](https://github.com/haizlin/fe-interview/issues/882)
 #### [使用webpack打包React项目，怎么减小生成的js大小？](https://github.com/haizlin/fe-interview/issues/881)

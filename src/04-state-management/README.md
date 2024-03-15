@@ -48,6 +48,10 @@ aliases:
     - `MyButton({ count, onClick })`
 - 📌 Case
     - _[ShareData](https://github.com/Jenniferwonder/react-tutorial/blob/main/src/components/01-quick-start/ShareData.jsx)_
+## Solutions
+- [in Depth-deep-dive-into-state-management-with-react-and-nextjs](https://angularindepth.com/posts/1487/deep-dive-into-state-management-with-react-and-nextjs)
+## In-Depth
+- [In-depth explanation of state and props update in React | by Max Koretskyi | React In Depth | Medium](https://medium.com/react-in-depth/in-depth-explanation-of-state-and-props-update-in-react-51ab94563311)
 ## Questions
 #### [在React中你是怎么进行状态管理的？](https://github.com/haizlin/fe-interview/issues/605)
 #### [如何更新组件的状态？](https://github.com/haizlin/fe-interview/issues/849)
