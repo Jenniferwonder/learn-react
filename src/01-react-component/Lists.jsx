@@ -10,12 +10,16 @@ export default function Lists() {
 		<li
 			key={product.id}
 			style={{
-				color: product.isFruit ? "magenta" : "darkgreen",
+				color: product.isFruit ? "magenta" : "lightgreen",
 			}}
 		>
 			{product.title}
 		</li>
 	));
 
-	return <ul>{listItems}</ul>;
+	return (
+		<>
+			<ul>{listItems}</ul>
+		</>
+	);
 }

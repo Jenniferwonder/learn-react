@@ -1,39 +1,14 @@
+import { useState } from "react";
 const user = {
 	name: "Hedy Lamarr",
 	imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
 	imageSize: 90,
-	isLoggedIn: true,
+	isLoggedIn: false,
 };
-function Image() {
-	return (
-		<>
-			<h1>{user.name}</h1>
-			<img
-				className="avatar"
-				src={user.imageUrl}
-				alt={"Photo of " + user.name}
-				style={{
-					width: user.imageSize,
-					height: user.imageSize,
-				}}
-			/>
-		</>
-	);
+function Button({ info, onClick }) {
+	return <button onClick={onClick}>{info}</button>;
 }
-function Default() {
-	return (
-		<>
-			<p>
-				Hello there.
-				<br />
-				How do you do?
-			</p>
-			<button>I'm a button</button>
-		</>
-	);
-}
-
-// Case-1: if...else
+// 🏷️Case-1: if...else
 // export default function AboutPage() {
 // 	let content;
 // 	if (user.isLoggedIn) {
@@ -44,20 +19,47 @@ function Default() {
 // 	return { content };
 // }
 
-// Case-2: {test?a:b}
-export default function AboutPage() {
-	return (
-	<div>
-		{user.isLoggedIn ? (
-			<Image />
-		) : (
-			<Default />
-		)}
-	</div>
-	);
+// 🏷️Case-2: {test?a:b}
+export default function Conditional() {
+	const [isLoggedIn, setIsLoggedIn] = useState(user.isLoggedIn);
+	function handleClick() {
+		setIsLoggedIn(!isLoggedIn);
+	}
+	function Image() {
+		return (
+			<>
+				<h3>{user.name}</h3>
+				<div>
+					<img
+						className="avatar"
+						src={user.imageUrl}
+						alt={"Photo of " + user.name}
+						style={{
+							width: user.imageSize,
+							height: user.imageSize,
+						}}
+					/>
+				</div>
+				<Button info="Log out" onClick={handleClick} />
+			</>
+		);
+	}
+	function Default() {
+		return (
+			<>
+				<p>
+					Hello there.
+					<br />
+					How do you do?
+				</p>
+				<Button info="Log in" onClick={handleClick} />
+			</>
+		);
+	}
+	return <div>{isLoggedIn ? <Image /> : <Default />}</div>;
 }
 
-// Case-3: &&
+// 🏷️Case-3: &&
 // export default function AboutPage() {
 // 	return <div>{user.isLoggedIn && <Image />}</div>;
 // }

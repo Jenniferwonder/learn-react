@@ -21,7 +21,7 @@ export default function Scores() {
 			>
 				+3
 			</button>
-			<h1>Score: {score}</h1>
+			<h3>Score: {score}</h3>
 		</>
 	);
 }

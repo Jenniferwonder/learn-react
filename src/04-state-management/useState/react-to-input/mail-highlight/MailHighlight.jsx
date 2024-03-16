@@ -29,7 +29,7 @@ export default function MailHighlight() {
 
 	return (
 		<>
-			<h2>Inbox</h2>
+			<h3>Inbox</h3>
 			<ul>
 				{letters.map((letter) => (
 					<Letter

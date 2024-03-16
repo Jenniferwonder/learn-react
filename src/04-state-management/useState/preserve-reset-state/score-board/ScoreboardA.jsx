@@ -35,9 +35,9 @@ function Counter({ person }) {
 			onPointerEnter={() => setHover(true)}
 			onPointerLeave={() => setHover(false)}
 		>
-			<h1>
+			<h3>
 				{person}'s score: {score}
-			</h1>
+			</h3>
 			<button onClick={() => setScore(score + 1)}>Add one</button>
 		</div>
 	);

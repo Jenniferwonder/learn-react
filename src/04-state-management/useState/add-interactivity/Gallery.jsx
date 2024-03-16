@@ -22,10 +22,10 @@ export default function Gallery() {
 	return (
 		<>
 			<button onClick={handleNextClick}>Next</button>
-			<h2>
+			<h3>
 				<i>{sculpture.name} </i>
 				by {sculpture.artist}
-			</h2>
+			</h3>
 			<h3>
 				({index + 1} of {sculptureList.length})
 			</h3>

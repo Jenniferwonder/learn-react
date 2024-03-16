@@ -54,10 +54,12 @@ import TaskApp from "./04-state-management/useReducer/TaskApp/TaskApp";
 export default function App() {
 	return (
 		<>
-			<h1>Welcome to 01-quick-start</h1>
+			<h1>🏷️01-quick-start</h1>
+			<blockquote>
+				<i>JSX, Prop, useState Basics</i>
+			</blockquote>
 			<h2>About Page</h2>
 			<AboutPage />
-			{/* <Conditional /> */}
 			<h2>Lists</h2>
 			<Lists />
 			<h2>Click to alert</h2>
@@ -67,40 +69,81 @@ export default function App() {
 			<UpdateClick />
 			<h2>Share Click</h2>
 			<ShareClickApp />
-			<h1>Welcome to 02-tic-tac-toe</h1>
+			<h2>Conditional Rendering</h2>
+			<Conditional />
+			<hr></hr>
+			<h1>🏷️02-tic-tac-toe</h1>
+			<blockquote>
+				<i>Prop, useState</i>
+			</blockquote>
 			<Game />
-			<h1>Welcome to 03-think-in-react</h1>
+			<hr></hr>
+			<h1>🏷️03-think-in-react</h1>
+			<h2>Product Table</h2>
 			<ProductTableApp />
-			<h1>Welcome to 04-state-management/useState</h1>
-			<h2>add-interactivity</h2>
+			<hr></hr>
+			<h1>🏷️04-1-useState</h1>
+			<blockquote>
+				<i>-- Add interactivity --</i>
+			</blockquote>
+			<h2>Gallery</h2>
 			<Gallery />
+			<h2>Message</h2>
 			<Message />
+			<h2>Scores Updater</h2>
 			<Scores />
+			<h2>Info Change</h2>
 			<InfoChange />
+			<h2>Immer Info Change</h2>
 			<ImmerInfoChange />
-			<h2>react-to-input</h2>
+			<hr></hr>
+			<blockquote>
+				<i>-- React to input --</i>
+			</blockquote>
 			<Quiz />
+			<h2>Click to Remove Background</h2>
 			<RemoveBg />
+			<h2>Edit Profile</h2>
 			<EditProfile />
+			<h2>Mail Highlight</h2>
 			<MailHighlight />
+			<h2>Mail Select</h2>
 			<MailSelect />
-			<h2>state-structure</h2>
+			<hr></hr>
+			<blockquote>
+				<i>-- State Structure --</i>
+			</blockquote>
+			<h2>Travel Plan</h2>
 			<TravelPlan />
-			<h2>share-state</h2>
+			<hr></hr>
+			<blockquote>
+				<i>-- Share State --</i>
+			</blockquote>
+			<h2>Filter List</h2>
 			<FilterList />
-			<h2>preserve-reset-state</h2>
+			<hr></hr>
+			<blockquote>
+				<i>-- Preserve & Reset State --</i>
+			</blockquote>
+			<h2>Fancy Counter</h2>
 			<FancyCounter />
+			<h2>Pause Counter</h2>
 			<PauseCounter />
+			<h2>Scoreboard</h2>
 			<ScoreboardA />
 			<ScoreboardB />
+			<h2>Chat Form</h2>
 			<ChatForm />
-			<h1>Welcome to 04-state-management/useReducer</h1>
+			<hr></hr>
+			<h1>🏷️04-2-useReducer</h1>
+			<h2>Task App</h2>
 			<TaskApp />
 			{/* <HeadingApp /> */}
 			{/* <PostApp /> */}
-			{/* <h1>Welcome to component from my-react-component-lib</h1> */}
+			{/* <h1>🏷️component from my-react-component-lib</h1> */}
 			{/* <Button label="Hello World"></Button> */}
-			<h1>Welcome to 04-state-management/useContext</h1>
+			<hr></hr>
+			<h1>🏷️04-3-useContext</h1>
 			<NavApp />
 		</>
 	);

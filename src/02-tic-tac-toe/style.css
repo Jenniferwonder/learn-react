@@ -57,7 +57,7 @@ body {
 }
 
 .square {
-	background: #fff;
+	background: gray;
 	border: 1px solid #999;
 	float: left;
 	font-size: 24px;
@@ -71,7 +71,7 @@ body {
 	width: 34px;
 }
 
-.board-row:after {
+.board-row::after {
 	clear: both;
 	content: "";
 	display: table;
@@ -87,4 +87,10 @@ body {
 
 .game-info {
 	margin-left: 20px;
+}
+
+@media (prefers-color-scheme: light) {
+	.square {
+		background: #fff;
+	}
 }

@@ -63,7 +63,7 @@ export default function MailSelect() {
 
 	return (
 		<>
-			<h2>Inbox</h2>
+			<h3>Inbox</h3>
 			<ul>
 				{letters.map((letter) => (
 					<Letter
@@ -80,7 +80,7 @@ export default function MailSelect() {
 						onToggle={handleToggle}
 					/>
 				))}
-				<hr />
+				{/* <hr /> */}
 				<p>
 					<b>You selected {selectedCount} letters</b>
 				</p>
