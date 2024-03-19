@@ -56,7 +56,7 @@ export default function App() {
 		<>
 			<h1>🏷️01-quick-start</h1>
 			<blockquote>
-				<i>JSX, Prop, useState Basics</i>
+				<i>JSX, Prop, useState Basics (Number, Boolean)</i>
 			</blockquote>
 			<h2>About Page</h2>
 			<AboutPage />
@@ -74,11 +74,14 @@ export default function App() {
 			<hr></hr>
 			<h1>🏷️02-tic-tac-toe</h1>
 			<blockquote>
-				<i>Prop, useState</i>
+				<i>Prop, useState (Array, Boolean) </i>
 			</blockquote>
 			<Game />
 			<hr></hr>
 			<h1>🏷️03-think-in-react</h1>
+			<blockquote>
+				<i>Prop, useState (String, Boolean) </i>
+			</blockquote>
 			<h2>Product Table</h2>
 			<ProductTableApp />
 			<hr></hr>

@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Quiz() {
 	const [answer, setAnswer] = useState("");
 	const [error, setError] = useState(null);
-	const [status, setStatus] = useState("typing");
+	const [status, setStatus] = useState("empty");
 
 	if (status === "success") {
 		return <h1>That's right!</h1>;
@@ -21,6 +21,7 @@ export default function Quiz() {
 	}
 
 	function handleTextareaChange(e) {
+		e.target.value ? setStatus("typing") : setStatus("empty");
 		setAnswer(e.target.value);
 	}
 	return (
