@@ -6,7 +6,7 @@ export const Messages = () => {
 
 	return (
 		<div className="messages">
-			<h1>Messages</h1>
+			<h3>Messages</h3>
 			<p>1 message for {username}</p>
 			<p className="message">useContext is awesome!</p>
 		</div>

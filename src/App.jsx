@@ -59,6 +59,13 @@ import ListRef from "./05-more-hooks/useRef/ListRef";
 import VideoRef from "./05-more-hooks/useRef/VideoRef";
 import RemoveRef from "./05-more-hooks/useRef/RemoveRef";
 import ForwardRef from "./05-more-hooks/useRef/ForwardRef";
+import HeadingApp from "./04-state-management/useContext/heading-context/HeadingApp";
+import PostApp from "./04-state-management/useContext/post-context/PostApp";
+import ThemeContextApp from "./04-state-management/useContext/ThemeContextApp";
+import CurrentUser from "./04-state-management/useContext/CurrentUser";
+import MultiContext from "./04-state-management/useContext/MultiContext";
+import ExtractContext from "./04-state-management/useContext/ExtractContext";
+import OverrideContext from "./04-state-management/useContext/OverrideContext";
 
 export default function App() {
 	return (
@@ -110,7 +117,14 @@ export default function App() {
 			{/* <Button label="Hello World"></Button> */}
 			<hr></hr>
 			<h1>🏷️04-3-useContext</h1>
+			<HeadingApp />
+			<PostApp />
 			<NavApp />
+			<ThemeContextApp />
+			<CurrentUser />
+			<MultiContext />
+			<ExtractContext />
+			<OverrideContext />
 			<hr></hr>
 			<h1>🏷️05-1-useRef</h1>
 			<ClickRef />

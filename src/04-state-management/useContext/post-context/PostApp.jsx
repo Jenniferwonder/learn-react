@@ -1,14 +1,17 @@
-import Heading from "./Heading.js";
-import Section from "./Section.js";
+import Heading from "./Heading.jsx";
+import Section from "./Section.jsx";
 import "./styles.css";
 
-export default function ProfilePage() {
+export default function PostApp() {
 	return (
-		<Section>
-			<Heading>My Profile</Heading>
-			<Post title="Hello traveller!" body="Read about my adventures." />
-			<AllPosts />
-		</Section>
+		<>
+			<h2>Post App</h2>
+			<Section>
+				<Heading>My Profile</Heading>
+				<Post title="Hello traveller!" body="Read about my adventures." />
+				<AllPosts />
+			</Section>
+		</>
 	);
 }
 

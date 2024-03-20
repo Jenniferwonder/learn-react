@@ -7,6 +7,7 @@ import { Messages } from "./Messages";
 export default function NavApp() {
 	return (
 		<>
+			<h2>Nav App</h2>
 			<AppContext.Provider
 				value={{
 					username: "superawesome",
@@ -17,7 +18,6 @@ export default function NavApp() {
 					<Messages />
 				</div>
 			</AppContext.Provider>
-			;
 		</>
 	);
 }
