@@ -6,6 +6,7 @@ export default function PauseCounter() {
 	const [isPaused, setIsPaused] = useState(false);
 	return (
 		<div>
+			<h2>Pause Counter</h2>
 			{isPaused ? <p>See you later!</p> : <Counter />}
 			<label>
 				<input

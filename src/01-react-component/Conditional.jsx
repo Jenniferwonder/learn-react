@@ -28,6 +28,7 @@ export default function Conditional() {
 	function Image() {
 		return (
 			<>
+				<h2>Conditional Rendering</h2>
 				<h3>{user.name}</h3>
 				<div>
 					<img

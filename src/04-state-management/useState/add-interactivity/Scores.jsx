@@ -11,6 +11,7 @@ export default function Scores() {
 
 	return (
 		<>
+			<h2>Scores Updater</h2>
 			<button onClick={() => increment()}>+1</button>
 			<button
 				onClick={() => {

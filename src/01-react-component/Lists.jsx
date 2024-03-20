@@ -19,6 +19,7 @@ export default function Lists() {
 
 	return (
 		<>
+			<h2>Lists</h2>
 			<ul>{listItems}</ul>
 		</>
 	);

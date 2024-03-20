@@ -36,6 +36,7 @@ export default function ImmerInfoChange() {
 
 	return (
 		<>
+			<h2>Immer Info Change</h2>
 			<label>
 				Name:
 				<input value={person.name} onChange={handleNameChange} />

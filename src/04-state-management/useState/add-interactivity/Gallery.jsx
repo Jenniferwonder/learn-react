@@ -21,6 +21,7 @@ export default function Gallery() {
 	let sculpture = sculptureList[index];
 	return (
 		<>
+			<h2>Gallery</h2>
 			<button onClick={handleNextClick}>Next</button>
 			<h3>
 				<i>{sculpture.name} </i>

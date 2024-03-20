@@ -9,6 +9,7 @@ export default function FancyCounter() {
 	const [isFancy, setIsFancy] = useState(false);
 	return (
 		<div>
+			<h2>Fancy Counter</h2>
 			{isFancy ? <Counter isFancy={true} /> : <Counter isFancy={false} />}
 			<label>
 				<input

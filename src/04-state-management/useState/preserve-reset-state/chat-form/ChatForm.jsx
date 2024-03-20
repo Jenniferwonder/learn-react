@@ -7,6 +7,7 @@ export default function ChatForm() {
 	const [to, setTo] = useState(contacts[0]);
 	return (
 		<div>
+			<h2>Chat Form</h2>
 			<ContactList
 				contacts={contacts}
 				selectedContact={to}

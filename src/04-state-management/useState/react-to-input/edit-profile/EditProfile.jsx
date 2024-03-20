@@ -24,35 +24,40 @@ export default function EditProfile() {
 	}
 
 	return (
-		<form onSubmit={handleClick}>
-			<label>
-				First name: <b style={nameDisplay}>{firstName}</b>
-				<input
-					value={firstName}
-					onChange={(e) => {
-						setFirstName(e.target.value);
-					}}
-					style={inputDisplay}
-				/>
-			</label>
-			<label>
-				Last name: <b style={nameDisplay}>{lastName}</b>
-				<input
-					value={lastName}
-					onChange={(e) => {
-						setLastName(e.target.value);
-					}}
-					style={inputDisplay}
-				/>
-			</label>
-			<button type="submit">{isEdit ? "Save Profile" : "Edit Profile"}</button>
-			{/* <button type="submit">{btnText}</button> */}
-			<p>
-				{/* <i>Hello, Jane Jacobs!</i> */}
-				<i>
-					Hello, {firstName} {lastName}!
-				</i>
-			</p>
-		</form>
+		<>
+			<h2>Edit Profile</h2>
+			<form onSubmit={handleClick}>
+				<label>
+					First name: <b style={nameDisplay}>{firstName}</b>
+					<input
+						value={firstName}
+						onChange={(e) => {
+							setFirstName(e.target.value);
+						}}
+						style={inputDisplay}
+					/>
+				</label>
+				<label>
+					Last name: <b style={nameDisplay}>{lastName}</b>
+					<input
+						value={lastName}
+						onChange={(e) => {
+							setLastName(e.target.value);
+						}}
+						style={inputDisplay}
+					/>
+				</label>
+				<button type="submit">
+					{isEdit ? "Save Profile" : "Edit Profile"}
+				</button>
+				{/* <button type="submit">{btnText}</button> */}
+				<p>
+					{/* <i>Hello, Jane Jacobs!</i> */}
+					<i>
+						Hello, {firstName} {lastName}!
+					</i>
+				</p>
+			</form>
+		</>
 	);
 }

@@ -3,7 +3,12 @@ import { PRODUCTS } from "./productData";
 import FilterTable from "./FilterTable";
 
 export default function ProductTableApp() {
-	return <FilterTable products={PRODUCTS} />;
+	return (
+		<>
+			<h2>Product Table</h2>
+			<FilterTable products={PRODUCTS} />
+		</>
+	);
 }
 
 // const PRODUCTS = [

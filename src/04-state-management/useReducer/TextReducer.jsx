@@ -33,14 +33,16 @@ export default function TextReducer() {
 }
 
 const TextInput = ({ label, value, onChangeText }) => (
-	<>
-		<label>{label}</label>
-		<input
-			type="text"
-			value={value}
-			onChange={(e) => onChangeText(e.target.value)}
-		/>
-	</>
+	<div className="wrapper">
+		<label>
+			{label}
+			<input
+				type="text"
+				value={value}
+				onChange={(e) => onChangeText(e.target.value)}
+			/>
+		</label>
+	</div>
 );
 
 const textReducer = (state, action) => action;

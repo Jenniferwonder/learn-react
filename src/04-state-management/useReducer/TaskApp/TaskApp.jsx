@@ -54,7 +54,7 @@ export default function TaskApp() {
 
 	return (
 		<>
-			<h1>Prague itinerary</h1>
+			<h2>Task Reducer App</h2>
 			<AddTask onAddTask={handleAddTask} />
 			<TaskList
 				tasks={tasks}

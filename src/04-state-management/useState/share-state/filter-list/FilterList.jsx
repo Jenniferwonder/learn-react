@@ -11,6 +11,7 @@ export default function FilterList() {
 
 	return (
 		<>
+			<h2>Filter List</h2>
 			<SearchBar query={query} onChange={handleChange} />
 			<hr />
 			<List items={results} />

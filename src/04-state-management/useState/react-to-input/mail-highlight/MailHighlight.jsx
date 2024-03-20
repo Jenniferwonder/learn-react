@@ -29,6 +29,7 @@ export default function MailHighlight() {
 
 	return (
 		<>
+			<h2>Mail Highlight</h2>
 			<h3>Inbox</h3>
 			<ul>
 				{letters.map((letter) => (

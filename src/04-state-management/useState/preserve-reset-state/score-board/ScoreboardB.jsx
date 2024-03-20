@@ -34,15 +34,18 @@ function Counter({ person }) {
 	}
 
 	return (
-		<div
-			className={className}
-			onPointerEnter={() => setHover(true)}
-			onPointerLeave={() => setHover(false)}
-		>
-			<h3>
-				{person}'s score: {score}
-			</h3>
-			<button onClick={() => setScore(score + 1)}>Add one</button>
-		</div>
+		<>
+			<h2>Scoreboard B</h2>
+			<div
+				className={className}
+				onPointerEnter={() => setHover(true)}
+				onPointerLeave={() => setHover(false)}
+			>
+				<h3>
+					{person}'s score: {score}
+				</h3>
+				<button onClick={() => setScore(score + 1)}>Add one</button>
+			</div>
+		</>
 	);
 }

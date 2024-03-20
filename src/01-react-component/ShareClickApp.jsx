@@ -10,6 +10,7 @@ export default function ShareClickApp() {
 	}
 	return (
 		<div>
+			<h2>Share Click</h2>
 			<ShareClick count={count} onClick={handleClick} />
 			<ShareClick count={count} onClick={handleClick} />
 		</div>

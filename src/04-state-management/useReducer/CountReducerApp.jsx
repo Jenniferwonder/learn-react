@@ -4,7 +4,7 @@ export default function CountReducerApp() {
 	const [count, dispatch] = useReducer(countReducer, 0);
 	return (
 		<div>
-			<h2>CountReducer App</h2>
+			<h2>Count Reducer App</h2>
 			{count}
 			<button onClick={() => dispatch("increment")}>+1</button>
 			<button onClick={() => dispatch("decrement")}>-1</button>

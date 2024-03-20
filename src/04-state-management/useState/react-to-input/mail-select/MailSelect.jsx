@@ -63,6 +63,7 @@ export default function MailSelect() {
 
 	return (
 		<>
+			<h2>Mail Select</h2>
 			<h3>Inbox</h3>
 			<ul>
 				{letters.map((letter) => (

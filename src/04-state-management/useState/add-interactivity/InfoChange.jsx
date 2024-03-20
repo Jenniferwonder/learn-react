@@ -49,6 +49,7 @@ export default function InfoChange() {
 
 	return (
 		<>
+			<h2>Info Change</h2>
 			<label>
 				Name:
 				<input value={person.name} onChange={handleNameChange} />

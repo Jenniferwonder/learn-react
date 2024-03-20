@@ -47,7 +47,21 @@ aliases:
 - `key`
 	- `<li>` has a `key` attribute. For each item in a list, you should pass a string or a number that uniquely identifies that item among its siblings.
 	- 📌[Lists](../../DB-React-Components/Lists.md)
-
+### Keep Component Pure
+>reference: [Keeping Components Pure – React](https://react.dev/learn/keeping-components-pure#where-you-_can_-cause-side-effects)
+#### Pure Function
+>React is designed around the concept of functional programming, assuming that every component you write is a **pure function**. This means that React components you write must always return the same JSX given the same inputs
+- **It minds its own business.** It does not change any objects or variables that existed before it was called
+- **Same inputs, same output.** Given the same inputs, a pure function should always return the same result
+📌 PureFun.jsx
+📌 ImpureFun.jsx
+#### Side Effects
+**Side effects**: updating the screen, starting an animation, changing the data, things that happen _on the side_, not during rendering
+Side effects usually belong inside [event handlers](https://react.dev/learn/responding-to-events), which don't run _during_ rendering, so event handlers don't need to be pure.
+#### Benefits
+- Your components could run in a different environment—for example, on the server!
+- You can improve performance by [skipping rendering](https://react.dev/reference/react/memo) components whose inputs have not changed. This is safe because pure functions always return the same results, so they are safe to cache.
+- If some data changes in the middle of rendering a deep component tree, React can restart rendering without wasting time to finish the outdated render. Purity makes it safe to stop calculating at any time.
 ## Questions
 ### DevTools
 #### [有用过React Devtools吗？说说它的优缺点分别是什么？](https://github.com/haizlin/fe-interview/issues/801)

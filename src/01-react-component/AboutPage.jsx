@@ -6,6 +6,7 @@ const user = {
 export default function AboutPage() {
 	return (
 		<>
+			<h2>About Page</h2>
 			<h3>{user.name}</h3>
 			<img
 				className="avatar"
