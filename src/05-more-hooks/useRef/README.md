@@ -7,6 +7,7 @@ Refs are an escape hatch. You should only use them when you have to “step outs
 ### ❌ Pitfall
 🚩 Don't write a ref during rendering
 🚩 Don't read a ref during rendering
+🚩 **Do not overuse refs.** You should only use refs for _imperative_ behaviors that you can't express as props: for example, scrolling to a node, focusing a node, triggering an animation, selecting text, and so on
 ✅ You can read or write refs **from event handlers or effects instead**.
 ### Basics
 `const ref = useRef(initialValue)`
@@ -66,3 +67,8 @@ In design systems, it is a common pattern for low-level components like buttons,
 #### [什么是 React.forwardRef？它有什么作用？](https://github.com/haizlin/fe-interview/issues/878)
 
 #### [使用 React 的 memo 和 forwardRef 包装的组件为什么提示 children 类型不对？](https://github.com/haizlin/fe-interview/issues/844)
+
+
+
+
+

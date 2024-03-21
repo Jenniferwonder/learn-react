@@ -75,6 +75,8 @@ import ChatRoomCustom from "./05-more-hooks/useEffect/ChatRoomCustom";
 import MapWidgetApp from "./05-more-hooks/useEffect/MapWidgetApp";
 import FetchBio from "./05-more-hooks/useEffect/FetchBio";
 import StateUpdate from "./05-more-hooks/useEffect/StateUpdate";
+import { useImperativeHandle } from "react";
+import CommentApp from "./05-more-hooks/useImperativeHandle/CommentApp";
 
 export default function App() {
 	return (
@@ -135,7 +137,7 @@ export default function App() {
 			<ExtractContext />
 			<OverrideContext />
 			<hr></hr>
-			<h1>🏷️05-1-useRef</h1>
+			<h1>🏷️05-1-A-useRef</h1>
 			<ClickRef />
 			<InputRef />
 			<ListRef />
@@ -143,6 +145,8 @@ export default function App() {
 			<ForwardRef />
 			<RemoveRef />
 			<ModalDialog />
+			<h1>🏷️05-1-B-useImperativeHandle</h1>
+			<CommentApp />
 			<h1>🏷️05-2-useEffect</h1>
 			<ChatRoomApp />
 			<GlobalEvent />
@@ -152,6 +156,7 @@ export default function App() {
 			<MapWidgetApp />
 			<FetchBio />
 			<StateUpdate />
+			<h1>🏷️05-3-useMemo</h1>
 		</>
 	);
 }
