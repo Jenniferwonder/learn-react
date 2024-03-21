@@ -1,8 +1,10 @@
 ---
 Title: README
-Topic: 
-Type: 
-tags: 
+Topic:
+  - React
+Type: D
+tags:
+  - React
 DateStarted: 2024-03-06
 DateModified: 2024-03-06
 DateDo: 
@@ -17,6 +19,8 @@ aliases:
   - useState Hook
 ---
 # useState Hook
+>[In-depth explanation of state and props update in React | by Max Koretskyi | React In Depth | Medium](https://medium.com/react-in-depth/in-depth-explanation-of-state-and-props-update-in-react-51ab94563311)
+[in Depth-deep-dive-into-state-management-with-react-and-nextjs](https://angularindepth.com/posts/1487/deep-dive-into-state-management-with-react-and-nextjs)
 ## Questions
 [在React中组件的state和setState有什么区别？](https://github.com/haizlin/fe-interview/issues/809)
 [useState和this.state的区别是什么？](https://github.com/haizlin/fe-interview/issues/709)

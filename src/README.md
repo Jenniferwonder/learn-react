@@ -1,6 +1,20 @@
 ---
+Title: React Tutorial Code & Notes
+Topic:
+  - React
+Type: O
+tags:
+  - React
 DateStarted: 2023-12-02
-DateModified: 2023-12-05
+DateModified: 2024-03-20
+DateDo: 
+DateDone: 
+DateDue: 
+DateReviewed: 
+status: 
+Comment: 
+aliases:
+  - learn-react
 ---
 
 # React Tutorial Code & Notes
@@ -67,3 +81,8 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 - Run `npm install` to install dependencies;
 - Import needed component to `App.js`
 - Run `npm start` to view each component effect in the browser.
+
+
+
+
+

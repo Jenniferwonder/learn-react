@@ -66,6 +66,15 @@ import CurrentUser from "./04-state-management/useContext/CurrentUser";
 import MultiContext from "./04-state-management/useContext/MultiContext";
 import ExtractContext from "./04-state-management/useContext/ExtractContext";
 import OverrideContext from "./04-state-management/useContext/OverrideContext";
+import ChatRoomApp from "./05-more-hooks/useEffect/ChatRoomApp";
+import GlobalEvent from "./05-more-hooks/useEffect/GlobalEvent";
+import AnimationApp from "./05-more-hooks/useEffect/AnimationApp";
+import ModalDialog from "./05-more-hooks/useRef/ModalDialog";
+import VisibleElement from "./05-more-hooks/useEffect/VisibleElement";
+import ChatRoomCustom from "./05-more-hooks/useEffect/ChatRoomCustom";
+import MapWidgetApp from "./05-more-hooks/useEffect/MapWidgetApp";
+import FetchBio from "./05-more-hooks/useEffect/FetchBio";
+import StateUpdate from "./05-more-hooks/useEffect/StateUpdate";
 
 export default function App() {
 	return (
@@ -133,6 +142,16 @@ export default function App() {
 			<VideoRef />
 			<ForwardRef />
 			<RemoveRef />
+			<h1>🏷️05-2-useEffect</h1>
+			<ChatRoomApp />
+			<GlobalEvent />
+			<AnimationApp />
+			<ModalDialog />
+			<VisibleElement />
+			<ChatRoomCustom />
+			<MapWidgetApp />
+			<FetchBio />
+			<StateUpdate />
 		</>
 	);
 }
