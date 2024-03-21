@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 export default function VisibleElement() {
 	return (
 		<>
+			<h2>Visible Element</h2>
 			<LongSection />
 			<Box />
 			{/* <LongSection /> */}

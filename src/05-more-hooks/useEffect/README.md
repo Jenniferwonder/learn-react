@@ -20,6 +20,8 @@ Comment:
 ## Why
 a React Hook that lets you [synchronize a component with an external system.](https://react.dev/learn/synchronizing-with-effects)
 ✅ For example, you might want to control a non-React component based on the React state, ==set up a server connection==, or ==send an analytics log== when a component appears on the screen. _Effects_ let you run some code after rendering so that you can synchronize your component with some system outside of React.
+✅ _Effects_ let you specify side effects that are caused by rendering itself, rather than by a particular event like a click
+❌ If your Effect only adjusts some state based on other state, [you might not need an Effect](https://react.dev/learn/you-might-not-need-an-effect)
 ❌ If your Effect is doing something visual (for example, positioning a tooltip), and the delay is noticeable (for example, it flickers), replace `useEffect` with [`useLayoutEffect`](https://react.dev/reference/react/useLayoutEffect)
 - Even if your Effect was caused by an interaction (like a click), **the browser may repaint the screen before processing the state updates inside your Effect.** Usually, that’s what you want. However, if you must block the browser from repainting the screen, you need to replace `useEffect` with [`useLayoutEffect`](https://react.dev/reference/react/useLayoutEffect)
 ## Basics

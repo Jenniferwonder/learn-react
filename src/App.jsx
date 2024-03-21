@@ -142,11 +142,11 @@ export default function App() {
 			<VideoRef />
 			<ForwardRef />
 			<RemoveRef />
+			<ModalDialog />
 			<h1>🏷️05-2-useEffect</h1>
 			<ChatRoomApp />
 			<GlobalEvent />
 			<AnimationApp />
-			<ModalDialog />
 			<VisibleElement />
 			<ChatRoomCustom />
 			<MapWidgetApp />
