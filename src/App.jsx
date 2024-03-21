@@ -49,8 +49,13 @@ import TextReducer from "./04-state-management/useReducer/TextReducer";
 
 // 🏷️useContext
 import NavApp from "./04-state-management/useContext/nav-message/NavApp";
-// import HeadingApp from "./heading-context/HeadingApp";
-// import PostApp from "./heading-post/PostApp";
+import HeadingApp from "./04-state-management/useContext/heading-context/HeadingApp";
+import PostApp from "./04-state-management/useContext/post-context/PostApp";
+import ThemeContextApp from "./04-state-management/useContext/ThemeContextApp";
+import CurrentUser from "./04-state-management/useContext/CurrentUser";
+import MultiContext from "./04-state-management/useContext/MultiContext";
+import ExtractContext from "./04-state-management/useContext/ExtractContext";
+import OverrideContext from "./04-state-management/useContext/OverrideContext";
 
 // 🏷️useRef
 import ClickRef from "./05-more-hooks/useRef/ClickRef";
@@ -59,13 +64,10 @@ import ListRef from "./05-more-hooks/useRef/ListRef";
 import VideoRef from "./05-more-hooks/useRef/VideoRef";
 import RemoveRef from "./05-more-hooks/useRef/RemoveRef";
 import ForwardRef from "./05-more-hooks/useRef/ForwardRef";
-import HeadingApp from "./04-state-management/useContext/heading-context/HeadingApp";
-import PostApp from "./04-state-management/useContext/post-context/PostApp";
-import ThemeContextApp from "./04-state-management/useContext/ThemeContextApp";
-import CurrentUser from "./04-state-management/useContext/CurrentUser";
-import MultiContext from "./04-state-management/useContext/MultiContext";
-import ExtractContext from "./04-state-management/useContext/ExtractContext";
-import OverrideContext from "./04-state-management/useContext/OverrideContext";
+// 🏷️ useImperativeHandle
+import CommentApp from "./05-more-hooks/useImperativeHandle/CommentApp";
+
+// 🏷️ useEffect
 import ChatRoomApp from "./05-more-hooks/useEffect/ChatRoomApp";
 import GlobalEvent from "./05-more-hooks/useEffect/GlobalEvent";
 import AnimationApp from "./05-more-hooks/useEffect/AnimationApp";
@@ -75,15 +77,20 @@ import ChatRoomCustom from "./05-more-hooks/useEffect/ChatRoomCustom";
 import MapWidgetApp from "./05-more-hooks/useEffect/MapWidgetApp";
 import FetchBio from "./05-more-hooks/useEffect/FetchBio";
 import StateUpdate from "./05-more-hooks/useEffect/StateUpdate";
-import { useImperativeHandle } from "react";
-import CommentApp from "./05-more-hooks/useImperativeHandle/CommentApp";
+// 🏷️ useLayoutEffect
+import ToolTipButton from "./05-more-hooks/useLayoutEffect/ToolTipButton";
+
+// 🏷️ useMemo
 import MemoToDo from "./05-more-hooks/useMemo/MemoToDo";
 import RecalToDo from "./05-more-hooks/useMemo/RecalToDo";
+// 🏷️ useCallback
 import FormCallback from "./05-more-hooks/useCallback/FormCallback";
 
 export default function App() {
 	return (
 		<>
+			{/* <h1>🏷️component from my-react-component-lib</h1> */}
+			{/* <Button label="Hello World"></Button> */}
 			<h1>🏷️01-react-component</h1>
 			<AboutPage />
 			<Lists />
@@ -125,8 +132,6 @@ export default function App() {
 			<CountReducerApp />
 			<DualCount />
 			<TextReducer />
-			{/* <h1>🏷️component from my-react-component-lib</h1> */}
-			{/* <Button label="Hello World"></Button> */}
 			<hr></hr>
 			<h1>🏷️04-3-useContext</h1>
 			<HeadingApp />
@@ -148,7 +153,7 @@ export default function App() {
 			<ModalDialog />
 			<h1>🏷️05-1-B-useImperativeHandle</h1>
 			<CommentApp />
-			<h1>🏷️05-2-useEffect</h1>
+			<h1>🏷️05-2-A-useEffect</h1>
 			<ChatRoomApp />
 			<GlobalEvent />
 			<AnimationApp />
@@ -157,6 +162,8 @@ export default function App() {
 			<MapWidgetApp />
 			<FetchBio />
 			<StateUpdate />
+			<h1>🏷️05-2-B-useLayoutEffect</h1>
+			<ToolTipButton />
 			<h1>🏷️05-3-A-useMemo</h1>
 			<MemoToDo />
 			<RecalToDo />
