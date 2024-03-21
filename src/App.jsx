@@ -77,6 +77,9 @@ import FetchBio from "./05-more-hooks/useEffect/FetchBio";
 import StateUpdate from "./05-more-hooks/useEffect/StateUpdate";
 import { useImperativeHandle } from "react";
 import CommentApp from "./05-more-hooks/useImperativeHandle/CommentApp";
+import MemoToDo from "./05-more-hooks/useMemo/MemoToDo";
+import RecalToDo from "./05-more-hooks/useMemo/RecalToDo";
+import FormCallback from "./05-more-hooks/useCallback/FormCallback";
 
 export default function App() {
 	return (
@@ -122,8 +125,6 @@ export default function App() {
 			<CountReducerApp />
 			<DualCount />
 			<TextReducer />
-			{/* <HeadingApp /> */}
-			{/* <PostApp /> */}
 			{/* <h1>🏷️component from my-react-component-lib</h1> */}
 			{/* <Button label="Hello World"></Button> */}
 			<hr></hr>
@@ -156,7 +157,11 @@ export default function App() {
 			<MapWidgetApp />
 			<FetchBio />
 			<StateUpdate />
-			<h1>🏷️05-3-useMemo</h1>
+			<h1>🏷️05-3-A-useMemo</h1>
+			<MemoToDo />
+			<RecalToDo />
+			<h1>🏷️05-3-B-useCallback</h1>
+			<FormCallback />
 		</>
 	);
 }
