@@ -53,8 +53,8 @@ body {
 }
 
 .background {
-	width: 40vw;
-	height: 40vh;
+	width: 300px;
+	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

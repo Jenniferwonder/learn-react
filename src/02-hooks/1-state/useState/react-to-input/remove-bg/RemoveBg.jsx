@@ -1,5 +1,5 @@
-import "./styles.css";
 import { useState } from "react";
+import "./styles.css";
 
 export default function RemoveBg() {
 	const [isClick, setIsClick] = useState(false);

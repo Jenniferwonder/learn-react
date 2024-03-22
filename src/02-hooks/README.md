@@ -25,6 +25,7 @@ aliases:
 
 - [React Hooks 入门教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2019/09/react-hooks.html)
 - https://react.dev/reference/react
+- [Making Sense of React Hooks - DEV Community](https://dev.to/dan_abramov/making-sense-of-react-hooks-2eib)
 
 ## Hooks Concept
 - Functions starting with `use` are called _Hooks_.
