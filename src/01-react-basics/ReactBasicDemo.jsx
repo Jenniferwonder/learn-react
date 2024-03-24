@@ -18,7 +18,7 @@ import PureFun from "./PureFun";
 export default function ReactBasicDemo() {
 	return (
 		<>
-			<h1>🏷️01-react-component</h1>
+			<h1>🏷️01-react-basics</h1>
 			<AboutPage />
 			<Lists />
 			<ClickAlert />

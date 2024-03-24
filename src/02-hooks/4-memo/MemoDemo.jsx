@@ -1,8 +1,8 @@
 // 🏷️ useMemo
-import MemoToDo from "./05-more-hooks/useMemo/MemoToDo";
-import RecalToDo from "./05-more-hooks/useMemo/RecalToDo";
+import MemoToDo from "./MemoToDo";
+import RecalToDo from "./RecalToDo";
 // 🏷️ useCallback
-import FormCallback from "./05-more-hooks/useCallback/FormCallback";
+import FormCallback from "./FormCallback";
 
 export default function MemoDemo() {
 	return (
