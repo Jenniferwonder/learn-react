@@ -28,8 +28,8 @@ export default function Navbar() {
 					defaultValue={q}
 					className={
 						searching
-							? "pl-3 h-8 m-2 h-10 rounded-md loading"
-							: "pl-3 h-8 m-2 h-10 rounded-md"
+							? "pl-3 h-8 m-2 h-10 rounded-md dark:text-black loading"
+							: "pl-3 h-8 m-2 h-10 rounded-md dark:text-black"
 					}
 					onChange={(event) => {
 						const isFirstSearch = q == null;
@@ -42,9 +42,7 @@ export default function Navbar() {
 				<div className="sr-only" aria-live="polite"></div>
 			</Form>
 			<Form method="post">
-				<button type="submit" className=" bg-gray-500">
-					New
-				</button>
+				<button type="submit">New</button>
 			</Form>
 		</div>
 	);

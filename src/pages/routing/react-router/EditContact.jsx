@@ -64,6 +64,7 @@ export default function EditContact() {
 
 export async function action({ request, params }) {
 	const formData = await request.formData();
+	// to transform a list of key-value pairs (as arrays) into an object
 	const updates = Object.fromEntries(formData);
 	await updateContact(params.contactId, updates);
 	return redirect(`/router-dom/contacts/${params.contactId}`);
