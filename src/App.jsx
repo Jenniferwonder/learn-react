@@ -1,6 +1,12 @@
 // ref: https://stackoverflow.com/questions/74566649/createbrowserrouter-how-to-nest-child-routes-inside-another-route-that-itself-is/78214668#78214668
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import "./App.css";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useStateContext } from "./contexts/ContextProvider";
+import { useEffect } from "react";
+import { FiSettings } from "react-icons/fi";
+import Sidebar from "./components/Sidebar.jsx";
+import { pageLinks } from "./data/dummy";
 import RouterApp, {
 	loader as rootLoader,
 	action as rootAction,
@@ -17,11 +23,7 @@ import Index from "./pages/routing/react-router/Index";
 import StateDemo from "./pages/hooks/state/useState/StateDemo.jsx";
 import RefDemo from "./pages/hooks/ref/RefDemo.jsx";
 import ReactBasicDemo from "./pages/react-basics/ReactBasicDemo";
-import Sidebar from "./components/Sidebar.jsx";
 import ThemeSettings from "./components/ThemeSettings.jsx";
-import { useStateContext } from "./contexts/ContextProvider";
-import { useEffect } from "react";
-import { FiSettings } from "react-icons/fi";
 import ReducerDemo from "./pages/hooks/state/useReducer/ReducerDemo";
 import ContextDemo from "./pages/hooks/state/useContext/ContextDemo";
 import EffectDemo from "./pages/hooks/effects/EffectDemo";
@@ -47,6 +49,7 @@ const AppLayout = () => {
 			setCurrentMode(currentThemeMode);
 		}
 	}, []);
+
 	return (
 		<>
 			<div className={currentMode === "Dark" ? "dark" : ""}>
@@ -80,10 +83,11 @@ const AppLayout = () => {
 						<div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
 							{/* <Navbar /> */}
 						</div>
-						<div>
-							{themeSettings && <ThemeSettings />}
-
-							<Outlet />
+						<div>{themeSettings && <ThemeSettings />}</div>
+						<div className="m-6 ml-8">
+							<div className="m-2 md:m-10 mt-24 p-2 md:p-10 dark:bg-[#34373e] bg-white rounded-3xl">
+								<Outlet />
+							</div>
 						</div>
 					</div>
 				</div>

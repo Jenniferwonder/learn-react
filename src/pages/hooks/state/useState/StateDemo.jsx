@@ -42,7 +42,7 @@ export default function StateDemo() {
 			<ScoreboardB />
 			<ChatForm />
 			<TaskStateApp />
-			<hr></hr>;
+			<hr></hr>
 		</div>
 	);
 }
