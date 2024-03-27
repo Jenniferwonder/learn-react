@@ -97,38 +97,38 @@ const AppLayout = () => {
 };
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/learn-react/",
 		element: <AppLayout />,
 		errorElement: <ErrorPage />,
 		children: [
-			{ path: "/basic", element: <ReactBasicDemo /> },
-			{ path: "/useState", element: <StateDemo /> },
-			{ path: "/useReducer", element: <ReducerDemo /> },
-			{ path: "/useContext", element: <ContextDemo /> },
-			{ path: "/useRef", element: <RefDemo /> },
-			{ path: "/useEffect", element: <EffectDemo /> },
-			{ path: "/useMemo", element: <MemoDemo /> },
+			{ path: "/learn-react/basic", element: <ReactBasicDemo /> },
+			{ path: "/learn-react/useState", element: <StateDemo /> },
+			{ path: "/learn-react/useReducer", element: <ReducerDemo /> },
+			{ path: "/learn-react/useContext", element: <ContextDemo /> },
+			{ path: "/learn-react/useRef", element: <RefDemo /> },
+			{ path: "/learn-react/useEffect", element: <EffectDemo /> },
+			{ path: "/learn-react/useMemo", element: <MemoDemo /> },
 			{
-				path: "/router-dom",
+				path: "/learn-react/router-dom",
 				element: <RouterApp />,
 				loader: rootLoader,
 				action: rootAction,
 				children: [
 					{ index: true, element: <Index /> },
 					{
-						path: "/router-dom/contacts/:contactId",
+						path: "/learn-react/router-dom/contacts/:contactId",
 						element: <Contact />,
 						loader: contactLoader,
 					},
 					// We want it to be rendered in the root route's outlet, so we made it a sibling to the existing child route
 					{
-						path: "/router-dom/contacts/:contactId/edit",
+						path: "/learn-react/router-dom/contacts/:contactId/edit",
 						element: <EditContact />,
 						loader: contactLoader,
 						action: editAction,
 					},
 					{
-						path: "/router-dom/contacts/:contactId/destroy",
+						path: "/learn-react/router-dom/contacts/:contactId/destroy",
 						action: destroyAction,
 						errorElement: <div>Oops! There was an error.</div>,
 					},
