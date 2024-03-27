@@ -51,7 +51,7 @@ export default function Sidebar() {
 									</p>
 									{item.links.map((link) => (
 										<NavLink
-											to={`/${link.name}`}
+											to={`/learn-react/${link.name}`}
 											key={link.name}
 											onClick={handleCloseSideBar}
 											style={({ isActive }) => ({
