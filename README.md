@@ -55,6 +55,8 @@ Projects for each chapter can be found in [src/pages](https://github.com/Jennife
 
 <details>
 <summary><a href="https://github.com/Jenniferwonder/learn-react/tree/main/src/pages/style-for-react">📂style-for-react</a></summary>
+  
+</details>
 
 <details>
 <summary><a href="https://github.com/Jenniferwonder/learn-react/tree/main/src/pages/react-performance">📂react-performance</a></summary>
