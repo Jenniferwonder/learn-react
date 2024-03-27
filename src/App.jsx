@@ -101,6 +101,7 @@ const router = createBrowserRouter([
 		element: <AppLayout />,
 		errorElement: <ErrorPage />,
 		children: [
+			{ index: true, element: <ReactBasicDemo /> },
 			{ path: "/learn-react/basic", element: <ReactBasicDemo /> },
 			{ path: "/learn-react/useState", element: <StateDemo /> },
 			{ path: "/learn-react/useReducer", element: <ReducerDemo /> },

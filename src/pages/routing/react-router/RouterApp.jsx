@@ -32,5 +32,5 @@ export async function loader({ request }) {
 export async function action() {
 	const contact = await createContact();
 	// return { contact };
-	return redirect(`/router-dom/contacts/${contact.id}/edit`);
+	return redirect(`contacts/${contact.id}/edit`);
 }
