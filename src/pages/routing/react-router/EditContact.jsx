@@ -15,6 +15,7 @@ export default function EditContact() {
 					type="text"
 					name="first"
 					defaultValue={contact.first}
+					className="dark:text-black"
 				/>
 				<input
 					placeholder="Last"
@@ -22,6 +23,7 @@ export default function EditContact() {
 					type="text"
 					name="last"
 					defaultValue={contact.last}
+					className="dark:text-black"
 				/>
 			</p>
 			<label>
@@ -31,6 +33,7 @@ export default function EditContact() {
 					name="twitter"
 					placeholder="@jack"
 					defaultValue={contact.twitter}
+					className="dark:text-black"
 				/>
 			</label>
 			<label>
@@ -41,6 +44,7 @@ export default function EditContact() {
 					type="text"
 					name="avatar"
 					defaultValue={contact.avatar}
+					className="dark:text-black"
 				/>
 			</label>
 			<label>
