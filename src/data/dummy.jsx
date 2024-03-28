@@ -563,46 +563,59 @@ export const pageLinks = [
 				name: "react-query",
 				icon: <AiOutlineStock />,
 			},
-			{
-				name: "area",
-				icon: <AiOutlineAreaChart />,
-			},
+			// {
+			// 	name: "area",
+			// 	icon: <AiOutlineAreaChart />,
+			// },
 
+			// {
+			// 	name: "bar",
+			// 	icon: <AiOutlineBarChart />,
+			// },
+			// {
+			// 	name: "pie",
+			// 	icon: <FiPieChart />,
+			// },
+			// {
+			// 	name: "financial",
+			// 	icon: <RiStockLine />,
+			// },
+			// {
+			// 	name: "color-mapping",
+			// 	icon: <BsBarChart />,
+			// },
+			// {
+			// 	name: "pyramid",
+			// 	icon: <GiLouvrePyramid />,
+			// },
+			// {
+			// 	name: "stacked",
+			// 	icon: <AiOutlineBarChart />,
+			// },
+			// {
+			// 	name: "kanban",
+			// 	icon: <BsKanban />,
+			// },
+			// {
+			// 	name: "editor",
+			// 	icon: <FiEdit />,
+			// },
+			// {
+			// 	name: "color-picker",
+			// 	icon: <BiColorFill />,
+			// },
+		],
+	},
+	{
+		title: "Think in React",
+		links: [
 			{
-				name: "bar",
-				icon: <AiOutlineBarChart />,
+				name: "product-table",
+				icon: <AiOutlineShoppingCart />,
 			},
 			{
-				name: "pie",
-				icon: <FiPieChart />,
-			},
-			{
-				name: "financial",
-				icon: <RiStockLine />,
-			},
-			{
-				name: "color-mapping",
-				icon: <BsBarChart />,
-			},
-			{
-				name: "pyramid",
+				name: "tic-tac-toe",
 				icon: <GiLouvrePyramid />,
-			},
-			{
-				name: "stacked",
-				icon: <AiOutlineBarChart />,
-			},
-			{
-				name: "kanban",
-				icon: <BsKanban />,
-			},
-			{
-				name: "editor",
-				icon: <FiEdit />,
-			},
-			{
-				name: "color-picker",
-				icon: <BiColorFill />,
 			},
 		],
 	},

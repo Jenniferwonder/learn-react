@@ -28,6 +28,9 @@ import ReducerDemo from "./pages/hooks/state/useReducer/ReducerDemo";
 import ContextDemo from "./pages/hooks/state/useContext/ContextDemo";
 import EffectDemo from "./pages/hooks/effects/EffectDemo";
 import MemoDemo from "./pages/hooks/memo/MemoDemo.jsx";
+import ThinkInReact from "./pages/think-in-react/ThinkInReact.jsx";
+import ProductTableApp from "./pages/think-in-react/product-table-app/ProductTableApp.jsx";
+import Game from "./pages/think-in-react/tic-tac-toe/Game.jsx";
 
 // ref: https://stackoverflow.com/questions/78098860/typeerror-cannot-destructure-property-basename-of-react2-usecontext-as
 const AppLayout = () => {
@@ -103,6 +106,8 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <ReactBasicDemo /> },
 			{ path: "/learn-react/basic", element: <ReactBasicDemo /> },
+			{ path: "/learn-react/product-table", element: <ProductTableApp /> },
+			{ path: "/learn-react/tic-tac-toe", element: <Game /> },
 			{ path: "/learn-react/useState", element: <StateDemo /> },
 			{ path: "/learn-react/useReducer", element: <ReducerDemo /> },
 			{ path: "/learn-react/useContext", element: <ContextDemo /> },
