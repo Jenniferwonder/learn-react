@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { HiOutlineMenu } from "react-icons/hi";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { useStateContext } from "../contexts/ContextProvider";
 import { pageLinks } from "../data/dummy";
 export default function Sidebar() {

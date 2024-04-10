@@ -517,7 +517,19 @@ export const pageLinks = [
 			},
 		],
 	},
-
+	{
+		title: "Think in React",
+		links: [
+			{
+				name: "product-table",
+				icon: <AiOutlineShoppingCart />,
+			},
+			{
+				name: "tic-tac-toe",
+				icon: <GiLouvrePyramid />,
+			},
+		],
+	},
 	{
 		title: "Hooks",
 		links: [
@@ -604,19 +616,6 @@ export const pageLinks = [
 			// 	name: "color-picker",
 			// 	icon: <BiColorFill />,
 			// },
-		],
-	},
-	{
-		title: "Think in React",
-		links: [
-			{
-				name: "product-table",
-				icon: <AiOutlineShoppingCart />,
-			},
-			{
-				name: "tic-tac-toe",
-				icon: <GiLouvrePyramid />,
-			},
 		],
 	},
 ];

@@ -6,7 +6,7 @@ import { useStateContext } from "./contexts/ContextProvider";
 import { useEffect } from "react";
 import { FiSettings } from "react-icons/fi";
 import Sidebar from "./components/Sidebar.jsx";
-import { pageLinks } from "./data/dummy";
+// import { pageLinks } from "./data/dummy";
 import RouterApp, {
 	loader as rootLoader,
 	action as rootAction,
@@ -28,9 +28,9 @@ import ReducerDemo from "./pages/hooks/state/useReducer/ReducerDemo";
 import ContextDemo from "./pages/hooks/state/useContext/ContextDemo";
 import EffectDemo from "./pages/hooks/effects/EffectDemo";
 import MemoDemo from "./pages/hooks/memo/MemoDemo.jsx";
-import ThinkInReact from "./pages/think-in-react/ThinkInReact.jsx";
 import ProductTableApp from "./pages/think-in-react/product-table-app/ProductTableApp.jsx";
 import Game from "./pages/think-in-react/tic-tac-toe/Game.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 // ref: https://stackoverflow.com/questions/78098860/typeerror-cannot-destructure-property-basename-of-react2-usecontext-as
 const AppLayout = () => {
@@ -84,7 +84,7 @@ const AppLayout = () => {
 						}
 					>
 						<div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
-							{/* <Navbar /> */}
+							<Navbar />
 						</div>
 						<div>{themeSettings && <ThemeSettings />}</div>
 						<div className="m-6 ml-8">
@@ -98,6 +98,7 @@ const AppLayout = () => {
 		</>
 	);
 };
+
 const router = createBrowserRouter([
 	{
 		path: "/learn-react/",
