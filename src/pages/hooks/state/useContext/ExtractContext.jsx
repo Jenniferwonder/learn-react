@@ -63,6 +63,8 @@ function LoginForm() {
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const canLogin = firstName !== "" && lastName !== "";
+	const theme = useContext(ThemeContext);
+	const className = "input-" + theme;
 	return (
 		<>
 			<label>
@@ -71,6 +73,7 @@ function LoginForm() {
 					required
 					value={firstName}
 					onChange={(e) => setFirstName(e.target.value)}
+					className={className}
 				/>
 			</label>
 			<label>
@@ -79,6 +82,7 @@ function LoginForm() {
 					required
 					value={lastName}
 					onChange={(e) => setLastName(e.target.value)}
+					className={className}
 				/>
 			</label>
 			<Button

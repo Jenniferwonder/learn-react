@@ -12,6 +12,11 @@ export default function MemoToDo() {
 	return (
 		<>
 			<h2>Memo ToDo List </h2>
+			<p>
+				✅ When theme changes, the list will not be re-rendered because it's
+				been memorized.
+			</p>
+			and state of the list haven't changed
 			<button onClick={() => setTab("all")}>All</button>
 			<button onClick={() => setTab("active")}>Active</button>
 			<button onClick={() => setTab("completed")}>Completed</button>
@@ -36,7 +41,7 @@ function TodoList({ todos, theme, tab }) {
 		<div className={`todolist ${theme}`}>
 			<p>
 				<b>
-					Note: <code>List</code> is artificially slowed down!
+					💥Note: <code>List</code> is artificially slowed down!
 				</b>
 			</p>
 			<List items={visibleTodos} />
@@ -49,8 +54,8 @@ const List = memo(function List({ items }) {
 		"[ARTIFICIALLY SLOW] Rendering <List /> with " + items.length + " items"
 	);
 	let startTime = performance.now();
-	while (performance.now() - startTime < 500) {
-		// Do nothing for 500 ms to emulate extremely slow code
+	while (performance.now() - startTime < 80) {
+		// Do nothing for 80 ms to emulate extremely slow code
 	}
 
 	return (
@@ -64,7 +69,7 @@ const List = memo(function List({ items }) {
 
 export function createTodos() {
 	const todos = [];
-	for (let i = 0; i < 50; i++) {
+	for (let i = 0; i < 20; i++) {
 		todos.push({
 			id: i,
 			text: "Todo " + (i + 1),

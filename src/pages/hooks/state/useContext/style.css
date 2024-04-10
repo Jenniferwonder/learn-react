@@ -1,6 +1,6 @@
 .panel-light,
 .panel-dark {
-	border: 1px solid black;
+	border: 1px solid lightgray;
 	border-radius: 4px;
 	padding: 20px;
 	margin-bottom: 10px;
@@ -21,4 +21,17 @@
 	padding: 5px;
 	margin-right: 10px;
 	margin-top: 10px;
+}
+
+.button-dark {
+	background: gray;
+	color: #fff;
+}
+.input-dark {
+	background: gray;
+}
+
+.button-light {
+	background: #fff;
+	color: #222;
 }

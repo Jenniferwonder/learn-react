@@ -1,6 +1,6 @@
 // ref: https://stackoverflow.com/questions/74566649/createbrowserrouter-how-to-nest-child-routes-inside-another-route-that-itself-is/78214668#78214668
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useStateContext } from "./contexts/ContextProvider";
 import { useEffect } from "react";
@@ -31,6 +31,7 @@ import MemoDemo from "./pages/hooks/memo/MemoDemo.jsx";
 import ProductTableApp from "./pages/think-in-react/product-table-app/ProductTableApp.jsx";
 import Game from "./pages/think-in-react/tic-tac-toe/Game.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Blank from "./pages/Blank.jsx";
 
 // ref: https://stackoverflow.com/questions/78098860/typeerror-cannot-destructure-property-basename-of-react2-usecontext-as
 const AppLayout = () => {
@@ -115,6 +116,7 @@ const router = createBrowserRouter([
 			{ path: "/learn-react/useRef", element: <RefDemo /> },
 			{ path: "/learn-react/useEffect", element: <EffectDemo /> },
 			{ path: "/learn-react/useMemo", element: <MemoDemo /> },
+			{ path: "/learn-react/react-query", element: <Blank /> },
 			{
 				path: "/learn-react/router-dom",
 				element: <RouterApp />,

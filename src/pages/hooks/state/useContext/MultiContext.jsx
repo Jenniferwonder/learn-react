@@ -2,6 +2,7 @@
 // Multiple context
 // Done-20240320 Good
 import { createContext, useContext, useState } from "react";
+// import "./style.css";
 
 const ThemeContext = createContext(null);
 const CurrentUserContext = createContext(null);
@@ -67,6 +68,8 @@ function LoginForm() {
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const canLogin = firstName.trim() !== "" && lastName.trim() !== "";
+	const theme = useContext(ThemeContext);
+	const className = "input-" + theme;
 	return (
 		<>
 			<label>
@@ -75,6 +78,7 @@ function LoginForm() {
 					required
 					value={firstName}
 					onChange={(e) => setFirstName(e.target.value)}
+					className={className}
 				/>
 			</label>
 			<label>
@@ -83,6 +87,7 @@ function LoginForm() {
 					required
 					value={lastName}
 					onChange={(e) => setLastName(e.target.value)}
+					className={className}
 				/>
 			</label>
 			<Button

@@ -12,6 +12,10 @@ export default function RecalToDo() {
 	return (
 		<>
 			<h2>Recalculate ToDo List</h2>
+			<p>
+				❌ When theme changes, the list will be re-rendered, even if the props
+				and state of the list haven't changed
+			</p>
 			<button onClick={() => setTab("all")}>All</button>
 			<button onClick={() => setTab("active")}>Active</button>
 			<button onClick={() => setTab("completed")}>Completed</button>
@@ -37,7 +41,7 @@ function TodoList({ todos, theme, tab }) {
 			<ul>
 				<p>
 					<b>
-						Note: <code>filterTodos</code> is artificially slowed down!
+						💥 Note: <code>filterTodos</code> is artificially slowed down!
 					</b>
 				</p>
 				{visibleTodos.map((todo) => (
@@ -51,7 +55,7 @@ function TodoList({ todos, theme, tab }) {
 }
 function createTodos() {
 	const todos = [];
-	for (let i = 0; i < 50; i++) {
+	for (let i = 0; i < 20; i++) {
 		todos.push({
 			id: i,
 			text: "Todo " + (i + 1),
@@ -69,8 +73,8 @@ function filterTodos(todos, tab) {
 			'" tab.'
 	);
 	let startTime = performance.now();
-	while (performance.now() - startTime < 500) {
-		// Do nothing for 500 ms to emulate extremely slow code
+	while (performance.now() - startTime < 80) {
+		// Do nothing for 80 ms to emulate extremely slow code
 	}
 
 	return todos.filter((todo) => {
