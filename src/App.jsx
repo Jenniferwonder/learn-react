@@ -32,6 +32,7 @@ import ProductTableApp from "./pages/think-in-react/product-table-app/ProductTab
 import Game from "./pages/think-in-react/tic-tac-toe/Game.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Blank from "./pages/Blank.jsx";
+import ToDoApp from "./pages/think-in-react/todolist/ToDoApp";
 
 // ref: https://stackoverflow.com/questions/78098860/typeerror-cannot-destructure-property-basename-of-react2-usecontext-as
 const AppLayout = () => {
@@ -110,6 +111,7 @@ const router = createBrowserRouter([
 			{ path: "/learn-react/basic", element: <ReactBasicDemo /> },
 			{ path: "/learn-react/product-table", element: <ProductTableApp /> },
 			{ path: "/learn-react/tic-tac-toe", element: <Game /> },
+			{ path: "/learn-react/to-do-app", element: <ToDoApp /> },
 			{ path: "/learn-react/useState", element: <StateDemo /> },
 			{ path: "/learn-react/useReducer", element: <ReducerDemo /> },
 			{ path: "/learn-react/useContext", element: <ContextDemo /> },

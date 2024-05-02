@@ -11,8 +11,8 @@ export default function AddTask({ onAddTask }) {
 			/>
 			<button
 				onClick={() => {
-					setText("");
 					onAddTask(text);
+					setText("");
 				}}
 			>
 				Add

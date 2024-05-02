@@ -528,6 +528,10 @@ export const pageLinks = [
 				name: "tic-tac-toe",
 				icon: <GiLouvrePyramid />,
 			},
+			{
+				name: "to-do-app",
+				icon: <GiLouvrePyramid />,
+			},
 		],
 	},
 	{

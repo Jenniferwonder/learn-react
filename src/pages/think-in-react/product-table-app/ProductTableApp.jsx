@@ -1,11 +1,12 @@
 // Using useState
 import { PRODUCTS } from "./productData";
 import FilterTable from "./FilterTable";
-
+// import Header from "./../../../components/Header";
 export default function ProductTableApp() {
 	return (
 		<>
-			<h2>Product Table</h2>
+			{/* <Header category={"Think in React"} title={"Product Table"} /> */}
+			<h1>Product Table</h1>
 			<FilterTable products={PRODUCTS} />
 		</>
 	);

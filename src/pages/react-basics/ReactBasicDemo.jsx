@@ -15,10 +15,12 @@ import UpdateClick from "./UpdateClick";
 import ShareClickApp from "./ShareClickApp";
 import ImpureFun from "./ImpureFun";
 import PureFun from "./PureFun";
+// import Header from "./../../components/Header";
 export default function ReactBasicDemo() {
 	return (
 		<>
-			<h1>🏷️01-react-basics</h1>
+			{/* <Header category={"Basics"} title={"React Basics"} /> */}
+			<h1>🏷️01 React Basics</h1>
 			<AboutPage />
 			<Lists />
 			<ClickAlert />

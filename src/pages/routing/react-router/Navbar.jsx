@@ -28,8 +28,8 @@ export default function Navbar() {
 					defaultValue={q}
 					className={
 						searching
-							? "pl-3 h-8 m-2 h-10 rounded-md dark:text-black loading"
-							: "pl-3 h-8 m-2 h-10 rounded-md dark:text-black"
+							? "pl-3 m-2 h-10 rounded-md dark:text-black loading"
+							: "pl-3 m-2 h-10 rounded-md dark:text-black"
 					}
 					onChange={(event) => {
 						const isFirstSearch = q == null;

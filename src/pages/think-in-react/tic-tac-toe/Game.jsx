@@ -1,6 +1,5 @@
 // 02-tic-tac-toe
 import { useState } from "react";
-import { React } from "react";
 import Board from "./Board";
 
 // Lift state up again to add time travel
@@ -50,13 +49,20 @@ export default function Game() {
 	});
 
 	return (
-		<div className="game">
-			<div className="game-board">
-				<Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+		<>
+			<h1>Tic-Tac-Toe</h1>
+			<div className="game">
+				<div className="game-board">
+					<Board
+						xIsNext={xIsNext}
+						squares={currentSquares}
+						onPlay={handlePlay}
+					/>
+				</div>
+				<div className="game-info">
+					<ol>{moves}</ol>
+				</div>
 			</div>
-			<div className="game-info">
-				<ol>{moves}</ol>
-			</div>
-		</div>
+		</>
 	);
 }
