@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 Footer.propTypes = {
 	tasks: PropTypes.arrayOf(
 		PropTypes.shape({
-			id: PropTypes.number.isRequired,
+			id: PropTypes.string.isRequired,
 			text: PropTypes.string.isRequired,
 			done: PropTypes.bool.isRequired,
 		})

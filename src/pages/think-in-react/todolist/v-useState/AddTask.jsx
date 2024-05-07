@@ -7,7 +7,6 @@ export default function AddTask({ onAddTask }) {
 	const [text, setText] = useState("");
 	function handleSubmit(e) {
 		if (e.key === "Enter") {
-			// console.log(e.key);
 			onAddTask(text);
 			setText("");
 		}
@@ -16,7 +15,7 @@ export default function AddTask({ onAddTask }) {
 		<input
 			className=" w-full h-12 "
 			type="text"
-			placeholder="What needs to be done?"
+			placeholder="Enter to add a todo"
 			value={text}
 			label="New Todo Input"
 			onChange={(e) => {
