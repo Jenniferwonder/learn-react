@@ -19,7 +19,6 @@ import PauseCounter from "./preserve-reset-state/score-board/PauseCounter";
 import ScoreboardA from "./preserve-reset-state/score-board/ScoreboardA";
 import ScoreboardB from "./preserve-reset-state/score-board/ScoreboardB";
 import ChatForm from "./preserve-reset-state/chat-form/ChatForm";
-import TaskStateApp from "./TaskStateApp";
 export default function StateDemo() {
 	return (
 		<div>
@@ -41,7 +40,6 @@ export default function StateDemo() {
 			<ScoreboardA />
 			<ScoreboardB />
 			<ChatForm />
-			<TaskStateApp />
 			<hr></hr>
 		</div>
 	);
