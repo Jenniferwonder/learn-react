@@ -1,37 +1,35 @@
-import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+import { useState, useReducer } from "react";
 import TaskList from "../components/TaskList";
 import AddTask from "../components/AddTask";
 import Footer from "../components/Footer";
-export default function ToDoStateApp() {
-	const [tasks, setTasks] = useState([
-		// { id: 0, text: "test", done: false },
-		// { id: 1, text: "test2", done: false },
-	]);
+import taskReducer from "./taskReducer";
+export default function ToDoReducerApp() {
+	const [tasks, dispatch] = useReducer(taskReducer, []);
 	const [tab, setTab] = useState("all");
 	const count = tasks.filter((t) => !t.done).length;
 	function handleAddTask(text) {
-		setTasks([...tasks, { id: uuidv4(), text: text, done: false }]);
+		dispatch({
+			type: "addTask",
+			text: text,
+		});
 	}
 	function handleChangeTask(task) {
-		setTasks(
-			tasks.map((t) => {
-				if (t.id === task.id) {
-					return task;
-				} else {
-					return t;
-				}
-			})
-		);
+		dispatch({
+			type: "changeTask",
+			task: task,
+		});
 	}
 	function handleDeleteTask(task) {
-		setTasks(tasks.filter((t) => t.id !== task.id));
+		dispatch({
+			type: "deleteTask",
+			task: task,
+		});
 	}
 
 	return (
 		<div className="">
 			<header>
-				<h1>To Dos (useState)</h1>
+				<h1>To Dos (useReducer)</h1>
 				<AddTask onAddTask={handleAddTask} />
 			</header>
 			<TaskList
@@ -45,7 +43,7 @@ export default function ToDoStateApp() {
 				showAll={() => setTab("all")}
 				showActive={() => setTab("active")}
 				showCompleted={() => setTab("completed")}
-				clearCompleted={() => setTasks(tasks.filter((t) => !t.done))}
+				clearCompleted={() => dispatch({ type: "clearCompleted" })}
 			/>
 		</div>
 	);

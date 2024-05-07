@@ -7,6 +7,7 @@ export default function AddTask({ onAddTask }) {
 	const [text, setText] = useState("");
 	function handleSubmit(e) {
 		if (e.key === "Enter") {
+			if (e.target.value === "") return;
 			onAddTask(text);
 			setText("");
 		}
