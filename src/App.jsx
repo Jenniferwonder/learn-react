@@ -20,12 +20,12 @@ import EditContact, {
 } from "./pages/routing/react-router/EditContact.jsx";
 import { action as destroyAction } from "./pages/routing/react-router/Destroy.jsx";
 import Index from "./pages/routing/react-router/Index";
-import StateDemo from "./pages/hooks/state/useState/StateDemo.jsx";
+import StateDemo from "./pages/state-management/useState/StateDemo.jsx";
 import RefDemo from "./pages/hooks/ref/RefDemo.jsx";
 import ReactBasicDemo from "./pages/react-basics/ReactBasicDemo";
 import ThemeSettings from "./components/ThemeSettings.jsx";
-import ReducerDemo from "./pages/hooks/state/useReducer/ReducerDemo";
-import ContextDemo from "./pages/hooks/state/useContext/ContextDemo";
+import ReducerDemo from "./pages/state-management/useReducer/ReducerDemo";
+import ContextDemo from "./pages/state-management/useContext/ContextDemo";
 import EffectDemo from "./pages/hooks/effects/EffectDemo";
 import MemoDemo from "./pages/hooks/memo/MemoDemo.jsx";
 import ProductTableApp from "./pages/think-in-react/product-table-app/ProductTableApp.jsx";
