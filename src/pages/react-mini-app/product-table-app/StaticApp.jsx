@@ -1,5 +1,5 @@
 // Static version without using useState
-import { PRODUCTS } from "./productData";
+import { PRODUCTS } from "./data/productData";
 function ProductCategoryRow({ category }) {
 	return (
 		<tr>

@@ -10,16 +10,16 @@ import Sidebar from "./components/Sidebar.jsx";
 import RouterApp, {
 	loader as rootLoader,
 	action as rootAction,
-} from "./pages/routing/react-router/RouterApp.jsx";
-import ErrorPage from "./pages/routing/react-router/ErrorPage.jsx";
+} from "./pages/react-router/RouterApp.jsx";
+import ErrorPage from "./pages/react-router/ErrorPage.jsx";
 import Contact, {
 	loader as contactLoader,
-} from "./pages/routing/react-router/Contact.jsx";
+} from "./pages/react-router/Contact.jsx";
 import EditContact, {
 	action as editAction,
-} from "./pages/routing/react-router/EditContact.jsx";
-import { action as destroyAction } from "./pages/routing/react-router/Destroy.jsx";
-import Index from "./pages/routing/react-router/Index";
+} from "./pages/react-router/EditContact.jsx";
+import { action as destroyAction } from "./pages/react-router/Destroy.jsx";
+import Index from "./pages/react-router/Index";
 import StateDemo from "./pages/state-management/useState/StateDemo.jsx";
 import RefDemo from "./pages/hooks/ref/RefDemo.jsx";
 import ReactBasicDemo from "./pages/react-basics/ReactBasicDemo";
@@ -28,11 +28,11 @@ import ReducerDemo from "./pages/state-management/useReducer/ReducerDemo";
 import ContextDemo from "./pages/state-management/useContext/ContextDemo";
 import EffectDemo from "./pages/hooks/effects/EffectDemo";
 import MemoDemo from "./pages/hooks/memo/MemoDemo.jsx";
-import ProductTableApp from "./pages/think-in-react/product-table-app/ProductTableApp.jsx";
-import Game from "./pages/think-in-react/tic-tac-toe/Game.jsx";
+import ProductTableApp from "./pages/react-mini-app/product-table-app/ProductTableApp.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Blank from "./pages/Blank.jsx";
-import ToDoApp from "./pages/think-in-react/todolist/ToDoApp";
+import ToDoApp from "./pages/react-mini-app/todolist/ToDoApp";
+import TicTacToe from "./pages/react-mini-app/tic-tac-toe/TicTacToe.jsx";
 
 // ref: https://stackoverflow.com/questions/78098860/typeerror-cannot-destructure-property-basename-of-react2-usecontext-as
 const AppLayout = () => {
@@ -109,15 +109,15 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <ReactBasicDemo /> },
 			{ path: "/learn-react/basic", element: <ReactBasicDemo /> },
-			{ path: "/learn-react/product-table", element: <ProductTableApp /> },
-			{ path: "/learn-react/tic-tac-toe", element: <Game /> },
-			{ path: "/learn-react/to-do-app", element: <ToDoApp /> },
 			{ path: "/learn-react/useState", element: <StateDemo /> },
 			{ path: "/learn-react/useReducer", element: <ReducerDemo /> },
 			{ path: "/learn-react/useContext", element: <ContextDemo /> },
 			{ path: "/learn-react/useRef", element: <RefDemo /> },
 			{ path: "/learn-react/useEffect", element: <EffectDemo /> },
 			{ path: "/learn-react/useMemo", element: <MemoDemo /> },
+			{ path: "/learn-react/product-table", element: <ProductTableApp /> },
+			{ path: "/learn-react/tic-tac-toe", element: <TicTacToe /> },
+			{ path: "/learn-react/to-do-app", element: <ToDoApp /> },
 			{ path: "/learn-react/react-query", element: <Blank /> },
 			{
 				path: "/learn-react/router-dom",

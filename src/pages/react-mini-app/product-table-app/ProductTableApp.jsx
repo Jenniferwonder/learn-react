@@ -1,6 +1,6 @@
 // Using useState
-import { PRODUCTS } from "./productData";
-import FilterTable from "./FilterTable";
+import { PRODUCTS } from "./data/productData";
+import FilterTable from "./components/FilterTable";
 // import Header from "./../../../components/Header";
 export default function ProductTableApp() {
 	return (

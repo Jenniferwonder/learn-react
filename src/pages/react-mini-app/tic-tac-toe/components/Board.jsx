@@ -1,5 +1,5 @@
 import Square from "./Square";
-import { calculateWinner } from "./calculateWinner.js";
+import { calculateWinner } from "../utils/calculateWinner.js";
 
 export default function Board({ xIsNext, squares, onPlay }) {
 	// Lift the state up to Game component; See `setHistory`, `setXIsNext`

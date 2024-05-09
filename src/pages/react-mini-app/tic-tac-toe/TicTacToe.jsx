@@ -1,9 +1,9 @@
 // 02-tic-tac-toe
 import { useState } from "react";
-import Board from "./Board";
+import Board from "./components/Board";
 
 // Lift state up again to add time travel
-export default function Game() {
+export default function TicTacToe() {
 	const [history, setHistory] = useState([Array(9).fill(null)]);
 	// To keep track of which step the user is currently viewing
 	const [currentMove, setCurrentMove] = useState(0);
