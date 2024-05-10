@@ -19,16 +19,15 @@ React Router enables "==client side routing=="
 In traditional websites, the browser **requests a document from a web server, downloads and evaluates CSS and JavaScript assets, and renders the HTML sent from the server**. When the user clicks a link, it starts the process all over again for a new page
 Client side routing allows your app to update the URL from a link click **without making another request for another document from the server**. Instead, your app can immediately render some new UI and make data requests with `fetch` to update the page with new information
 
-
 ## Routers
-low-level interface that is shared by all router components. 
+low-level interface that is shared by all router components.
 - [`<Router>`](https://reactrouter.com/en/main/router-components/router)
 	- should use one of the higher-level routers. Only ever need one router in a given app
 ### ✅ Data Routers (v6.4)
 >v6.4, new routers that support Data API
 > to quickly update to a v6.4 is to get the help from [`createRoutesFromElements`](https://reactrouter.com/en/main/utils/create-routes-from-elements) so you don't need to convert your `<Route>` elements to route objects
 - [`createBrowserRouter`](https://reactrouter.com/en/main/routers/create-browser-router)
-	- For all web projects 
+	- For all web projects
 	- uses the **full URL** instead of the hash urls (`#this/stuff`) common in web apps before `history.pushState` was standardized
 	- better for SEO, better for server rendering, and are just more compatible with the rest of the web platform
 	- on a static file server, you'll need to configure it to send all requests to your `index.html` to avoid getting 404s
@@ -76,11 +75,7 @@ Data APIs for Route; Only work when using a [[front-end-frameworks/react/routing
 - `startViewTransition` support on [Link](https://reactrouter.com/en/main/components/link#unstable_viewtransition) and [useNavigate](https://reactrouter.com/en/main/hooks/use-navigate#optionsunstable_viewtransition)
 ## Fetch Utilities
 
-
 ## Utilities
-
-
-
 
 ## Use
 
@@ -104,20 +99,24 @@ ErrorBoundary
 #### ErrorPage
 
 ```jsx
-import { useRouteError } from "react-router-dom";
+import { useRouteError } from 'react-router-dom'
 export default function ErrorPage() {
-	const error = useRouteError();
-	console.error(error);
-	return (
-		<div id="error-page">
-			      <h1>Oops!</h1>      <p>Sorry, an unexpected error has occurred.</p> 
-			   {" "}
-			<p>
-				        <i>{error.statusText || error.message}</i>     {" "}
-			</p>
-			   {" "}
-		</div>
-	);
+  const error = useRouteError()
+  console.error(error)
+  return (
+    <div id="error-page">
+      <h1>Oops!</h1>
+      {' '}
+      <p>Sorry, an unexpected error has occurred.</p>
+      {' '}
+      <p>
+        <i>{error.statusText || error.message}</i>
+        {' '}
+        {' '}
+      </p>
+      {' '}
+    </div>
+  )
 }
 ```
 
@@ -157,10 +156,10 @@ Each field in the form is accessible with `formData.get(name)`
 
 ```jsx
 export async function action({ request, params }) {
-	const formData = await request.formData();
-	const firstName = formData.get("first");
-	const lastName = formData.get("last");
-	// ...
+  const formData = await request.formData()
+  const firstName = formData.get('first')
+  const lastName = formData.get('last')
+  // ...
 }
 ```
 
@@ -231,10 +230,3 @@ The `navigation.location` will show up when the app is navigating to a new URL
 ### Mutation without Navigation
 
 `useFetcher` allows us to communicate with loaders and actions without causing a navigation
-
-
-
-
-
-
-

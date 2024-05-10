@@ -5,16 +5,16 @@ Topic:
 tags:
   - React
 Type: D
-DateDo: 
-DateDone: 
-DateDue: 
+DateDo:
+DateDone:
+DateDue:
 DateStarted: 2023-12-06
 DateModified: 2024-03-05
-DateReviewed: 
-status: 
-Reviewed: 
-Difficulty: 
-Comment: 
+DateReviewed:
+status:
+Reviewed:
+Difficulty:
+Comment:
 aliases:
   - Share State (React Props)
 ---

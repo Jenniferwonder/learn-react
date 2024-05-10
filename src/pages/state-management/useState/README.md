@@ -7,14 +7,14 @@ tags:
   - React
 DateStarted: 2024-03-06
 DateModified: 2024-03-06
-DateDo: 
-DateDone: 
-DateDue: 
-DateReviewed: 
-Reviewed: 
-Difficulty: 
-status: 
-Comment: 
+DateDo:
+DateDone:
+DateDue:
+DateReviewed:
+Reviewed:
+Difficulty:
+status:
+Comment:
 aliases:
   - useState Hook
 ---
@@ -35,6 +35,3 @@ aliases:
 [React中的setState执行机制是什么呢？](https://github.com/haizlin/fe-interview/issues/680)
 [React中的setState和replaceState的区别是什么？](https://github.com/haizlin/fe-interview/issues/675)
 [React中的setState缺点是什么呢？](https://github.com/haizlin/fe-interview/issues/674)
-
-
-

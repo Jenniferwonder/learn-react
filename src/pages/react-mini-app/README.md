@@ -6,7 +6,7 @@ aliases:
 source: https://react.dev/learn/thinking-in-react
 ---
 
-# 03-Think in React 
+# 03-Think in React
 ## React vs. JS
 ### JS
 - Imperative
@@ -67,22 +67,6 @@ source: https://react.dev/learn/thinking-in-react
 
 - 📌`ProductApp.jsx`
 
-
-
-
-
-
-
-
-
-
-
-
 ## Questions
 #### [说说你对声明式编程的理解？](https://github.com/haizlin/fe-interview/issues/615)
 #### [使用React写一个todo应用，说说你的思路](https://github.com/haizlin/fe-interview/issues/712)
-
-
-
-
-

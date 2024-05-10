@@ -7,13 +7,13 @@ tags:
   - React
 DateStarted: 2024-03-05
 DateModified: 2024-03-05
-DateDo: 
-DateDone: 
-DateDue: 
-DateReviewed: 
-Reviewed: 
-Difficulty: 
-status: 
+DateDo:
+DateDone:
+DateDue:
+DateReviewed:
+Reviewed:
+Difficulty:
+status:
 Comment:
 ---
 # useEffect
@@ -51,9 +51,9 @@ a React Hook that lets you [synchronize a component with an external system.](ht
 	- ❌If you omit this argument, your Effect will re-run after every re-render of the component
 ###### Passing a dependency array
 ```jsx
-useEffect(() => {  
-	// ...  
-}, [a, b]); // Runs again if a or b are different
+useEffect(() => {
+  // ...
+}, [a, b]) // Runs again if a or b are different
 ```
 ### Returns
 `useEffect` returns `undefined`
@@ -74,36 +74,37 @@ useEffect(() => {
 ❌ Don't do `setCount(count+1)` in `useEffect`
 ✅ use an **updater function** `c => c + 1` to update the state in `useEffect`
 #### [Removing unnecessary object dependencies](https://react.dev/reference/react/useEffect#removing-unnecessary-object-dependencies)
-❌ Avoid using an object created during rendering as a dependency. 
+❌ Avoid using an object created during rendering as a dependency.
 ✅ Instead, create the object inside the Effect
 #### [Removing unnecessary function dependencies](https://react.dev/reference/react/useEffect#removing-unnecessary-function-dependencies)
 #### [Reading the latest props and state from an Effect](https://react.dev/reference/react/useEffect#reading-the-latest-props-and-state-from-an-effect)
 ##### `useEffectEvent()`
 ```jsx
-function Page({ url, shoppingCart }) {  
-	const onVisit = useEffectEvent(visitedUrl => {  
-		logVisit(visitedUrl, shoppingCart.length)  
-		});  
-	useEffect(() => {  
-		onVisit(url);  
-	}, [url]); // ✅ All dependencies declared  
-	// ...  
+function Page({ url, shoppingCart }) {
+  const onVisit = useEffectEvent((visitedUrl) => {
+    logVisit(visitedUrl, shoppingCart.length)
+  })
+  useEffect(() => {
+    onVisit(url)
+  }, [url]) // ✅ All dependencies declared
+  // ...
 }
 ```
 #### [Displaying different content on the server and the client](https://react.dev/reference/react/useEffect#displaying-different-content-on-the-server-and-the-client)
 In rare cases, you might need to display different content on the client. For example, if your app reads some data from [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage), it can't possibly do that on the server.
 In many cases, you can avoid the need for this by conditionally showing different things with CSS
 ```jsx
-function MyComponent() {  
-	const [didMount, setDidMount] = useState(false);  
-	useEffect(() => {  
-		setDidMount(true);  
-	}, []);  
-	if (didMount) {  
-		// ... return client-only JSX ...  
-	} else {  
-		// ... return initial JSX ...  
-	}  
+function MyComponent() {
+  const [didMount, setDidMount] = useState(false)
+  useEffect(() => {
+    setDidMount(true)
+  }, [])
+  if (didMount) {
+    // ... return client-only JSX ...
+  }
+  else {
+    // ... return initial JSX ...
+  }
 }
 ```
 ## Reference

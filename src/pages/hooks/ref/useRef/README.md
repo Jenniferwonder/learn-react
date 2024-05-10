@@ -20,28 +20,28 @@ This value is intentionally mutable, meaning you can both read and write to it. 
 ```js
 // ❌ Don't do this
 // the result of `new VideoPlayer()` is only used for the initial render, you’re still calling this function on every render. This can be wasteful if it’s creating expensive objects.
-function Video() {  
+function Video() {
 	const playerRef = useRef(new VideoPlayer());
 }
 // ✅ Do this instead
-function Video() {  
-	const playerRef = useRef(null);  
-	if (playerRef.current === null) {  
-		playerRef.current = new VideoPlayer();  
-}  
+function Video() {
+	const playerRef = useRef(null);
+	if (playerRef.current === null) {
+		playerRef.current = new VideoPlayer();
+}
 ```
 #### Returns
 `useRef` returns an object with a single property:
 - `current`: Initially, it’s set to the `initialValue` you have passed. You can later set it to something else. If you pass the ref object to React as a `ref` attribute to a JSX node, React will set its `current` property.
 ### Manipulate DOM with refs
-1. declare a ref object with an initial value of `null`: 
+1. declare a ref object with an initial value of `null`:
 	- `const inputRef = useRef(null);`
 2. pass your ref object as the `ref` attribute to the JSX of the DOM node you want to manipulate
 	- `return <input ref={inputRef} />;`
 3. React will set the `current` property of your ref object to that DOM node
 ```js
-function handleClick() {  
-	inputRef.current.focus();  
+function handleClick() {
+  inputRef.current.focus()
 }
 ```
 ### `forwardRef`
@@ -49,9 +49,9 @@ function handleClick() {
 use a combination of `useRef` to hold the input and [`forwardRef`](https://react.dev/reference/react/forwardRef) to expose it to the parent component
 ```jsx
 const MyInput = forwardRef((props, ref) => {
-  return <input {...props} ref={ref} />;
-});
-<MyInput ref={inputRef} />
+  return <input {...props} ref={ref} />
+})
+  <MyInput ref={inputRef} />
 ```
 
 In design systems, it is a common pattern for low-level components like buttons, inputs, and so on, **to forward their refs to their DOM nodes**. On the other hand, high-level components like forms, lists, or page sections usually won't expose their DOM nodes to avoid accidental dependencies on the DOM structure
@@ -67,8 +67,3 @@ In design systems, it is a common pattern for low-level components like buttons,
 #### [什么是 React.forwardRef？它有什么作用？](https://github.com/haizlin/fe-interview/issues/878)
 
 #### [使用 React 的 memo 和 forwardRef 包装的组件为什么提示 children 类型不对？](https://github.com/haizlin/fe-interview/issues/844)
-
-
-
-
-

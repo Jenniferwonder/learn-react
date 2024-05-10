@@ -7,14 +7,14 @@ tags:
   - React
 DateStarted: 2024-01-17
 DateModified: 2024-03-20
-DateDo: 
-DateDone: 
-DateDue: 
-DateReviewed: 
-Reviewed: 
-Comment: 
-Difficulty: 
-status: 
+DateDo:
+DateDone:
+DateDue:
+DateReviewed:
+Reviewed:
+Comment:
+Difficulty:
+status:
 aliases:
   - useContext
 ---
@@ -30,21 +30,21 @@ _Context_ lets the parent component make some information available to any compo
 #### createContext()
 
 ```jsx
-import { createContext } from 'react';  
-const ThemeContext = createContext('light');
+import { createContext } from 'react'
+const ThemeContext = createContext('light')
 ```
 #### useContext()
 ```jsx
-import { useContext } from 'react';  
-function MyComponent() {  
-	const theme = useContext(ThemeContext);  
+import { useContext } from 'react';
+function MyComponent() {
+	const theme = useContext(ThemeContext);
 ```
 #### Parameter
 `SomeContext`
-- The context that you've previously created with [`createContext`](https://react.dev/reference/react/createContext)(a React API). 
+- The context that you've previously created with [`createContext`](https://react.dev/reference/react/createContext)(a React API).
 - it only represents the kind of information you can provide or read from components
 #### Return
-`useContext` returns the context value for the calling component. 
+`useContext` returns the context value for the calling component.
 - It is determined as the `value` passed to the closest `SomeContext.Provider` above the calling component in the tree
 - `useContext()` call in a component is not affected by providers returned from the _same_ component. The corresponding `<Context.Provider>` **needs to be above** the component doing the `useContext()` call
 ### Use Case
@@ -75,9 +75,3 @@ function MyComponent() {
 #### [Consumer向上找不到Provider的时候怎么办？](https://github.com/haizlin/fe-interview/issues/939)
 #### [有使用过Consumer吗？](https://github.com/haizlin/fe-interview/issues/938)
 #### [Context api可以取代Redux吗？为什么？](https://github.com/haizlin/fe-interview/issues/916)
-
-
-
-
-
-

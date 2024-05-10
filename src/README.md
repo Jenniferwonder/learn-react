@@ -7,12 +7,12 @@ tags:
   - React
 DateStarted: 2023-12-02
 DateModified: 2024-03-20
-DateDo: 
-DateDone: 
-DateDue: 
-DateReviewed: 
-status: 
-Comment: 
+DateDo:
+DateDone:
+DateDue:
+DateReviewed:
+status:
+Comment:
 aliases:
   - learn-react
 ---
@@ -81,8 +81,3 @@ Projects for each chapter can be found in [src](https://github.com/Jenniferwonde
 - Run `npm install` to install dependencies;
 - Import needed component to `App.js`
 - Run `npm start` to view each component effect in the browser.
-
-
-
-
-

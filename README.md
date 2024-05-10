@@ -5,7 +5,7 @@ DateModified: 2024-03-27
 
 # React Code Demos & Notes
 
-This repository contains a collection of React code demos and projects built on my way of learning react, currently hosted on [Learn React](https://jenniferwonder.github.io/learn-react/). Reference and sources used in this project are mentioned in the README file in each page folder. 
+This repository contains a collection of React code demos and projects built on my way of learning react, currently hosted on [Learn React](https://jenniferwonder.github.io/learn-react/). Reference and sources used in this project are mentioned in the README file in each page folder.
 
 Projects for each chapter can be found in [src/pages](https://github.com/Jenniferwonder/learn-react/tree/main/src/pages), currently containing:
 
@@ -16,7 +16,7 @@ Projects for each chapter can be found in [src/pages](https://github.com/Jennife
 
 <details open>
 <summary><a href="https://github.com/Jenniferwonder/learn-react/tree/main/src/think-in-react">📂think-in-react</a></summary>
-  
+
 - [tic-tac-toe](https://github.com/Jenniferwonder/learn-react/tree/main/src/pages/think-in-react/tic-tac-toe)
 - [product-table](https://github.com/Jenniferwonder/learn-react/tree/main/src/pages/think-in-react/product-table-app)
 
@@ -55,12 +55,12 @@ Projects for each chapter can be found in [src/pages](https://github.com/Jennife
 
 <details>
 <summary><a href="https://github.com/Jenniferwonder/learn-react/tree/main/src/pages/style-for-react">📂style-for-react</a></summary>
-  
+
 </details>
 
 <details>
 <summary><a href="https://github.com/Jenniferwonder/learn-react/tree/main/src/pages/react-performance">📂react-performance</a></summary>
-  
+
 </details>
 
 <details>

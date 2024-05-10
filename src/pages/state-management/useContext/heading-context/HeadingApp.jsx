@@ -1,31 +1,31 @@
-import Heading from "./Heading.jsx";
-import Section from "./Section.jsx";
-import "./styles.css";
+import Heading from './Heading.jsx'
+import Section from './Section.jsx'
+import './styles.css'
 
 export default function HeadingApp() {
-	return (
-		<>
-			<h2>Heading App</h2>
-			<Section>
-				<Heading>Title</Heading>
-				<Section>
-					<Heading>Heading</Heading>
-					<Heading>Heading</Heading>
-					<Heading>Heading</Heading>
-					<Section>
-						<Heading>Sub-heading</Heading>
-						<Heading>Sub-heading</Heading>
-						<Heading>Sub-heading</Heading>
-						<Section>
-							<Heading>Sub-sub-heading</Heading>
-							<Heading>Sub-sub-heading</Heading>
-							<Heading>Sub-sub-heading</Heading>
-						</Section>
-					</Section>
-				</Section>
-			</Section>
-		</>
-	);
+  return (
+    <>
+      <h2>Heading App</h2>
+      <Section>
+        <Heading>Title</Heading>
+        <Section>
+          <Heading>Heading</Heading>
+          <Heading>Heading</Heading>
+          <Heading>Heading</Heading>
+          <Section>
+            <Heading>Sub-heading</Heading>
+            <Heading>Sub-heading</Heading>
+            <Heading>Sub-heading</Heading>
+            <Section>
+              <Heading>Sub-sub-heading</Heading>
+              <Heading>Sub-sub-heading</Heading>
+              <Heading>Sub-sub-heading</Heading>
+            </Section>
+          </Section>
+        </Section>
+      </Section>
+    </>
+  )
 }
 
 // export default function Page() {

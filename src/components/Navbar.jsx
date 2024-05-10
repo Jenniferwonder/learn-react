@@ -1,62 +1,60 @@
-import { useEffect } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
-import { useStateContext } from "../contexts/ContextProvider";
-const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
-	// <TooltipComponent content={title} position="BottomCenter">
-	<button
-		type="button"
-		onClick={() => customFunc()}
-		style={{ color }}
-		className="relative text-xl rounded-full p-3 hover:bg-light-gray"
-	>
-		<span
-			style={{ background: dotColor }}
-			className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
-		/>
-		{icon}
-	</button>
-	// </TooltipComponent>
-);
-const Navbar = () => {
-	const {
-		currentColor,
-		activeMenu,
-		setActiveMenu,
-		handleClick,
-		isClicked,
-		setScreenSize,
-		screenSize,
-	} = useStateContext();
+import { useEffect } from 'react'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { useStateContext } from '../contexts/ContextProvider'
 
-	useEffect(() => {
-		const handleResize = () => setScreenSize(window.innerWidth);
+function NavButton({ title, customFunc, icon, color, dotColor }) {
+  return (
+    <button
+      type="button"
+      onClick={() => customFunc()}
+      style={{ color }}
+      className="relative text-xl rounded-full p-3 hover:bg-light-gray"
+    >
+      <span
+        style={{ background: dotColor }}
+        className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
+      />
+      {icon}
+    </button>
+  )
+}
+function Navbar() {
+  const {
+    currentColor,
+    activeMenu,
+    setActiveMenu,
+    setScreenSize,
+    screenSize,
+  } = useStateContext()
 
-		window.addEventListener("resize", handleResize);
+  useEffect(() => {
+    const handleResize = () => setScreenSize(window.innerWidth)
 
-		handleResize();
+    window.addEventListener('resize', handleResize)
 
-		return () => window.removeEventListener("resize", handleResize);
-	}, []);
+    handleResize()
 
-	useEffect(() => {
-		if (screenSize <= 900) {
-			setActiveMenu(false);
-		} else {
-			setActiveMenu(true);
-		}
-	}, [screenSize]);
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
-	const handleActiveMenu = () => setActiveMenu(!activeMenu);
+  useEffect(() => {
+    if (screenSize <= 900)
+      setActiveMenu(false)
+		 else
+      setActiveMenu(true)
+  }, [screenSize])
 
-	return (
-		<div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
-			<NavButton
-				title="Menu"
-				customFunc={handleActiveMenu}
-				color={currentColor}
-				icon={<AiOutlineMenu />}
-			/>
-			{/* <div className="flex">
+  const handleActiveMenu = () => setActiveMenu(!activeMenu)
+
+  return (
+    <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
+      <NavButton
+        title="Menu"
+        customFunc={handleActiveMenu}
+        color={currentColor}
+        icon={<AiOutlineMenu />}
+      />
+      {/* <div className="flex">
         <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColor} icon={<FiShoppingCart />} />
         <NavButton title="Chat" dotColor="#03C9D7" customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
         <NavButton title="Notification" dotColor="rgb(254, 201, 15)" customFunc={() => handleClick('notification')} color={currentColor} icon={<RiNotification3Line />} />
@@ -83,10 +81,10 @@ const Navbar = () => {
         {isClicked.cart && (<Cart />)}
         {isClicked.chat && (<Chat />)}
         {isClicked.notification && (<Notification />)}
-        {isClicked.userProfile && (<UserProfile />)} 
-      </div>*/}
-		</div>
-	);
-};
+        {isClicked.userProfile && (<UserProfile />)}
+      </div> */}
+    </div>
+  )
+}
 
-export default Navbar;
+export default Navbar

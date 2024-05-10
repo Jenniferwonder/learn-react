@@ -5,7 +5,7 @@ aliases:
   - React Component
 ---
 
-# React Component 
+# React Component
 ## Basics
 ### Component Basics
 - Component Name
@@ -69,7 +69,7 @@ Side effects usually belong inside [event handlers](https://react.dev/learn/resp
 #### [浏览器为什么无法直接JSX？怎么解决呢？](https://github.com/haizlin/fe-interview/issues/624)
 #### [在使用React过程中你都踩过哪些坑？你是怎么填坑的？](https://github.com/haizlin/fe-interview/issues/623)
 
-### React Middleware 
+### React Middleware
 #### [你有写过React的中间件插件吗？](https://github.com/haizlin/fe-interview/issues/691)
 #### [React的中间件机制是怎么样的？这种机制有什么作用？](https://github.com/haizlin/fe-interview/issues/690)
 #### [React中你用过哪些第三方的中间件？](https://github.com/haizlin/fe-interview/issues/689)
@@ -122,7 +122,6 @@ Side effects usually belong inside [event handlers](https://react.dev/learn/resp
 #### [在React使用高阶组件(HOC)有遇到过哪些问题？如何解决？](https://github.com/haizlin/fe-interview/issues/752)
 #### [在使用React过程中什么时候用高阶组件(HOC)？](https://github.com/haizlin/fe-interview/issues/751)
 
-
 ### JSX
 #### [React必须使用JSX吗？](https://github.com/haizlin/fe-interview/issues/886)
 #### [在JSX中如何写注释？](https://github.com/haizlin/fe-interview/issues/867)
@@ -140,11 +139,9 @@ Side effects usually belong inside [event handlers](https://react.dev/learn/resp
 
 #### [在React中我们怎么做静态类型检测？都有哪些方法可以做到？](https://github.com/haizlin/fe-interview/issues/810)
 
-
 #### [为什么建议Fragment包裹元素？它的简写是什么？](https://github.com/haizlin/fe-interview/issues/864)
 #### [你有用过React.Fragment吗？说说它有什么用途？](https://github.com/haizlin/fe-interview/issues/863)
 #### [有用过React的Fragment吗？它的运用场景是什么？](https://github.com/haizlin/fe-interview/issues/673)
-
 
 #### [为什么标签里的for要写成htmlFor呢？](https://github.com/haizlin/fe-interview/issues/839)
 #### [在React中如何引入图片？哪种方式更好？](https://github.com/haizlin/fe-interview/issues/829)
@@ -172,7 +169,6 @@ Side effects usually belong inside [event handlers](https://react.dev/learn/resp
 #### [React中你有使用过getDefaultProps吗？它有什么作用？](https://github.com/haizlin/fe-interview/issues/789)
 #### [给组件设置很多属性时不想一个个去设置有什么办法可以解决这问题呢？](https://github.com/haizlin/fe-interview/issues/784)
 
-
 #### [immutable的原理是什么？](https://github.com/haizlin/fe-interview/issues/823)
 #### [你对immutable有了解吗？它有什么作用？](https://github.com/haizlin/fe-interview/issues/822)
 
@@ -183,7 +179,7 @@ Side effects usually belong inside [event handlers](https://react.dev/learn/resp
 ### Event
 #### React 组件中怎么做事件代理？它的原理是什么？
 #### [`<div onClick={handlerClick}>单击</div>`和`<div onClick={handlerClick(1)}>单击</div>`有什么区别？](https://github.com/haizlin/fe-interview/issues/830)
-jsx 事件 = 函数，会调用函数并把函数的返回值记录，在每次render 时调用  
+jsx 事件 = 函数，会调用函数并把函数的返回值记录，在每次render 时调用
 因此，handleClick 会随事件触发调用，handleClick() 只会调用一次
 #### [在React中什么是合成事件？有什么用？](https://github.com/haizlin/fe-interview/issues/713)
 #### [举例说明如何在React创建一个事件](https://github.com/haizlin/fe-interview/issues/850)
@@ -210,15 +206,7 @@ jsx 事件 = 函数，会调用函数并把函数的返回值记录，在每次r
 #### [shouldComponentUpdate方法是做什么的？](https://github.com/haizlin/fe-interview/issues/693)
 
 #### [说说你对windowing的了解](https://github.com/haizlin/fe-interview/issues/935)
-- 'windowing' 的技术把大数据集分解为多个块，当它们滚动到视图中时可以即时加载。它也可以用于创建无限加载列表  
-- 例如：react-virtualized，react-window等都使用了“windowing”的技术  
-- [https://react-window.now.sh/#/examples/list/fixed-size](https://react-window.now.sh/#/examples/list/fixed-size)  
+- 'windowing' 的技术把大数据集分解为多个块，当它们滚动到视图中时可以即时加载。它也可以用于创建无限加载列表
+- 例如：react-virtualized，react-window等都使用了“windowing”的技术
+- [https://react-window.now.sh/#/examples/list/fixed-size](https://react-window.now.sh/#/examples/list/fixed-size)
 - [https://bvaughn.github.io/react-virtualized/#/components/List](https://bvaughn.github.io/react-virtualized/#/components/List)
-
-
-
-
-
-
-
-

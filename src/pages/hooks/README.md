@@ -58,11 +58,3 @@ aliases:
 #### [怎样使用 Hooks 获取服务端数据？](https://github.com/haizlin/fe-interview/issues/891)
 
 #### [使用 Hooks 要遵守哪些原则？](https://github.com/haizlin/fe-interview/issues/890)
-
-
-
-
-
-
-
-

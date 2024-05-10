@@ -5,16 +5,16 @@ tags:
   - React
 Topic:
   - React
-DateDue: 
+DateDue:
 DateStarted: 2024-01-17
 DateModified: 2024-03-05
-DateDo: 
-DateDone: 
-DateReviewed: 
-status: 
-Reviewed: 
-Comment: 
-Difficulty: 
+DateDo:
+DateDone:
+DateReviewed:
+status:
+Reviewed:
+Comment:
+Difficulty:
 aliases:
   - React State Structure
 ---

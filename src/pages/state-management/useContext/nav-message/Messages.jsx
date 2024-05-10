@@ -1,14 +1,17 @@
-import { useContext } from "react";
-import { AppContext } from "./Context";
+import { useContext } from 'react'
+import { AppContext } from './Context'
 
-export const Messages = () => {
-	const { username } = useContext(AppContext);
+export function Messages() {
+  const { username } = useContext(AppContext)
 
-	return (
-		<div className="messages">
-			<h3>Messages</h3>
-			<p>1 message for {username}</p>
-			<p className="message">useContext is awesome!</p>
-		</div>
-	);
-};
+  return (
+    <div className="messages">
+      <h3>Messages</h3>
+      <p>
+        1 message for
+        {username}
+      </p>
+      <p className="message">useContext is awesome!</p>
+    </div>
+  )
+}

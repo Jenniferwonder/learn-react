@@ -7,14 +7,14 @@ tags:
 Type: D
 DateStarted: 2023-12-06
 DateModified: 2024-03-05
-DateDo: 
-DateDone: 
-DateDue: 
-DateReviewed: 
-Reviewed: 
-status: 
-Difficulty: 
-Comment: 
+DateDo:
+DateDone:
+DateDue:
+DateReviewed:
+Reviewed:
+status:
+Difficulty:
+Comment:
 aliases:
   - Preserve-Reset State
 ---

@@ -7,14 +7,14 @@ tags:
   - React
 DateStarted: 2024-03-06
 DateModified: 2024-03-06
-DateDo: 
-DateDone: 
-DateDue: 
-DateReviewed: 
-Reviewed: 
-Difficulty: 
-status: 
-Comment: 
+DateDo:
+DateDone:
+DateDue:
+DateReviewed:
+Reviewed:
+Difficulty:
+status:
+Comment:
 aliases:
   - Try React
 ---
@@ -28,8 +28,8 @@ aliases:
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <!-- to inform Babel what code to transform by changing the script type to -->
 <script type="text/jsx">
-	const app = document.getElementById('app');
-	ReactDOM.render(<h1>Develop. Preview. Ship.</h1>, app);
+const app = document.getElementById('app');
+ReactDOM.render(<h1>Develop. Preview. Ship.</h1>, app);
 </script>
 ```
 
@@ -38,7 +38,6 @@ aliases:
 ### Vite
 - `npm create vite@latest`
 - https://vitejs.dev/guide/
-
 
 ### Use a React Framework CLI
 #### Next.js
@@ -68,9 +67,3 @@ aliases:
 #### [你有在项目中使用过Mern脚手架吗？](https://github.com/haizlin/fe-interview/issues/694)
 
 #### [使用React的方式有哪几种？](https://github.com/haizlin/fe-interview/issues/658)
-
-
-
-
-
-
