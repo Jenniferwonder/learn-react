@@ -6,6 +6,7 @@ export default function ContactList({ selectedContact, contacts, onSelect }) {
         {contacts.map(contact => (
           <li key={contact.id}>
             <button
+              type="button"
               onClick={() => {
 							  onSelect(contact)
               }}

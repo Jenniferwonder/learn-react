@@ -15,7 +15,7 @@ Refs are an escape hatch. You should only use them when you have to “step outs
 `ref.current`
 This value is intentionally mutable, meaning you can both read and write to it. It’s like a secret pocket of your component that React doesn't track. (This is what makes it an “escape hatch” from React's one-way data flow)
 #### Parameter
-`initialValue`: The value you want the ref object’s `current` property to be initially. It can be a value of any type. This argument is ignored after the initial render
+`initialValue`: The value you want the ref object’s `current` property to be initially. It can be a value of any type. This argument is ignored after the initial render
 ##### Avoid recreating the ref contents
 ```js
 // ❌ Don't do this

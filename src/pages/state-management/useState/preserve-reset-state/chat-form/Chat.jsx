@@ -11,7 +11,7 @@ export default function Chat({ contact }) {
         onChange={e => setText(e.target.value)}
       />
       <br />
-      <button>
+      <button type="submit">
         Send to
         {contact.email}
       </button>

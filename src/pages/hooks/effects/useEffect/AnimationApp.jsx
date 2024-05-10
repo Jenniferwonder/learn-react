@@ -8,7 +8,7 @@ export default function AnimationApp() {
   return (
     <>
       <h2>Animation App</h2>
-      <button onClick={() => setShow(!show)}>{show ? 'Remove' : 'Show'}</button>
+      <button type="button" onClick={() => setShow(!show)}>{show ? 'Remove' : 'Show'}</button>
       {/* <hr /> */}
       {show && <Welcome />}
     </>

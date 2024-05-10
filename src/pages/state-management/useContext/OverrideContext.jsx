@@ -50,5 +50,5 @@ function Panel({ title, children }) {
 function Button({ children }) {
   const theme = useContext(ThemeContext)
   const className = `button-${theme}`
-  return <button className={className}>{children}</button>
+  return <button type="button" className={className}>{children}</button>
 }

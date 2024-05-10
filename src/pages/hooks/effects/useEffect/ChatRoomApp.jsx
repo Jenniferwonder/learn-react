@@ -17,7 +17,7 @@ export default function ChatRoomApp() {
           <option value="music">music</option>
         </select>
       </label>
-      <button onClick={() => setShow(!show)}>
+      <button type="button" onClick={() => setShow(!show)}>
         {show ? 'Close chat' : 'Open chat'}
       </button>
       {show && <hr />}

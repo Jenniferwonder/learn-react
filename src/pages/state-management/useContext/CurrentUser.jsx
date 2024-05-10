@@ -23,7 +23,7 @@ export default function CurrentUser() {
   )
 }
 
-function Form({ children }) {
+function Form() {
   return (
     <Panel title="Welcome">
       <LoginButton />
@@ -75,7 +75,7 @@ function Panel({ title, children }) {
 
 function Button({ children, onClick }) {
   return (
-    <button className="button" onClick={onClick}>
+    <button type="button" className="button" onClick={onClick}>
       {children}
     </button>
   )

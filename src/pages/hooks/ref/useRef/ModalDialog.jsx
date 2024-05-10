@@ -19,8 +19,8 @@ export default function ModalDialog() {
   return (
     <>
       <h2>Modal Dialog</h2>
-      {/* <button onClick={() => setShow(true)}>Open dialog</button> */}
-      <button onClick={handleModalOpen}>Open dialog</button>
+      {/* <button type="button" onClick={() => setShow(true)}>Open dialog</button> */}
+      <button type="button" onClick={handleModalOpen}>Open dialog</button>
       <dialog ref={ref}>
         Hello there!
         <br />
@@ -31,7 +31,7 @@ export default function ModalDialog() {
 			>
 				Close
 			</button> */}
-        <button onClick={handleModalClose}>Close</button>
+        <button type="button" onClick={handleModalClose}>Close</button>
       </dialog>
       {/* <Dialog isOpen={show}>
 				Hello there!

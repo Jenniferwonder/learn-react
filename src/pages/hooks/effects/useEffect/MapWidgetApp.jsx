@@ -1,7 +1,6 @@
 // ref: https://react.dev/reference/react/useEffect
 // Done-20240321 Good
-import { useState } from 'react'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { MapWidget } from './map-widget.js'
 
 export default function MapWidgetApp() {
@@ -13,15 +12,15 @@ export default function MapWidgetApp() {
       {' '}
       {zoomLevel}
       x
-      <button onClick={() => setZoomLevel(zoomLevel + 1)}>+</button>
-      <button onClick={() => setZoomLevel(zoomLevel - 1)}>-</button>
+      <button type="button" onClick={() => setZoomLevel(zoomLevel + 1)}>+</button>
+      <button type="button" onClick={() => setZoomLevel(zoomLevel - 1)}>-</button>
       <hr />
-      <Map zoomLevel={zoomLevel} />
+      <MapView zoomLevel={zoomLevel} />
     </>
   )
 }
 
-function Map({ zoomLevel }) {
+function MapView({ zoomLevel }) {
   const containerRef = useRef(null)
   const mapRef = useRef(null)
 

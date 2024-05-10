@@ -6,7 +6,7 @@
 // export { default as ShareClickApp } from "./ShareClickApp";
 // export { default as ImpureFun } from "./ImpureFun";
 // export { default as PureFun } from "./PureFun";
-// 🏷️01-react-basics
+// 🏷️01-basics
 import AboutPage from './AboutPage'
 import Conditional from './Conditional'
 import Lists from './Lists'
@@ -29,7 +29,7 @@ export default function ReactBasicDemo() {
       <Conditional />
       <ImpureFun />
       <PureFun />
-      <hr></hr>
+      <hr />
     </>
   )
 }

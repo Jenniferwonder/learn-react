@@ -21,7 +21,7 @@ export default function Gallery() {
   return (
     <>
       <h2>Gallery</h2>
-      <button onClick={handleNextClick}>Next</button>
+      <button type="button" onClick={handleNextClick}>Next</button>
       <h3>
         <i>
           {sculpture.name}
@@ -39,7 +39,7 @@ export default function Gallery() {
         {sculptureList.length}
         )
       </h3>
-      <button onClick={handleMoreClick}>
+      <button type="button" onClick={handleMoreClick}>
         {showMore ? 'Hide' : 'Show'}
         {' '}
         details

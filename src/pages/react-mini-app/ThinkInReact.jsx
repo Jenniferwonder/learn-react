@@ -8,9 +8,9 @@ export default function ThinkInReact() {
     <>
       <h1>🏷️think-in-react</h1>
       <ProductTableApp />
-      <hr></hr>
+      <hr/>
       <Game />
-      <hr></hr>
+      <hr/>
       <ToDoApp />
     </>
   )

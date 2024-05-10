@@ -13,17 +13,17 @@ export default function DualCount() {
       <h2>Dual Count Reducer</h2>
       <div>
         {state.count1}
-        <button onClick={() => dispatch({ type: 'increment1' })}>+1</button>
-        <button onClick={() => dispatch({ type: 'decrement1' })}>-1</button>
-        <button onClick={() => dispatch({ type: 'reset1', count: 0 })}>
+        <button type="button" onClick={() => dispatch({ type: 'increment1' })}>+1</button>
+        <button type="button" onClick={() => dispatch({ type: 'decrement1' })}>-1</button>
+        <button type="button" onClick={() => dispatch({ type: 'reset1', count: 0 })}>
           reset
         </button>
       </div>
       <div>
         {state.count2}
-        <button onClick={() => dispatch({ type: 'increment2' })}>+1</button>
-        <button onClick={() => dispatch({ type: 'decrement2' })}>-1</button>
-        <button onClick={() => dispatch({ type: 'reset2', count: 0 })}>
+        <button type="button" onClick={() => dispatch({ type: 'increment2' })}>+1</button>
+        <button type="button" onClick={() => dispatch({ type: 'decrement2' })}>-1</button>
+        <button type="button" onClick={() => dispatch({ type: 'reset2', count: 0 })}>
           reset
         </button>
       </div>

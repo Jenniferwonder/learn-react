@@ -10,6 +10,7 @@ export default function RemoveRef() {
     <div>
       <h2>Remove Ref</h2>
       <button
+        type="button"
         onClick={() => {
 				  setShow(!show)
         }}
@@ -17,6 +18,7 @@ export default function RemoveRef() {
         Toggle with setState
       </button>
       <button
+        type="button"
         onClick={() => {
 				  ref.current.remove()
         }}

@@ -16,9 +16,9 @@ export default function RecalToDo() {
         ❌ When theme changes, the list will be re-rendered, even if the props
         and state of the list haven't changed
       </p>
-      <button onClick={() => setTab('all')}>All</button>
-      <button onClick={() => setTab('active')}>Active</button>
-      <button onClick={() => setTab('completed')}>Completed</button>
+      <button type="button" onClick={() => setTab('all')}>All</button>
+      <button type="button" onClick={() => setTab('active')}>Active</button>
+      <button type="button" onClick={() => setTab('completed')}>Completed</button>
       <br />
       <label>
         <input

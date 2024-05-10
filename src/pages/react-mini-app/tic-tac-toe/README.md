@@ -91,7 +91,7 @@ aliases:
     - Define button function to update `currentMove`
         - keep track of which step the user is currently viewing
             - `const [currentMove, setCurrentMove] = useState(0);`
-        - `<button onClick={() => jumpTo(move)}>{description}</button>`
+        - `<button type="button" onClick={() => jumpTo(move)}>{description}</button>`
         - Add *jumpTo* function inside `Game`
             - update that `currentMove`
                 - `setCurrentMove(nextMove);`

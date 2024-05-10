@@ -15,6 +15,7 @@ export default function Letter({
       }}
     >
       <button
+        type="button"
         onClick={() => {
 				  onToggleStar(letter)
         }}

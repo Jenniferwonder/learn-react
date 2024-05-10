@@ -43,7 +43,7 @@ export default function TicTacToe() {
     return (
     // it’s safe to use the move index as a key
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <button type="button" onClick={() => jumpTo(move)}>{description}</button>
       </li>
     )
   })

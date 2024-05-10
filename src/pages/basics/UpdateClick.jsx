@@ -19,7 +19,7 @@ function Click() {
   }
 
   return (
-    <button onClick={handleClick}>
+    <button type="button" onClick={handleClick}>
       Clicked
       {count}
       {' '}

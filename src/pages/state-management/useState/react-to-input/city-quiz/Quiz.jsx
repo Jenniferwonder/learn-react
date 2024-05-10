@@ -38,7 +38,7 @@ export default function Quiz() {
           disabled={status === 'submitting'}
         />
         <br />
-        <button disabled={status === 'empty' || status === 'submitting'}>
+        <button type="submit" disabled={status === 'empty' || status === 'submitting'}>
           Submit
         </button>
         {error !== null && <p style={{ color: 'red' }}>{error.message}</p>}

@@ -17,9 +17,9 @@ export default function MemoToDo() {
         been memorized.
       </p>
       and state of the list haven't changed
-      <button onClick={() => setTab('all')}>All</button>
-      <button onClick={() => setTab('active')}>Active</button>
-      <button onClick={() => setTab('completed')}>Completed</button>
+      <button type="button" onClick={() => setTab('all')}>All</button>
+      <button type="button" onClick={() => setTab('active')}>Active</button>
+      <button type="button" onClick={() => setTab('completed')}>Completed</button>
       <br />
       <label>
         <input

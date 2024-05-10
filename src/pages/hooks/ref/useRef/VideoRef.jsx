@@ -18,7 +18,7 @@ export default function VideoRef() {
     <>
       <h2>Video Ref</h2>
       <div>
-        <button onClick={handleClick}>{isPlaying ? 'Pause' : 'Play'}</button>
+        <button type="button" onClick={handleClick}>{isPlaying ? 'Pause' : 'Play'}</button>
       </div>
 
       <video

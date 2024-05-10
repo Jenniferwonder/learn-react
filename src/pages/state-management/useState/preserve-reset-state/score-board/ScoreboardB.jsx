@@ -16,6 +16,7 @@ export default function ScoreboardB() {
           <Counter key="Sarah" person="Sarah" />
           )}
       <button
+        type="button"
         onClick={() => {
 				  setIsPlayerA(!isPlayerA)
         }}
@@ -47,7 +48,7 @@ function Counter({ person }) {
           's score:
           {score}
         </h3>
-        <button onClick={() => setScore(score + 1)}>Add one</button>
+        <button type="button" onClick={() => setScore(score + 1)}>Add one</button>
       </div>
     </>
   )

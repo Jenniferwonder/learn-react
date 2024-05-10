@@ -28,8 +28,8 @@ export default function ForwardRef() {
       <MyInput ref={inputRef} />
       <AnotherInput ref={anotherInputRef} />
       <div>
-        <button onClick={handleClick}>Focus the input</button>
-        <button onClick={handleAnotherClick}>Focus another input</button>
+        <button type="button" onClick={handleClick}>Focus the input</button>
+        <button type="button" onClick={handleAnotherClick}>Focus another input</button>
       </div>
     </>
   )

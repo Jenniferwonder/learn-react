@@ -11,7 +11,7 @@ export default function CommentApp() {
   return (
     <>
       <h2>Comment App</h2>
-      <button onClick={handleClick}>Write a comment</button>
+      <button type="button" onClick={handleClick}>Write a comment</button>
       <Post ref={postRef} />
     </>
   )

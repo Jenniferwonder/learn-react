@@ -48,6 +48,7 @@ function PlaceTree({ id, parentId, placesById, onComplete }) {
     <li>
       {place.title}
       <button
+        type="button"
         onClick={() => {
           onComplete(parentId, id)
         }}

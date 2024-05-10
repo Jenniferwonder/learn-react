@@ -13,7 +13,7 @@ export default function InputRef() {
     <>
       <h2>Input Ref</h2>
       <input ref={inputRef} />
-      <button onClick={handleClick}>Focus the input</button>
+      <button type="button" onClick={handleClick}>Focus the input</button>
     </>
   )
 }

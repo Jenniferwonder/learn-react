@@ -28,7 +28,7 @@ export default function ExtractContext() {
   )
 }
 
-function MyProviders({ children, theme, setTheme }) {
+function MyProviders({ children, theme }) {
   const [currentUser, setCurrentUser] = useState(null)
   return (
     <ThemeContext.Provider value={theme}>
@@ -44,7 +44,7 @@ function MyProviders({ children, theme, setTheme }) {
   )
 }
 
-function WelcomePanel({ children }) {
+function WelcomePanel() {
   const { currentUser } = useContext(CurrentUserContext)
   return (
     <Panel title="Welcome">
@@ -123,7 +123,7 @@ function Button({ children, disabled, onClick }) {
   const theme = useContext(ThemeContext)
   const className = `button-${theme}`
   return (
-    <button className={className} disabled={disabled} onClick={onClick}>
+    <button type="button" className={className} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   )

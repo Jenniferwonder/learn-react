@@ -20,9 +20,9 @@ export default function ListRef() {
     <>
       <h2> List Ref (Scroll to view) </h2>
       <nav>
-        <button onClick={() => scrollToIndex(0)}>Tom</button>
-        <button onClick={() => scrollToIndex(1)}>Maru</button>
-        <button onClick={() => scrollToIndex(2)}>Jellylorum</button>
+        <button type="button" onClick={() => scrollToIndex(0)}>Tom</button>
+        <button type="button" onClick={() => scrollToIndex(1)}>Maru</button>
+        <button type="button" onClick={() => scrollToIndex(2)}>Jellylorum</button>
       </nav>
       <div>
         <ul ref={listRef}>

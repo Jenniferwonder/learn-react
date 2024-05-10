@@ -41,7 +41,7 @@ export default function StateDemo() {
       <ScoreboardA />
       <ScoreboardB />
       <ChatForm />
-      <hr></hr>
+      <hr/>
     </div>
   )
 }

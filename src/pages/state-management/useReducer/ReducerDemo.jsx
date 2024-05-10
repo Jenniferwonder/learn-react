@@ -11,7 +11,7 @@ export default function ReducerDemo() {
       <CountReducerApp />
       <DualCount />
       <TextReducer />
-      <hr></hr>
+      <hr />
     </div>
   )
 }

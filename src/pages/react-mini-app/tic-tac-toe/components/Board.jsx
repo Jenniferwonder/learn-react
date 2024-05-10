@@ -21,7 +21,6 @@ export default function Board({ xIsNext, squares, onPlay }) {
 
     // Immutability is important: call `.slice()` to create a copy of the squares array instead of modifying the existing array.
     const nextSquares = squares.slice()
-
     xIsNext ? (nextSquares[i] = 'X') : (nextSquares[i] = 'O')
 
     // Replace the following code with onPlay to be controlled fully by Game component

@@ -7,7 +7,7 @@ const user = {
   isLoggedIn: false,
 }
 function Button({ info, onClick }) {
-  return <button onClick={onClick}>{info}</button>
+  return <button type="button" onClick={onClick}>{info}</button>
 }
 // 🏷️Case-1: if...else
 // export default function AboutPage() {

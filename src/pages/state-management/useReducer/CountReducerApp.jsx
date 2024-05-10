@@ -6,9 +6,9 @@ export default function CountReducerApp() {
     <div>
       <h2>Count Reducer App</h2>
       {count}
-      <button onClick={() => dispatch('increment')}>+1</button>
-      <button onClick={() => dispatch('decrement')}>-1</button>
-      <button onClick={() => dispatch('reset')}>reset</button>
+      <button type="button" onClick={() => dispatch('increment')}>+1</button>
+      <button type="button" onClick={() => dispatch('decrement')}>-1</button>
+      <button type="button" onClick={() => dispatch('reset')}>reset</button>
     </div>
   )
 }

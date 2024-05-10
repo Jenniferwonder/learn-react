@@ -20,7 +20,7 @@ export default function ContextDemo() {
       <MultiContext />
       <ExtractContext />
       <OverrideContext />
-      <hr></hr>
+      <hr/>
     </div>
   )
 }

@@ -10,7 +10,7 @@ This repository contains a collection of React code demos and projects built on 
 Projects for each chapter can be found in [src/pages](https://github.com/Jenniferwonder/learn-react/tree/main/src/pages), currently containing:
 
 <details>
-<summary><a href="https://github.com/Jenniferwonder/learn-react/tree/main/src/react-basics">📂react-basics</a></summary>
+<summary><a href="https://github.com/Jenniferwonder/learn-react/tree/main/src/basics">📂basics</a></summary>
 
 </details>
 

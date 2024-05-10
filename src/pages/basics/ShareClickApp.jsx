@@ -20,7 +20,7 @@ export default function ShareClickApp() {
 
 function ShareClick({ count, onClick }) {
   return (
-    <button onClick={onClick}>
+    <button type="button" onClick={onClick}>
       Clicked
       {count}
       {' '}

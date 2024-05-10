@@ -28,7 +28,7 @@ export default function ThemeContextApp() {
   )
 }
 
-function Form({ children }) {
+function Form() {
   return (
     <Panel title="Welcome">
       <Button>Sign up</Button>
@@ -51,5 +51,5 @@ function Panel({ title, children }) {
 function Button({ children }) {
   const theme = useContext(ThemeContext)
   const className = `button-${theme}`
-  return <button className={className}>{children}</button>
+  return <button type="button" className={className}>{children}</button>
 }

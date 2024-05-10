@@ -13,17 +13,15 @@ export default function ClickRef() {
   return (
     <>
       <h2>Click Ref</h2>
-      <button onClick={handleClick}>Click me!</button>
+      <button type="button" onClick={handleClick}>Click me!</button>
     </>
   )
 }
 
 // ❌ Pitfall
-function MyComponent() {
-  // ...
-  // 🚩 Don't write a ref during rendering
-  myRef.current = 123
-  // ...
-  // 🚩 Don't read a ref during rendering
-  return <h1>{myOtherRef.current}</h1>
-}
+// function MyComponent() {
+//   // 🚩 Don't write a ref during rendering
+//   myRef.current = 123
+//   // 🚩 Don't read a ref during rendering
+//   return <h1>{myOtherRef.current}</h1>
+// }

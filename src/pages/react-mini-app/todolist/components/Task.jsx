@@ -46,10 +46,10 @@ export default function Task({ task, onChange, onDelete }) {
         }}
       />
       {TaskContent}
-      <button onClick={() => setIsEditing(!isEditing)}>
+      <button type="button" onClick={() => setIsEditing(!isEditing)}>
         {isEditing ? 'save' : 'edit'}
       </button>
-      <button onClick={() => onDelete(task)}>delete</button>
+      <button type="button" onClick={() => onDelete(task)}>delete</button>
     </div>
   )
 }
