@@ -21,13 +21,13 @@ This value is intentionally mutable, meaning you can both read and write to it. 
 // ❌ Don't do this
 // the result of `new VideoPlayer()` is only used for the initial render, you’re still calling this function on every render. This can be wasteful if it’s creating expensive objects.
 function Video() {
-	const playerRef = useRef(new VideoPlayer());
+  const playerRef = useRef(new VideoPlayer())
 }
 // ✅ Do this instead
 function Video() {
-	const playerRef = useRef(null);
-	if (playerRef.current === null) {
-		playerRef.current = new VideoPlayer();
+  const playerRef = useRef(null)
+  if (playerRef.current === null)
+    playerRef.current = new VideoPlayer()
 }
 ```
 #### Returns

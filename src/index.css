@@ -71,10 +71,10 @@ body {
 		box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
 		transform: translateY(1px);
 	}
-	button:focus,
-	button:focus-visible {
+	/* button:focus,
+	button:focus-visible { */
 		/* box-shadow: 0 0px 4px hsla(0, 0%, 0%, 0.458), 0 1px 2px hsla(0, 0%, 0%, 0.2);
 		border-color: skyblue; */
 		/* outline: 4px auto -webkit-focus-ring-color; */
-	}
+	/* } */
 }

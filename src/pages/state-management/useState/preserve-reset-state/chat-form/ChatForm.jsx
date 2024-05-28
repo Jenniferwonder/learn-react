@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Chat from './Chat.jsx'
 import ContactList from './ContactList.jsx'
 // import "./styles.css";
-
 const contacts = [
   { id: 0, name: 'Taylor', email: 'taylor@mail.com' },
   { id: 1, name: 'Alice', email: 'alice@mail.com' },
