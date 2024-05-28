@@ -48,13 +48,18 @@ export default function Navbar() {
   const handleActiveMenu = () => setActiveMenu(!activeMenu)
 
   return (
-    <div className="relative flex justify-between p-2 md:ml-6 md:mr-6">
-      <NavButton
-        title="Menu"
-        customFunc={handleActiveMenu}
-        color={currentColor}
-        icon={<AiOutlineMenu />}
-      />
+    <div className="">
+      {activeMenu
+        ? ''
+        : (
+          <NavButton
+            title="Menu"
+            customFunc={handleActiveMenu}
+            color={currentColor}
+            icon={<AiOutlineMenu />}
+          />
+          )}
+
     </div>
   )
 }
