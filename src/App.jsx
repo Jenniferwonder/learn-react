@@ -61,7 +61,7 @@ function AppLayout() {
           </div>
           {activeMenu
             ? (
-              <div className="fixed bg-white w-72 dark:bg-secondary-dark-bg">
+              <div className="fixed bg-white dark:bg-secondary-dark-bg">
                 <Sidebar />
               </div>
               )
@@ -77,12 +77,12 @@ function AppLayout() {
 							  : 'dark:bg-main-dark-bg bg-main-bg w-full min-h-screen'
 						}
           >
-            <div className="fixed w-full md:static bg-main-bg dark:bg-main-dark-bg navbar">
+            <div className=" md:static bg-main-bg dark:bg-main-dark-bg h-10">
               <Navbar />
             </div>
             <div>{themeSettings && <ThemeSettings />}</div>
             <div className="m-6 ml-8">
-              <div className="m-2 md:m-10 mt-24 p-2 md:p-10 dark:bg-[#34373e] bg-white rounded-3xl">
+              <div className="m-2 md:m-10  p-2 md:p-10 dark:bg-[#34373e] bg-white rounded-3xl">
                 <Outlet />
               </div>
             </div>

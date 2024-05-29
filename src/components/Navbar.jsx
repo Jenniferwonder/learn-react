@@ -1,24 +1,9 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { SiShopware } from 'react-icons/si'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { useStateContext } from '../contexts/ContextProvider'
 
-function NavButton({ title, customFunc, icon, color, dotColor }) {
-  return (
-    <button
-      title={title}
-      type="button"
-      onClick={() => customFunc()}
-      style={{ color }}
-      className="relative p-3 text-xl rounded-full hover:bg-light-gray"
-    >
-      <span
-        style={{ background: dotColor }}
-        className="absolute inline-flex w-2 h-2 rounded-full right-2 top-2"
-      />
-      {icon}
-    </button>
-  )
-}
 export default function Navbar() {
   const {
     currentColor,
@@ -45,19 +30,32 @@ export default function Navbar() {
       setActiveMenu(true)
   }, [screenSize])
 
-  const handleActiveMenu = () => setActiveMenu(!activeMenu)
+  const openActiveMenu = () => setActiveMenu(true)
 
   return (
-    <div className="">
+    <div className="bg-white w-full h-14 px-5 pt-1 shadow-sm">
       {activeMenu
         ? ''
         : (
-          <NavButton
-            title="Menu"
-            customFunc={handleActiveMenu}
-            color={currentColor}
-            icon={<AiOutlineMenu />}
-          />
+          <div className="flex items-center">
+            <Link
+              to="/learn-react"
+              className="flex items-center gap-3 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+            >
+              <SiShopware />
+              {' '}
+              <span>Learn React</span>
+            </Link>
+            <button
+              title="open sidebar"
+              type="button"
+              onClick={openActiveMenu}
+              style={{ color: currentColor }}
+              className="p-1 text-xl rounded-full hover:bg-light-gray  ml-14"
+            >
+              <AiOutlineMenu />
+            </button>
+          </div>
           )}
 
     </div>

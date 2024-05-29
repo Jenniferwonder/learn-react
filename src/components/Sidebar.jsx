@@ -18,19 +18,19 @@ export default function Sidebar() {
 		= 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2'
   return (
     <div className="">
-      <div className="h-screen pb-10 ml-3 overflow-auto md:overflow-hidden md:hover:overflow-auto">
+      <div className="h-screen pb-10 px-5 pt-1 overflow-auto md:overflow-hidden md:hover:overflow-auto">
         {activeMenu && (
           <>
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <Link
                 to="/learn-react"
-                className="flex items-center gap-3 mt-4 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+                className="flex items-center gap-3 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
               >
                 <SiShopware />
                 {' '}
                 <span>Learn React</span>
               </Link>
-              <button onClick={() => setActiveMenu(false)} className="p-0 mt-5 ml-14 w-8 h-8 rounded-full flex items-center  hover:bg-gray-500/10 dark:hover:bg-white dark:text-white-light transition duration-300 rtl:rotate-180">
+              <button onClick={() => setActiveMenu(false)} className="p-0  ml-14 p-1 text-xl rounded-full hover:bg-light-gray">
                 <MdKeyboardDoubleArrowLeft style={{ color: currentColor }} className="m-auto size-5 " />
 
               </button>
