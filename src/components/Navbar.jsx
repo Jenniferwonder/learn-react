@@ -1,7 +1,5 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { SiShopware } from 'react-icons/si'
-import { AiOutlineMenu } from 'react-icons/ai'
 import { useStateContext } from '../contexts/ContextProvider'
 
 export default function Navbar() {
@@ -33,7 +31,7 @@ export default function Navbar() {
   const openActiveMenu = () => setActiveMenu(true)
 
   return (
-    <div className="w-full h-14 px-5 pt-1 shadow-sm bg-main-bg dark:bg-secondary-dark-bg">
+    <div className="w-full px-5 pt-1 shadow-sm h-14 bg-main-bg dark:bg-secondary-dark-bg">
       {activeMenu
         ? ''
         : (
@@ -42,8 +40,7 @@ export default function Navbar() {
               to="/learn-react"
               className="flex items-center gap-3 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware />
-              {' '}
+              <i className="text-3xl i-mdi-library" />
               <span>Learn React</span>
             </Link>
             <button
@@ -51,9 +48,10 @@ export default function Navbar() {
               type="button"
               onClick={openActiveMenu}
               style={{ color: currentColor }}
-              className="p-1 text-xl rounded-full dark:bg-light-gray hover:bg-light-gray ml-14"
+              className="flex items-center p-1 text-xl rounded-full dark:bg-light-gray hover:bg-light-gray ml-14"
             >
-              <AiOutlineMenu />
+              <i className="i-mdi-menu"></i>
+              {/* <AiOutlineMenu /> */}
             </button>
           </div>
           )}

@@ -1,6 +1,4 @@
 import { Link, NavLink } from 'react-router-dom'
-import { SiShopware } from 'react-icons/si'
-import { MdKeyboardDoubleArrowLeft } from 'react-icons/md'
 import { useStateContext } from '../contexts/ContextProvider'
 import { pageLinks } from '../data/dummy'
 
@@ -18,7 +16,7 @@ export default function Sidebar() {
 		= 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2'
   return (
     <div className="">
-      <div className="pb-10 px-5 pt-1">
+      <div className="px-5 pt-1 pb-10">
         {activeMenu && (
           <>
             {/* Site Title and Toggle Button */}
@@ -27,13 +25,11 @@ export default function Sidebar() {
                 to="/learn-react"
                 className="flex items-center gap-3 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
               >
-                <SiShopware />
-                {' '}
+                <i className="text-3xl i-mdi-library" />
                 <span>Learn React</span>
               </Link>
-              <button onClick={() => setActiveMenu(false)} className="p-0  ml-14 p-1 text-xl rounded-full dark:bg-light-gray hover:bg-light-gray">
-                <MdKeyboardDoubleArrowLeft style={{ color: currentColor }} className="m-auto size-5 " />
-
+              <button onClick={() => setActiveMenu(false)} className="flex items-center p-1 text-xl rounded-full ml-14 dark:bg-light-gray hover:bg-light-gray">
+                <i className="i-mdi-chevron-double-left" style={{ color: currentColor }}></i>
               </button>
             </div>
             {/* Sidebar List */}
