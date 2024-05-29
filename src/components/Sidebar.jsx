@@ -18,7 +18,7 @@ export default function Sidebar() {
 		= 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2'
   return (
     <div className="">
-      <div className="h-screen pb-10 px-5 pt-1 overflow-auto md:overflow-hidden md:hover:overflow-auto">
+      <div className="pb-10 px-5 pt-1">
         {activeMenu && (
           <>
             <div className="flex items-center ">
@@ -35,9 +35,9 @@ export default function Sidebar() {
 
               </button>
             </div>
-            <div className="mt-6 ">
+            <div className="mt-6 h-[90vh] overflow-auto md:overflow-hidden md:hover:overflow-auto">
               {pageLinks.map(item => (
-                <div key={item.title}>
+                <ul key={item.title}>
                   <p className="m-3 mt-4 text-gray-400 uppercase dark:text-gray-400">
                     {item.title}
                   </p>
@@ -56,7 +56,7 @@ export default function Sidebar() {
                       <span className="capitalize ">{link.name}</span>
                     </NavLink>
                   ))}
-                </div>
+                </ul>
               ))}
             </div>
           </>

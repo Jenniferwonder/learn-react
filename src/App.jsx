@@ -34,6 +34,8 @@ function AppLayout() {
     currentColor,
     themeSettings,
     setThemeSettings,
+    setActiveMenu,
+    screenSize,
   } = useStateContext()
 
   useEffect(() => {
@@ -49,6 +51,7 @@ function AppLayout() {
     <>
       <div className={currentMode === 'Dark' ? 'dark' : ''}>
         <div className="relative flex dark:bg-main-dark-bg">
+          {/* Setting Button */}
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <button
               type="button"
@@ -59,9 +62,17 @@ function AppLayout() {
               <FiSettings />
             </button>
           </div>
+          {/* Sidebar Overlay */}
+          {activeMenu && screenSize < 900 && (
+            <div
+              className="fixed inset-0 bg-[black]/60 z-50 lg:hidden"
+              onClick={() => setActiveMenu(false)}
+            />
+          )}
+          {/* Sidebar */}
           {activeMenu
             ? (
-              <div className="fixed bg-white dark:bg-secondary-dark-bg">
+              <div className=" z-[100] fixed bg-white dark:bg-secondary-dark-bg">
                 <Sidebar />
               </div>
               )
@@ -70,6 +81,7 @@ function AppLayout() {
                 <Sidebar />
               </div>
               )}
+          {/* Main Content */}
           <div
             className={
 							activeMenu
