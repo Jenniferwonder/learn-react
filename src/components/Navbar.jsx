@@ -33,7 +33,7 @@ export default function Navbar() {
   const openActiveMenu = () => setActiveMenu(true)
 
   return (
-    <div className="bg-white w-full h-14 px-5 pt-1 shadow-sm">
+    <div className="w-full h-14 px-5 pt-1 shadow-sm bg-main-bg dark:bg-secondary-dark-bg">
       {activeMenu
         ? ''
         : (
@@ -51,7 +51,7 @@ export default function Navbar() {
               type="button"
               onClick={openActiveMenu}
               style={{ color: currentColor }}
-              className="p-1 text-xl rounded-full hover:bg-light-gray  ml-14"
+              className="p-1 text-xl rounded-full dark:bg-light-gray hover:bg-light-gray ml-14"
             >
               <AiOutlineMenu />
             </button>

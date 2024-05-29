@@ -30,7 +30,7 @@ export default function Sidebar() {
                 {' '}
                 <span>Learn React</span>
               </Link>
-              <button onClick={() => setActiveMenu(false)} className="p-0  ml-14 p-1 text-xl rounded-full hover:bg-light-gray">
+              <button onClick={() => setActiveMenu(false)} className="p-0  ml-14 p-1 text-xl rounded-full dark:bg-light-gray hover:bg-light-gray">
                 <MdKeyboardDoubleArrowLeft style={{ color: currentColor }} className="m-auto size-5 " />
 
               </button>

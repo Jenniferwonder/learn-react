@@ -77,7 +77,7 @@ function AppLayout() {
               </div>
               )
             : (
-              <div className="w-0 dark:bg-secondary-dark-bg">
+              <div className="w-0 ">
                 <Sidebar />
               </div>
               )}
@@ -89,7 +89,7 @@ function AppLayout() {
 							  : 'dark:bg-main-dark-bg bg-main-bg w-full min-h-screen'
 						}
           >
-            <div className=" md:static bg-main-bg dark:bg-main-dark-bg h-10">
+            <div className="md:static">
               <Navbar />
             </div>
             <div>{themeSettings && <ThemeSettings />}</div>
