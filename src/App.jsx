@@ -92,9 +92,19 @@ function AppLayout() {
             <div className="md:static">
               <Navbar />
             </div>
-            <div>{themeSettings && <ThemeSettings />}</div>
+            <div>
+              {themeSettings && (
+                <>
+                  <ThemeSettings />
+                  <div
+                    className="fixed w-screen inset-0 bg-[black]/60 z-50"
+                    onClick={() => setThemeSettings(false)}
+                  />
+                </>
+              )}
+            </div>
             <div className="m-6 ml-8">
-              <div className="m-2 md:m-10  p-2 md:p-10 dark:bg-[#34373e] bg-white rounded-3xl">
+              <div className="m-2 md:m-10 p-2 md:p-10 dark:bg-[#34373e] bg-white rounded-3xl">
                 <Outlet />
               </div>
             </div>
