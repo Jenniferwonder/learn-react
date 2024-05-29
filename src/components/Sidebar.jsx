@@ -9,7 +9,7 @@ export default function Sidebar() {
 		= useStateContext()
 
   const handleCloseSideBar = () => {
-    if (activeMenu !== undefined && screenSize <= 900)
+    if (activeMenu !== undefined && screenSize <= 1024)
       setActiveMenu(false)
   }
   const activeLink

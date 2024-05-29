@@ -22,13 +22,8 @@ export default function Footer({
   clearCompleted,
 }) {
   return (
-    <div className="flex items-center">
-      <p className="mr-1">
-        {count}
-        {' '}
-        item left!
-      </p>
-      <div className="flex-grow flex-nowrap">
+    <div className="md:flex items-center">
+      <div className="ml-4 md:flex-grow md:flex-nowrap md:ml-0">
         <button className="mr-1" onClick={showAll}>
           All
         </button>
@@ -38,10 +33,15 @@ export default function Footer({
         <button className="mr-1" onClick={showCompleted}>
           Completed
         </button>
+        <button className="whitespace-nowrap" onClick={clearCompleted}>
+          Clear completed
+        </button>
       </div>
-      <button className="whitespace-nowrap" onClick={clearCompleted}>
-        Clear completed
-      </button>
+      <p className="block ml-6 md:mr-1 md:ml-0 md:order-first">
+        {count}
+        {' '}
+        item left!
+      </p>
     </div>
   )
 }

@@ -16,7 +16,7 @@ export default function AddTask({ onAddTask }) {
   }
   return (
     <input
-      className=" w-full h-12 "
+      className="w-[90%] ml-6 h-12 dark:text-white md:w-full md:ml-0 placeholder:dark:text-white"
       type="text"
       placeholder="Enter to add a todo"
       value={text}
