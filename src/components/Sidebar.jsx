@@ -21,6 +21,7 @@ export default function Sidebar() {
       <div className="pb-10 px-5 pt-1">
         {activeMenu && (
           <>
+            {/* Site Title and Toggle Button */}
             <div className="flex items-center ">
               <Link
                 to="/learn-react"
@@ -35,7 +36,8 @@ export default function Sidebar() {
 
               </button>
             </div>
-            <div className="mt-6 h-[90vh] overflow-auto md:overflow-hidden md:hover:overflow-auto">
+
+            <div className="mt-3 h-[90vh] overflow-auto md:overflow-hidden md:hover:overflow-auto">
               {pageLinks.map(item => (
                 <ul key={item.title}>
                   <p className="m-3 mt-4 text-gray-400 uppercase dark:text-gray-400">
