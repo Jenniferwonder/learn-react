@@ -53,12 +53,12 @@ export default function DefaultLayout() {
           {/* Sidebar */}
           {activeMenu
             ? (
-              <div className=" z-[100] fixed bg-white dark:bg-secondary-dark-bg">
+              <div className=" ">
                 <Sidebar />
               </div>
               )
             : (
-              <div className="w-0 ">
+              <div className="invisible">
                 <Sidebar />
               </div>
               )}
