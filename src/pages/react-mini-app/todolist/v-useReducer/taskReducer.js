@@ -9,7 +9,7 @@ export default function taskReducer(tasks, action) {
       return tasks.map((t) => {
         if (t.id === action.task.id)
           return action.task
-				 else return t
+        return t
       })
     }
     case 'deleteTask': {
