@@ -31,7 +31,40 @@ export default function DefaultLayout() {
   return (
     <App>
       <div className={currentMode === 'Dark' ? 'dark' : ''}>
-        <div className="relative flex dark:bg-main-dark-bg">
+        <Navbar />
+        {/* Sidebar Overlay */}
+        {activeMenu && screenSize < 900 && (
+          <div
+            className="fixed w-screen mt-14 inset-0 bg-[black]/60 z-[50] lg:hidden"
+            onClick={() => setActiveMenu(false)}
+          />
+        )}
+        <div className="flex dark:bg-main-dark-bg">
+          {/* Sidebar */}
+          {activeMenu
+            ? (
+              <div>
+                <Sidebar />
+              </div>
+              )
+            : (
+              <div className="invisible">
+                <Sidebar />
+              </div>
+              )}
+          {/* Theme Settings */}
+          <div>
+            {themeSettings && (
+              <>
+                <ThemeSettings />
+                {/* Setting Overlay */}
+                <div
+                  className="fixed w-screen inset-0 bg-[black]/60 z-[200]"
+                  onClick={() => setThemeSettings(false)}
+                />
+              </>
+            )}
+          </div>
           {/* Setting Button */}
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <button
@@ -43,51 +76,16 @@ export default function DefaultLayout() {
               <i className="text-3xl i-carbon-settings hover:drop-shadow-xl" />
             </button>
           </div>
-          {/* Sidebar Overlay */}
-          {activeMenu && screenSize < 900 && (
-            <div
-              className="fixed inset-0 bg-[black]/60 z-50 lg:hidden"
-              onClick={() => setActiveMenu(false)}
-            />
-          )}
-          {/* Sidebar */}
-          {activeMenu
-            ? (
-              <div className=" ">
-                <Sidebar />
-              </div>
-              )
-            : (
-              <div className="invisible">
-                <Sidebar />
-              </div>
-              )}
-          <div>
-            {themeSettings && (
-              <>
-                <ThemeSettings />
-                <div
-                  className="fixed w-screen inset-0 bg-[black]/60 z-50"
-                  onClick={() => setThemeSettings(false)}
-                />
-              </>
-            )}
-          </div>
           {/* Main Content */}
           <div
             className={
               activeMenu
-                ? 'dark:bg-main-dark-bg bg-main-bg md:ml-72 w-full min-h-screen'
+                ? 'dark:bg-main-dark-bg bg-main-bg md:ml-60 w-full min-h-screen'
                 : 'dark:bg-main-dark-bg bg-main-bg w-full min-h-screen'
             }
           >
-            <div className="md:static">
-              <Navbar />
-            </div>
-            <div className="m-6 ml-8">
-              <div className="m-2 md:m-10 p-2 md:p-10 dark:bg-[#34373e] bg-white rounded-3xl">
-                <Outlet />
-              </div>
+            <div className="mr-5 mt-12 -ml-4 md:m-16 md:mt-20 p-2 md:p-10 dark:bg-[#34373e] bg-white md:rounded-3xl">
+              <Outlet />
             </div>
           </div>
         </div>

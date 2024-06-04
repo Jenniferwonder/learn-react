@@ -1,9 +1,7 @@
-import { Link, NavLink } from 'react-router-dom'
-import { useEffect, useRef, useState } from 'react'
-
-// import AnimateHeight from 'react-animate-height'
+import { NavLink } from 'react-router-dom'
 import { useStateContext } from '../contexts/ContextProvider'
 import { pageLinks } from '../data/dummy'
+import Details from './Details'
 
 export default function Sidebar() {
   const { currentColor, activeMenu, setActiveMenu, screenSize }
@@ -13,51 +11,67 @@ export default function Sidebar() {
       setActiveMenu(false)
   }
   const activeLink
-		= 'flex items-center gap-5 pl-4 pt-2 pb-1.5 rounded-lg  text-white  text-md m-2'
+		= 'flex items-center gap-2 pl-4 pt-2 pb-1.5 rounded-lg  text-white  text-md m-2 ml-6'
   const normalLink
-		= 'flex items-center gap-5 pl-4 pt-2 pb-1.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2'
+		= 'flex items-center gap-2 pl-4 pt-2 pb-1.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2 ml-6'
   return (
-    <div className="px-5 pt-1 pb-10 z-[100] fixed bg-main-bg shadow-lg dark:bg-secondary-dark-bg">
+    <div className="px-5 pt-1 pb-10 z-[100] shadow-lg bg-red-400 dark:bg-secondary-dark-bg">
       {activeMenu && (
         <>
-          {/* Site Title and Toggle Button */}
-          <div className="flex items-center ">
-            <Link
-              to="/learn-react"
-              className="flex items-center gap-3 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
-            >
-              <i className="text-3xl i-mdi-library" />
-              <span>Learn React</span>
-            </Link>
-            <button onClick={() => setActiveMenu(false)} className="flex items-center p-1 text-xl rounded-full ml-14 dark:bg-light-gray hover:bg-light-gray">
-              <i className="i-mdi-chevron-double-left" style={{ color: currentColor }}></i>
-            </button>
-          </div>
           {/* Sidebar List */}
-          <div className="mt-3 h-[90vh] overflow-auto md:overflow-hidden md:hover:overflow-auto">
-
+          <div className="w-72 -ml-6 h-[100vh] pt-16 px-6  shadow-sm bg:bg-main-bg dark:bg-secondary-dark-bg font-semibold fixed overflow-auto md:overflow-hidden md:hover:overflow-auto z-[100]">
             {pageLinks.map(item => (
-              <ul key={item.title} className="relative font-semibold space-y-0.5 p-4 py-0">
+              <ul key={item.title} className=" ">
                 <Details
-                  item={item}
+                  title={item.title}
                 >
-                  <ul>
-                    {item.links.map(link => (
-                      <NavLink
-                        to={`/learn-react/${link.name}`}
-                        key={link.name}
-                        onClick={handleCloseSideBar}
-                        style={({ isActive }) => ({
-                          backgroundColor: isActive ? currentColor : '',
-                        })}
-                        className={({ isActive }) =>
-                          isActive ? activeLink : normalLink}
-                      >
-                        {link.icon}
-                        <span className="capitalize ">{link.name}</span>
-                      </NavLink>
-                    ))}
-                  </ul>
+                  {item.links.map(link => (
+                    <li key={link.name}>
+                      {link.subLinks
+                        ? (
+                          <div className="ml-4">
+                            <Details title={link.name}>
+                              <ul>
+                                {link.subLinks.map(subLink => (
+                                  <NavLink
+                                    to={`/learn-react/${subLink.name}`}
+                                    key={subLink.name}
+                                    onClick={handleCloseSideBar}
+                                    style={({ isActive }) => ({
+                                      backgroundColor: isActive ? currentColor : '',
+                                    })}
+                                    className={({ isActive }) =>
+                                      isActive ? activeLink : normalLink}
+                                  >
+                                    <i className="i-mdi-minus text-xs" />
+                                    <span className="capitalize">{subLink.name}</span>
+                                  </NavLink>
+                                ))}
+                              </ul>
+                            </Details>
+                          </div>
+                          )
+                        : (
+                          <>
+
+                            <NavLink
+                              to={`/learn-react/${link.name}`}
+                              key={link.name}
+                              onClick={handleCloseSideBar}
+                              style={({ isActive }) => ({
+                                backgroundColor: isActive ? currentColor : '',
+                              })}
+                              className={({ isActive }) =>
+                                isActive ? activeLink : normalLink}
+                            >
+                              <i className="i-mdi-minus text-xs" />
+                              <span className="capitalize">{link.name}</span>
+                            </NavLink>
+                          </>
+                          )}
+                    </li>
+                  ))}
+
                 </Details>
               </ul>
             ))}
@@ -65,36 +79,5 @@ export default function Sidebar() {
         </>
       )}
     </div>
-  )
-}
-
-function Details({ item, children }) {
-  const [isOpen, setIsOpen] = useState(true)
-  const detailsRef = useRef(null)
-  function toggleOpen(newValue) {
-    newValue = detailsRef.current?.open
-    if (newValue !== undefined && newValue !== isOpen) {
-      // console.log('Setting isOpen', newValue)
-      setIsOpen(newValue)
-    }
-  }
-
-  useEffect(() => {
-    detailsRef.current?.addEventListener('toggle', toggleOpen)
-
-    return () => {
-      detailsRef.current?.removeEventListener('toggle', toggleOpen)
-    }
-  }, [toggleOpen])
-
-  return (
-    <details open={isOpen} ref={detailsRef}>
-      <summary className="dark:focus:text-black list-none cursor-pointer pl-3 pt-2 pb-1.5 my-1 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray focus:bg-light-gray ml-0">
-        {item.title}
-        {/* <i className={`${currentMenu === `${item.title}` ? 'i-mdi-chevron-down' : 'i-mdi-chevron-right'} ml-4 mb-1 text-xl`} /> */}
-        <i className={`${isOpen ? 'i-mdi-chevron-down' : 'i-mdi-chevron-right'} ml-4 mb-1 text-xl`} />
-      </summary>
-      {children}
-    </details>
   )
 }

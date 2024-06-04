@@ -27,7 +27,7 @@ const routes = [
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <ReactBasicDemo /> },
-      { path: '/learn-react/basic', element: <ReactBasicDemo /> },
+      { path: '/learn-react/basics', element: <ReactBasicDemo /> },
       { path: '/learn-react/useState', element: <StateDemo /> },
       { path: '/learn-react/useReducer', element: <ReducerDemo /> },
       { path: '/learn-react/useContext', element: <ContextDemo /> },

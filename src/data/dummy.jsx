@@ -1,84 +1,62 @@
-import {
-  AiOutlineCalendar,
-  AiOutlineShoppingCart,
-  AiOutlineStock,
-} from 'react-icons/ai'
-import { FiShoppingBag } from 'react-icons/fi'
-import { IoMdContacts } from 'react-icons/io'
-import { RiContactsLine } from 'react-icons/ri'
-import { GiLouvrePyramid } from 'react-icons/gi'
-
 export const pageLinks = [
   {
-    title: 'Basics',
+    title: 'Basic Demo',
     links: [
       {
-        name: 'basic',
-        icon: <FiShoppingBag />,
-      },
-    ],
-  },
-  {
-    title: 'Hooks',
-    links: [
-      {
-        name: 'useState',
-        icon: <AiOutlineShoppingCart />,
+        name: 'Basics',
       },
       {
-        name: 'useReducer',
-        icon: <IoMdContacts />,
+        name: 'Hooks',
+        subLinks: [
+          {
+            name: 'useState',
+          },
+          {
+            name: 'useReducer',
+          },
+          {
+            name: 'useContext',
+          },
+          {
+            name: 'useRef',
+          },
+          {
+            name: 'useEffect',
+          },
+          {
+            name: 'useMemo',
+          },
+        ],
       },
       {
-        name: 'useContext',
-        icon: <RiContactsLine />,
+        name: 'React Mini App',
+        subLinks: [
+          {
+            name: 'product-table',
+          },
+          {
+            name: 'tic-tac-toe',
+          },
+          {
+            name: 'to-do-app',
+          },
+        ],
       },
       {
-        name: 'useRef',
-        icon: <RiContactsLine />,
+        name: 'Routing',
+        subLinks: [
+          {
+            name: 'router-dom',
+          },
+        ],
       },
       {
-        name: 'useEffect',
-        icon: <RiContactsLine />,
-      },
-      {
-        name: 'useMemo',
-        icon: <RiContactsLine />,
-      },
-    ],
-  },
-  {
-    title: 'React Mini App',
-    links: [
-      {
-        name: 'product-table',
-        icon: <AiOutlineShoppingCart />,
-      },
-      {
-        name: 'tic-tac-toe',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'to-do-app',
-        icon: <GiLouvrePyramid />,
-      },
-    ],
-  },
-  {
-    title: 'Routing',
-    links: [
-      {
-        name: 'router-dom',
-        icon: <AiOutlineCalendar />,
-      },
-    ],
-  },
-  {
-    title: 'Query',
-    links: [
-      {
-        name: 'react-query',
-        icon: <AiOutlineStock />,
+        name: 'Query',
+        subLinks: [
+          {
+            name: 'react-query',
+          },
+        ],
       },
     ],
   },

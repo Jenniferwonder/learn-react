@@ -10,7 +10,7 @@ function ThemeSettings() {
 		= useStateContext()
 
   return (
-    <div className="fixed top-0 right-0 z-[100]">
+    <div className="fixed top-0 right-0 z-[500]">
       <div className="float-right h-screen dark:text-gray-200  bg-white dark:bg-[#484B52] w-400">
         <div className="flex items-center justify-between p-4 ml-4">
           <p className="text-lg font-semibold">Settings</p>
@@ -25,7 +25,6 @@ function ThemeSettings() {
         </div>
         <div className="flex-col p-4 ml-4 border-t-1 border-color">
           <p className="text-xl font-semibold ">Theme Option</p>
-
           <div className="mt-4">
             <input
               type="radio"
