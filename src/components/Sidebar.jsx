@@ -1,11 +1,12 @@
 import { Link, NavLink } from 'react-router-dom'
+
+// import AnimateHeight from 'react-animate-height'
 import { useStateContext } from '../contexts/ContextProvider'
 import { pageLinks } from '../data/dummy'
 
 export default function Sidebar() {
-  const { currentColor, activeMenu, setActiveMenu, screenSize }
+  const { currentColor, activeMenu, setActiveMenu, screenSize, currentMenu, toggleMenu }
 		= useStateContext()
-
   const handleCloseSideBar = () => {
     if (activeMenu !== undefined && screenSize <= 1024)
       setActiveMenu(false)
@@ -34,26 +35,35 @@ export default function Sidebar() {
             </div>
             {/* Sidebar List */}
             <div className="mt-3 h-[90vh] overflow-auto md:overflow-hidden md:hover:overflow-auto">
+
               {pageLinks.map(item => (
-                <ul key={item.title}>
-                  <p className="m-3 mt-4 text-gray-400 uppercase dark:text-gray-400">
-                    {item.title}
-                  </p>
-                  {item.links.map(link => (
-                    <NavLink
-                      to={`/learn-react/${link.name}`}
-                      key={link.name}
-                      onClick={handleCloseSideBar}
-                      style={({ isActive }) => ({
-											  backgroundColor: isActive ? currentColor : '',
-                      })}
-                      className={({ isActive }) =>
-											  isActive ? activeLink : normalLink}
-                    >
-                      {link.icon}
-                      <span className="capitalize ">{link.name}</span>
-                    </NavLink>
-                  ))}
+                <ul key={item.title} className="relative font-semibold space-y-0.5 p-4 py-0">
+
+                  <li className="menu nav-item">
+                    <details open className="">
+                      <summary onClick={() => toggleMenu(`${item.title}`)} className="list-none cursor-pointer pl-3 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray focus:bg-light-gray ml-0">
+                        {item.title}
+                        <i className={`${currentMenu === `${item.title}` ? 'i-mdi-chevron-right' : 'i-mdi-chevron-down'} ml-4 mb-1 text-xl`} />
+                      </summary>
+                      <ul>
+                        {item.links.map(link => (
+                          <NavLink
+                            to={`/learn-react/${link.name}`}
+                            key={link.name}
+                            onClick={handleCloseSideBar}
+                            style={({ isActive }) => ({
+                              backgroundColor: isActive ? currentColor : '',
+                            })}
+                            className={({ isActive }) =>
+                              isActive ? activeLink : normalLink}
+                          >
+                            {link.icon}
+                            <span className="capitalize ">{link.name}</span>
+                          </NavLink>
+                        ))}
+                      </ul>
+                    </details>
+                  </li>
                 </ul>
               ))}
             </div>

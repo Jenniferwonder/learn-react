@@ -10,6 +10,7 @@ const initialState = {
 }
 
 export function ContextProvider({ children }) {
+  const [currentMenu, setCurrentMenu] = useState('')
   const [screenSize, setScreenSize] = useState(undefined)
   const [currentColor, setCurrentColor] = useState('#03C9D7')
   const [currentMode, setCurrentMode] = useState('Light')
@@ -30,6 +31,12 @@ export function ContextProvider({ children }) {
   const handleClick = clicked =>
     setIsClicked({ ...initialState, [clicked]: true })
 
+  const toggleMenu = (value) => {
+    setCurrentMenu((oldValue) => {
+      return oldValue === value ? '' : value
+    })
+  }
+
   return (
     <StateContext.Provider
       value={{
@@ -40,6 +47,8 @@ export function ContextProvider({ children }) {
 			  screenSize,
 			  initialState,
 			  themeSettings,
+        currentMenu,
+        toggleMenu,
 			  handleClick,
 			  setScreenSize,
 			  setIsClicked,
