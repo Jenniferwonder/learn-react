@@ -1,27 +1,11 @@
-import { useStateContext } from '../contexts/ContextProvider'
-
-function Button({
-  icon,
-  bgColor,
-  color,
-  bgHoverColor,
-  size,
-  text,
-  borderRadius,
-  width,
+function Button({ children,
 }) {
-  const { setIsClicked, initialState } = useStateContext()
-
   return (
     <button
       type="button"
-      onClick={() => setIsClicked(initialState)}
-      style={{ backgroundColor: bgColor, color, borderRadius }}
-      className={` text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}
+      className="dark:bg-[gray] p-1 m-2 font-medium rounded-lg bg-[#fafbfb] cursor-pointer text-base border-2  shadow-md border-solid border-transparent transition duration-[.25s] hover:drop-shadow-xl active:translate-y-1;"
     >
-      {icon}
-      {' '}
-      {text}
+      {children}
     </button>
   )
 }
