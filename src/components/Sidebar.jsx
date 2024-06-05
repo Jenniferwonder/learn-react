@@ -11,9 +11,9 @@ export default function Sidebar() {
       setActiveMenu(false)
   }
   const activeLink
-		= 'flex items-center gap-2 pl-4 pt-2 pb-1.5 rounded-lg  text-white  text-md m-2 ml-6'
+		= 'flex items-center gap-2 pl-4 pt-2 pb-1.5 rounded-lg  text-white  text-md m-2 ml-3'
   const normalLink
-		= 'flex items-center gap-2 pl-4 pt-2 pb-1.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2 ml-6'
+		= 'flex items-center gap-2 pl-4 pt-2 pb-1.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-gray-400 m-2 ml-3'
   return (
     <div className="px-5 pt-1 pb-10 z-[100] ">
       {activeMenu && (
@@ -52,7 +52,7 @@ export default function Sidebar() {
                           </div>
                           )
                         : (
-                          <>
+                          <div className="">
 
                             <NavLink
                               to={`/learn-react/${link.name}`}
@@ -64,10 +64,10 @@ export default function Sidebar() {
                               className={({ isActive }) =>
                                 isActive ? activeLink : normalLink}
                             >
-                              <i className="i-mdi-minus text-xs" />
+                              {/* <i className="i-mdi-document text-gray-300 text-xs" /> */}
                               <span className="capitalize">{link.name}</span>
                             </NavLink>
-                          </>
+                          </div>
                           )}
                     </li>
                   ))}
