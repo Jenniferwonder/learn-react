@@ -19,9 +19,9 @@ export default function Sidebar() {
       {activeMenu && (
         <>
           {/* Sidebar List */}
-          <div className="w-72 -ml-6 h-[100vh] pt-16 px-6 shadow-lg bg-main-bg dark:bg-secondary-dark-bg font-semibold fixed overflow-auto md:overflow-hidden md:hover:overflow-auto z-[100]">
+          <div className="w-[260px] -ml-6 h-[100vh] pt-16 px-6 shadow-lg bg-main-bg dark:bg-secondary-dark-bg font-semibold fixed overflow-auto md:overflow-hidden md:hover:overflow-auto z-[100]">
             {pageLinks.map(item => (
-              <ul key={item.title} className=" ">
+              <ul key={item.title} className="">
                 <Details
                   title={item.title}
                 >
@@ -43,7 +43,7 @@ export default function Sidebar() {
                                     className={({ isActive }) =>
                                       isActive ? activeLink : normalLink}
                                   >
-                                    <i className="i-mdi-minus text-xs" />
+                                    <i className="text-xs i-mdi-minus" />
                                     <span className="capitalize">{subLink.name}</span>
                                   </NavLink>
                                 ))}
@@ -64,7 +64,7 @@ export default function Sidebar() {
                               className={({ isActive }) =>
                                 isActive ? activeLink : normalLink}
                             >
-                              {/* <i className="i-mdi-document text-gray-300 text-xs" /> */}
+                              {/* <i className="text-xs text-gray-300 i-mdi-document" /> */}
                               <span className="capitalize">{link.name}</span>
                             </NavLink>
                           </div>

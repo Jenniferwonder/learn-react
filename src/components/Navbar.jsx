@@ -35,7 +35,7 @@ export default function Navbar() {
     <div className="w-[100vw] fixed z-[300] px-5 pt-1 shadow-sm h-14 bg-main-bg dark:bg-secondary-dark-bg">
       {activeMenu
         ? (
-          <div className="w-full  flex items-center">
+          <div className="flex items-center w-full">
             <Link
               to="/learn-react"
               className="flex items-center gap-3 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
@@ -56,15 +56,6 @@ export default function Navbar() {
               <span>Learn React</span>
             </Link>
             <ToggleSidebar />
-            {/* <button
-              title="open sidebar"
-              type="button"
-              onClick={openActiveMenu}
-              style={{ color: currentColor }}
-              className="flex items-center p-1 text-xl rounded-full dark:bg-light-gray hover:bg-light-gray ml-14"
-            >
-              <i className="i-mdi-menu"></i>
-            </button> */}
           </div>
           )}
 
