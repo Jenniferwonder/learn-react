@@ -1,6 +1,9 @@
 export const pageLinks = [
   {
-    title: 'Basic Demo',
+    name: 'Dashboard',
+    links: [{ name: 'Sales' }, { name: 'Analytics' }, { name: 'Finance' }],
+  },
+  {
     name: 'Basic-demo',
     links: [
       {
@@ -8,7 +11,7 @@ export const pageLinks = [
       },
       {
         name: 'Hooks',
-        subLinks: [
+        links: [
           {
             name: 'useState',
           },
@@ -31,7 +34,7 @@ export const pageLinks = [
       },
       {
         name: 'React Mini App',
-        subLinks: [
+        links: [
           {
             name: 'product-table',
           },
@@ -45,7 +48,7 @@ export const pageLinks = [
       },
       {
         name: 'Routing',
-        subLinks: [
+        links: [
           {
             name: 'router-dom',
           },
@@ -53,7 +56,7 @@ export const pageLinks = [
       },
       {
         name: 'Query',
-        subLinks: [
+        links: [
           {
             name: 'react-query',
           },
