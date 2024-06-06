@@ -22,6 +22,7 @@ function ShareClick({ count, onClick }) {
   return (
     <button type="button" onClick={onClick}>
       Clicked
+      {' '}
       {count}
       {' '}
       times

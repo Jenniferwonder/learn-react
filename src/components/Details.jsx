@@ -21,7 +21,7 @@ export default function Details({ title, children }) {
 
   return (
     <details open={isOpen} ref={detailsRef}>
-      <summary className="dark:focus:text-black list-none cursor-pointer pl-3 pt-2 pb-1.5 my-1 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-gray-400 focus:bg-gray-400 ml-0">
+      <summary className=" list-none cursor-pointer pl-3 pt-2 pb-1.5 my-1 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black dark:hover:bg-gray-400  ml-0">
         {title}
         <i className={`${isOpen ? 'i-mdi-chevron-down' : 'i-mdi-chevron-right'} ml-4 mb-1 text-xl`} />
       </summary>

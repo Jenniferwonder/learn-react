@@ -21,6 +21,7 @@ function Click() {
   return (
     <button type="button" onClick={handleClick}>
       Clicked
+      {' '}
       {count}
       {' '}
       times
