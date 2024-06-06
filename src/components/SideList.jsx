@@ -2,7 +2,7 @@ import { useStateContext } from '@contexts/ContextProvider'
 import Details from './Details'
 import IconLink from './IconLink'
 
-export default function SideList({ group }) {
+export default function SideList({ group, icon }) {
   const { currentColor, activeMenu, setActiveMenu, screenSize }
     = useStateContext()
   const handleCloseSideBar = () => {
@@ -11,12 +11,12 @@ export default function SideList({ group }) {
   }
   return (
     <div>
-      <Details title={group.name.toUpperCase()}>
+      <Details title={group.name.toUpperCase()} icon={icon}>
         {group.links.map(item => (
           <ul key={item.name} className="ml-3">
             {item.links
               ? (
-                <>
+                <div className="ml-2">
                   <Details
                     title={item.name}
                   >
@@ -26,10 +26,10 @@ export default function SideList({ group }) {
                       </li>
                     ))}
                   </Details>
-                </>
+                </div>
                 )
               : (
-                <div className="-ml-3">
+                <div className="-ml-1">
                   <IconLink to={`/learn-react/${group.name}/${item.name}`} item={item} onClick={handleCloseSideBar} currentColor={currentColor} />
                 </div>
                 )}

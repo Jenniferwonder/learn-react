@@ -11,9 +11,9 @@ export default function Sidebar() {
           {/* Sidebar List */}
           <div className="w-72 -ml-6 h-[100vh] pt-16 px-5 shadow-lg bg-main-bg dark:bg-secondary-dark-bg font-semibold fixed overflow-auto md:overflow-hidden md:hover:overflow-auto z-[100]">
             {/* Dashboard List */}
-            <SideList group={pageLinks[0]} />
+            <SideList group={pageLinks[0]} icon="i-carbon-chart-bar" />
             {/* Basic-demo List */}
-            <SideList group={pageLinks[1]} />
+            <SideList group={pageLinks[1]} icon="i-carbon-demo" />
           </div>
         </>
       )}
