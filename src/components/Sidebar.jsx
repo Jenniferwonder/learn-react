@@ -34,7 +34,7 @@ export default function Sidebar() {
                               <ul>
                                 {link.subLinks.map(subLink => (
                                   <NavLink
-                                    to={`/learn-react/${subLink.name}`}
+                                    to={`/learn-react/${item.name}/${subLink.name}`}
                                     key={subLink.name}
                                     onClick={handleCloseSideBar}
                                     style={({ isActive }) => ({
@@ -55,7 +55,7 @@ export default function Sidebar() {
                           <div className="">
 
                             <NavLink
-                              to={`/learn-react/${link.name}`}
+                              to={`/learn-react/${item.name}/${link.name}`}
                               key={link.name}
                               onClick={handleCloseSideBar}
                               style={({ isActive }) => ({

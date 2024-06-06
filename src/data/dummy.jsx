@@ -1,6 +1,7 @@
 export const pageLinks = [
   {
     title: 'Basic Demo',
+    name: 'Basic-demo',
     links: [
       {
         name: 'Basics',

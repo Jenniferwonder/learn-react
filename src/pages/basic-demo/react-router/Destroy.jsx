@@ -4,5 +4,5 @@ import { deleteContact } from './contacts'
 export async function action({ params }) {
   // throw new Error("oh dang!");
   await deleteContact(params.contactId)
-  return redirect('/learn-react/router-dom')
+  return redirect('/learn-react/Basic-demo/router-dom')
 }
