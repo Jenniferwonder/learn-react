@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 export default function Details({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   const detailsRef = useRef(null)
   function toggleOpen(newValue) {
     newValue = detailsRef.current?.open
