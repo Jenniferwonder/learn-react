@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom'
 import { useEffect } from 'react'
-import { useStateContext } from '../contexts/ContextProvider'
-import Sidebar from '../components/Sidebar.jsx'
-import Navbar from '../components/Navbar.jsx'
-import ThemeSettings from '../components/ThemeSettings.jsx'
-import App from '../App.jsx'
+import { useStateContext } from '@contexts/ContextProvider'
+import Sidebar from '@components/Sidebar.jsx'
+import Navbar from '@components/Navbar.jsx'
+import ThemeSettings from '@components/ThemeSettings.jsx'
+import App from '@/App.jsx'
 
 export default function DefaultLayout() {
   const {

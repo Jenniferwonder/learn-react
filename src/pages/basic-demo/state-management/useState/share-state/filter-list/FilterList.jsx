@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { filterItems } from '../../../../../utils/filterItems.js'
+import { filterItems } from '@utils/filterItems.js'
 import { foods } from './data.js'
 
 export default function FilterList() {

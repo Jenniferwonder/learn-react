@@ -1,7 +1,7 @@
 // Using useState
 import { PRODUCTS } from './data/productData'
 import FilterTable from './components/FilterTable'
-// import Header from "./../../../components/Header";
+
 export default function ProductTableApp() {
   return (
     <>

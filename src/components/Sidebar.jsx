@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import { useStateContext } from '../contexts/ContextProvider'
-import { pageLinks } from '../data/dummy'
+import { useStateContext } from '@contexts/ContextProvider'
+import { pageLinks } from '@data/dummy'
 import Details from './Details'
 
 export default function Sidebar() {

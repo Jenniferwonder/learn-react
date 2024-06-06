@@ -3,14 +3,15 @@
 - https://localforage.github.io/localForage/
 - https://www.npmjs.com/package/sort-by */
 import localforage from 'localforage'
-import { filterItems } from './../../utils/filterItems'
+import { filterItems } from '@utils/filterItems'
+
 // import { matchSorter } from 'match-sorter'
 // import sortBy from 'sort-by'
 
 export async function getContacts(query) {
   await fakeNetwork(`getContacts:${query}`)
   let contacts = await localforage.getItem('contacts')
-  console.log(contacts)
+  // console.log(contacts)
   if (!contacts)
     contacts = []
   if (query)

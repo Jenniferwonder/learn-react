@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useStateContext } from '../contexts/ContextProvider'
+import { useStateContext } from '@contexts/ContextProvider'
 import ToggleSidebar from './ToggleSidebar'
 
 export default function Navbar() {
