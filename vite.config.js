@@ -23,6 +23,7 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
       '@contexts': path.resolve(__dirname, './src/contexts'),
       '@Basic-demo': path.resolve(__dirname, './src/pages/Basic-demo'),
+      '@Dashboard': path.resolve(__dirname, './src/pages/Dashboard'),
     },
   },
 })

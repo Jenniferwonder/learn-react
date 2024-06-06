@@ -16,6 +16,9 @@ import ProductTableApp from '@Basic-demo/react-mini-app/product-table-app/Produc
 import Blank from '@Basic-demo/Blank.jsx'
 import ToDoApp from '@Basic-demo/react-mini-app/todolist/ToDoApp'
 import TicTacToe from '@Basic-demo/react-mini-app/tic-tac-toe/TicTacToe.jsx'
+import Sales from '@Dashboard/Sales.jsx'
+import Analytics from '@Dashboard/Analytics'
+import Finance from '@Dashboard/Finance'
 import DefaultLayout from '@layouts/DefaultLayout'
 
 // ref: https://stackoverflow.com/questions/78098860/typeerror-cannot-destructure-property-basename-of-react2-usecontext-as
@@ -27,6 +30,11 @@ const routes = [
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <ReactBasicDemo /> },
+      // Dashboard
+      { path: '/learn-react/Dashboard/sales', element: <Sales /> },
+      { path: '/learn-react/Dashboard/analytics', element: <Analytics /> },
+      { path: '/learn-react/Dashboard/finance', element: <Finance /> },
+      // Basic-demo
       { path: '/learn-react/Basic-demo/basics', element: <ReactBasicDemo /> },
       { path: '/learn-react/Basic-demo/useState', element: <StateDemo /> },
       { path: '/learn-react/Basic-demo/useReducer', element: <ReducerDemo /> },
