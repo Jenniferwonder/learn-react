@@ -22,7 +22,7 @@ export default defineConfig({
       '@router': path.resolve(__dirname, './src/router'),
       '@components': path.resolve(__dirname, './src/components'),
       '@contexts': path.resolve(__dirname, './src/contexts'),
-      '@basic-demo': path.resolve(__dirname, './src/pages/basic-demo'),
+      '@Basic-demo': path.resolve(__dirname, './src/pages/Basic-demo'),
     },
   },
 })
