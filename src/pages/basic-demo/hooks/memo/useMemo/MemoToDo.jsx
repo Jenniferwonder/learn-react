@@ -14,9 +14,8 @@ export default function MemoToDo() {
       <h2>Memo ToDo List </h2>
       <p>
         ✅ When theme changes, the list will not be re-rendered because it's
-        been memorized.
+        been memorized and state of the list haven't changed.
       </p>
-      and state of the list haven't changed
       <button type="button" onClick={() => setTab('all')}>All</button>
       <button type="button" onClick={() => setTab('active')}>Active</button>
       <button type="button" onClick={() => setTab('completed')}>Completed</button>
