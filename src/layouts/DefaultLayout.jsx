@@ -9,8 +9,8 @@ import App from '@/App.jsx'
 export default function DefaultLayout() {
   const {
     setCurrentColor,
-    setCurrentMode,
-    currentMode,
+    setIsDark,
+    isDark,
     activeMenu,
     currentColor,
     themeSettings,
@@ -24,13 +24,13 @@ export default function DefaultLayout() {
     const currentThemeMode = localStorage.getItem('themeMode')
     if (currentThemeColor && currentThemeMode) {
       setCurrentColor(currentThemeColor)
-      setCurrentMode(currentThemeMode)
+      setIsDark(currentThemeMode === 'Dark')
     }
   }, [])
 
   return (
     <App>
-      <div className={currentMode === 'Dark' ? 'dark' : ''}>
+      <div className={isDark === true ? 'dark' : ''}>
         <Navbar />
         {/* Sidebar Overlay */}
         {activeMenu && screenSize < 900 && (

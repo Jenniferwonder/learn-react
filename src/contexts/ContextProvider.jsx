@@ -13,14 +13,15 @@ export function ContextProvider({ children }) {
   const [currentMenu, setCurrentMenu] = useState('')
   const [screenSize, setScreenSize] = useState(undefined)
   const [currentColor, setCurrentColor] = useState('#03C9D7')
-  const [currentMode, setCurrentMode] = useState('Light')
+  const [isDark, setIsDark] = useState(false)
   const [themeSettings, setThemeSettings] = useState(false)
   const [activeMenu, setActiveMenu] = useState(true)
   const [isClicked, setIsClicked] = useState(initialState)
 
-  const setMode = (e) => {
-    setCurrentMode(e.target.value)
-    localStorage.setItem('themeMode', e.target.value)
+  const toggleMode = () => {
+    setIsDark(!isDark)
+    console.log(isDark)
+    localStorage.setItem('isDark', isDark)
   }
 
   const setColor = (color) => {
@@ -42,7 +43,7 @@ export function ContextProvider({ children }) {
       value={{
 			  isClicked,
 			  currentColor,
-			  currentMode,
+			  isDark,
 			  activeMenu,
 			  screenSize,
 			  initialState,
@@ -54,8 +55,8 @@ export function ContextProvider({ children }) {
 			  setIsClicked,
 			  setActiveMenu,
 			  setCurrentColor,
-			  setCurrentMode,
-			  setMode,
+			  setIsDark,
+			  toggleMode,
 			  setColor,
 			  setThemeSettings,
       }}

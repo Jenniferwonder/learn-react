@@ -6,7 +6,7 @@ import { themeColors } from '@data/dummy'
 import { useStateContext } from '@contexts/ContextProvider'
 
 function ThemeSettings() {
-  const { setColor, setMode, currentMode, currentColor, setThemeSettings }
+  const { setColor, toggleMode, isDark, currentColor, setThemeSettings }
 		= useStateContext()
 
   return (
@@ -32,8 +32,8 @@ function ThemeSettings() {
               name="theme"
               value="Light"
               className="cursor-pointer"
-              onChange={setMode}
-              checked={currentMode === 'Light'}
+              onChange={toggleMode}
+              checked={isDark === false}
             />
             <label htmlFor="light" className="ml-2 cursor-pointer text-md">
               Light
@@ -45,9 +45,9 @@ function ThemeSettings() {
               id="dark"
               name="theme"
               value="Dark"
-              onChange={setMode}
+              onChange={toggleMode}
               className="cursor-pointer"
-              checked={currentMode === 'Dark'}
+              checked={isDark === true}
             />
             <label htmlFor="dark" className="ml-2 cursor-pointer text-md">
               Dark
