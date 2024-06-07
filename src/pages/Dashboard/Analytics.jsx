@@ -1,5 +1,4 @@
 import ReactApexChart from 'react-apexcharts'
-import { Link } from 'react-router-dom'
 import { engagement, followers, paidVisit, referral, totalVisit, uniqueVisitorSeries } from '@data/dummy'
 import Breadcrumb from '@components/Breadcrumb'
 

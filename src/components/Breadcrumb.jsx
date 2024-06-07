@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Breadcrumb({ title }) {
   return (
-    <ul className="md:mx-20 mt-16 md:mt-[4.5rem] flex space-x-2 rtl:space-x-reverse">
+    <ul className="md:mx-10 mt-16 md:mt-[4.5rem] flex space-x-2 rtl:space-x-reverse">
       <li>
         <Link to="/learn-react/Dashboard/" className="text-primary hover:underline">
           Dashboard
