@@ -20,14 +20,14 @@ export default function Navbar() {
     handleResize()
 
     return () => window.removeEventListener('resize', handleResize)
-  }, [])
+  }, [setScreenSize])
 
   useEffect(() => {
     if (screenSize <= 1024)
       setActiveMenu(false)
 		 else
       setActiveMenu(true)
-  }, [screenSize])
+  }, [screenSize, setActiveMenu])
 
   return (
     <div className="w-[100vw] fixed z-[300] px-5 pt-1 shadow-sm h-14 bg-main-bg dark:bg-secondary-dark-bg">
