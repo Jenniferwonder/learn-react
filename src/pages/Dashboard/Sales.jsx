@@ -9,7 +9,7 @@ export default function Sales() {
       {/* Breadcrumb */}
       <Breadcrumb title="Sales" />
       {/* Display Section */}
-      <div className="mr-4 mt-3 -ml-4 md:m-8 md:mt-4 p-2  dark:bg-[#34373e] ">
+      <div className="mr-4 mt-3 -ml-4 md:m-8 md:mt-4 p-2 dark:bg-[#34373e] ">
         {/* Row 1 */}
         <div className="grid xl:grid-cols-3 gap-6 mb-6">
           {/* Row 1.1-Line Chart */}
