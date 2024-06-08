@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
-export default function IconLink({ icon, item, to, link, onClick, currentColor }) {
+export default function SideLink({ icon, item, to, link, onClick, currentColor }) {
   const activeLink
     = 'flex items-center gap-2 pl-3 pt-2 pb-1.5 rounded-lg  text-white text-md m-2 ml-6'
   const normalLink
