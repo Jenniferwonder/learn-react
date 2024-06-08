@@ -13,7 +13,7 @@ export default function Sidebar() {
             {/* Dashboard List */}
             <SideList group={pageLinks[0]} icon="i-carbon-chart-bar" />
             {/* Basic-demo List */}
-            <SideList group={pageLinks[1]} icon="i-carbon-demo" />
+            <SideList group={pageLinks[1]} icon="i-carbon-demo" setSubOpen={false} />
           </div>
         </>
       )}
