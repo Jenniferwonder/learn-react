@@ -7,7 +7,7 @@ export default function ToggleSidebar() {
   return (
     <div className="flex">
       <Link
-        to="/learn-react/"
+        to="/"
         className="flex items-center gap-3 ml-3 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
       >
         <i className="text-3xl i-mdi-library" />
