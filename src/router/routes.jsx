@@ -27,15 +27,23 @@ import TicTacToe from '@Basic-demo/react-mini-app/tic-tac-toe/TicTacToe.jsx'
 const routes = [
   {
     path: '/learn-react/',
+    element: <ChartLayout />,
+    errorElement: <ErrorPage />,
+    layout: 'chart',
+    children: [
+      { index: true, element: <Sales /> },
+      // Dashboard
+      { path: '/learn-react/Dashboard/sales', element: <Sales /> },
+      { path: '/learn-react/Dashboard/analytics', element: <Analytics /> },
+      { path: '/learn-react/Dashboard/finance', element: <Finance /> },
+    ],
+  },
+  {
+    path: '/learn-react/Basic-demo/',
     element: <DefaultLayout />,
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <ReactBasicDemo /> },
-      // Dashboard
-      // { path: '/learn-react/Dashboard/sales', element: <Sales /> },
-      // { path: '/learn-react/Dashboard/analytics', element: <Analytics /> },
-      // { path: '/learn-react/Dashboard/finance', element: <Finance /> },
-      // Basic-demo
       { path: '/learn-react/Basic-demo/basics', element: <ReactBasicDemo /> },
       { path: '/learn-react/Basic-demo/useState', element: <StateDemo /> },
       { path: '/learn-react/Basic-demo/useReducer', element: <ReducerDemo /> },
@@ -75,22 +83,10 @@ const routes = [
       },
     ],
   },
-  {
-    path: '/learn-react/blank/',
-    layout: 'blank',
-  },
-  {
-    path: '/learn-react/Dashboard/',
-    element: <ChartLayout />,
-    errorElement: <ErrorPage />,
-    layout: 'chart',
-    children: [
-      { index: true, element: <Sales /> },
-      // Dashboard
-      { path: '/learn-react/Dashboard/sales', element: <Sales /> },
-      { path: '/learn-react/Dashboard/analytics', element: <Analytics /> },
-      { path: '/learn-react/Dashboard/finance', element: <Finance /> },
-    ],
-  },
+  // {
+  //   path: '/learn-react/blank/',
+  //   layout: 'blank',
+  // },
+
 ]
 export { routes }
