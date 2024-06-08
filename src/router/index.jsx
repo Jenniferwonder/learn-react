@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import BlankLayout from '@layouts/BlankLayout'
 import DefaultLayout from '@layouts/DefaultLayout'
 import ChartLayout from '@layouts/ChartLayout'
@@ -12,7 +12,7 @@ const finalRoutes = routes.map((route) => {
   }
 })
 
-const router = createBrowserRouter(finalRoutes)
+const router = createHashRouter(finalRoutes)
 // const router = createBrowserRouter(routes)
 
 export default router

@@ -22,7 +22,7 @@ export default function SideList({ group, icon }) {
                   >
                     {item.links.map(link => (
                       <li key={link.name}>
-                        <IconLink to={`/learn-react/${group.name}/${link.name}`} item={item} link={link} onClick={handleCloseSideBar} currentColor={currentColor} icon="i-mdi-minus" />
+                        <IconLink to={`/${group.name}/${link.name}`} item={item} link={link} onClick={handleCloseSideBar} currentColor={currentColor} icon="i-mdi-minus" />
                       </li>
                     ))}
                   </Details>
@@ -30,7 +30,7 @@ export default function SideList({ group, icon }) {
                 )
               : (
                 <div className="-ml-1">
-                  <IconLink to={`/learn-react/${group.name}/${item.name}`} item={item} onClick={handleCloseSideBar} currentColor={currentColor} />
+                  <IconLink to={`/${group.name}/${item.name}`} item={item} onClick={handleCloseSideBar} currentColor={currentColor} />
                 </div>
                 )}
           </ul>
